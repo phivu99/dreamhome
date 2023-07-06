@@ -6,7 +6,7 @@
     display      : inline-block;
     background-color: $color-3;
     box-sizing   : border-box;
-    padding         : 14px 30px;
+    padding         : 15px 18.5px;
     border-radius: 10px;
     @include transition3;
     span {
@@ -21,6 +21,9 @@
     &.active {
         border-color: transparent;
         outline: 0 none;
+    }
+    svg {
+      margin-right: 17px;
     }
 }
 

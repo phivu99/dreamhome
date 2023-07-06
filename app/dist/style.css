@@ -63,8 +63,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   color: #120A21;
   background-color: #fff;
@@ -95,11 +95,11 @@ ul, li {
 }
 
 .container2 {
-  max-width: 1460px;
+  max-width: 1482px;
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1110px;
 }
 
 .container2,
@@ -131,7 +131,7 @@ input[type=search],
 input[type=tel],
 input[type=color] {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
   outline: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -256,13 +256,13 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 h5 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 h6 {
@@ -389,7 +389,7 @@ label.error {
   text-transform: unset !important;
 }
 
-.align {
+.align-center {
   align-items: center;
 }
 
@@ -419,7 +419,7 @@ button {
 }
 
 .font-2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 .fw-4 {
@@ -436,6 +436,10 @@ button {
 
 .fw-7 {
   font-weight: 700;
+}
+
+.lh-24 {
+  line-height: 24px;
 }
 
 .lh-26 {
@@ -464,6 +468,14 @@ button {
 
 .mb-203 {
   margin-bottom: 203px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-16 {
+  font-size: 16px;
 }
 
 .fs-20 {
@@ -618,7 +630,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .link-style-6 a:focus, .link-style-6 a:hover {
-  color: #FFD80D;
+  color: #FFF5E0;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -638,7 +650,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .link-style-7 a:focus, .link-style-7 a:hover {
-  color: #FFD80D;
+  color: #FFF5E0;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -661,7 +673,7 @@ a:focus, a:hover {
 }
 
 .text-color-4 {
-  color: #666666 !important;
+  color: #8E8E93 !important;
 }
 
 .text-color-5 {
@@ -669,7 +681,7 @@ a:focus, a:hover {
 }
 
 .text-color-6 {
-  color: #FFD80D !important;
+  color: #FFF5E0 !important;
 }
 
 .text-color-7 {
@@ -718,8 +730,8 @@ a:focus, a:hover {
   width: 100%;
   border: 1px solid #E5E5EA;
   line-height: 24px;
-  padding: 15px 50px 14px 20px;
-  border-radius: 0;
+  padding: 14px 49px 14px 17px;
+  border-radius: 10px;
 }
 .search-form .search-field::placeholder {
   color: #120A21 !important;
@@ -753,7 +765,7 @@ a:focus, a:hover {
   color: #120A21;
 }
 .header_1.is-fixed #main-nav > ul > .current-menu-item > a {
-  color: #FFD80D;
+  color: #FFF5E0;
 }
 
 .header_1.is-fixed.is-small {
@@ -831,7 +843,7 @@ a:focus, a:hover {
   color: #fff;
   text-align: center;
   line-height: 65px;
-  box-shadow: 2px 6px 0 #FFD80D;
+  box-shadow: 2px 6px 0 #FFF5E0;
 }
 .themesflat-pagination ul li .page-numbers.style i {
   font-size: 22px;
@@ -892,7 +904,7 @@ a:focus, a:hover {
   font-weight: 600;
 }
 .button-go:hover {
-  box-shadow: 5px 5px 0 #FFD80D;
+  box-shadow: 5px 5px 0 #FFF5E0;
 }
 
 /* PreLoad

@@ -69,8 +69,8 @@ html {
 
 body {
     font-family: $font-1;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
     font-weight: 400;
     color: $color-2;
     background-color: $color-1;
@@ -101,11 +101,11 @@ ul, li {
 }
 
 .container2 {
-    max-width: 1460px;
+    max-width: 1482px;
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1110px;
 }
 
 .container2,
@@ -266,13 +266,13 @@ h3 {
 }
 
 h4 {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 h5 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 h6 {
@@ -400,7 +400,7 @@ label.error {
 }
 
 
-.align {
+.align-center {
     align-items: center;
 }
 
@@ -449,6 +449,9 @@ button {
     font-weight: 700
 }
 
+.lh-24 {
+    line-height: 24px
+}
 
 .lh-26 {
     line-height: 26px
@@ -476,6 +479,14 @@ button {
 
 .mb-203 {
     margin-bottom: 203px
+}
+
+.fs-13 {
+    font-size: 13px
+}
+
+.fs-16 {
+    font-size: 16px
 }
 
 .fs-20 {
@@ -620,7 +631,7 @@ a {
 }
 
 .text-color-4 {
-    color: #666666 !important;
+    color: #8E8E93 !important;
 }
 
 .text-color-5 {
@@ -678,8 +689,8 @@ a {
         width: 100%;
         border: 1px solid $color-5;
         line-height: 24px;
-        padding: 15px 50px 14px 20px;
-        border-radius: 0;
+        padding: 14px 49px 14px 17px;
+        border-radius: 10px;
         &::placeholder {
             color: $color-2 !important;
             line-height: 19px;

@@ -194,7 +194,7 @@ var swiper =  new Swiper(".carousel-5", {
         },
         1200: {
             slidesPerView: 6,
-            spaceBetween: 50,
+            spaceBetween: 30,
         },
     },
 });

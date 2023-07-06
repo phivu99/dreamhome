@@ -1,7 +1,7 @@
 .nice-select {
     -webkit-tap-highlight-color: transparent;
     background-color: #fff;
-    border: 1px solid #eee !important;
+    border: 1px solid #E5E5EA !important;
     border-radius: 3px;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     font-family: var(--paraFont);
     font-size: 16px;
     font-weight: 400;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     outline: none;
     position: relative;
     transition: all linear .2s;
