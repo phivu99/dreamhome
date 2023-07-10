@@ -13,7 +13,6 @@
     
     <link rel="stylesheet" href="app/dist/app.css">
     <link rel="stylesheet" href="app/dist/responsive.css">
-    <link rel="stylesheet" href="app/dist/nice-select.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -247,7 +246,7 @@
                                         <div class="row">
 
                                         
-                                        <div class="container2  flex relative">      
+                                        <div class="container2  relative">      
                                             <div class="content po-content-two">
                                                 <div class="heading">
                                                     <h1>We will find a perfect home for you</h1>
@@ -337,18 +336,9 @@
                                                                 <form method="post">
                                   
                                                                   <div class="wd-find-select flex">
-                                                                    <div class="form-group-1 search-form form-style">
-                                                                        <input type="search" class="search-field" placeholder="Type keyword..." value="" name="s" title="Search for" required="">
-                                                                        
-                                                                    </div>
                                                                       
                                                                     <div class="form-group-2 form-style">
                                                                         <div class="group-select">
-                                                                            <!-- <select style="display: none;">
-                                                                                <option>Property type</option>
-                                                                                <option>1 Per Page</option>
-                                                                                <option>10 Per Page</option>
-                                                                            </select> -->
                                                                             <div class="nice-select" tabindex="0"><span class="current">Property type</span>
                                                                                 <ul class="list">                                                          
                                                                                   <li data-value="Condo" class="option">Condo</li>
@@ -361,11 +351,6 @@
                                                                       </div>
                                                                       <div class="form-group-3 form-style">
                                                                         <div class="group-select">
-                                                                            <!-- <select>
-                                                                                <option>Location</option>
-                                                                                <option>New</option>
-                                                                                <option>Last</option>
-                                                                            </select> -->
                                                                             <div class="nice-select" tabindex="0"><span class="current">Location</span>
                                                                                 <ul class="list">                                                          
                                                                                     <li data-value="Japan" class="option">Japan</li>
@@ -387,8 +372,8 @@
                                                                       <div class="button-search sc-btn-top">
                                                                         <a class="sc-button" href="#">
                                                              
-                                                                            <span>Search Now</span>
-                                                                            <i class="far fa-search text-color-1"></i>
+                                                                            <span>Buy</span>
+                                                                            <i class="far fa-dollar-sign text-color-1"></i>
                                                                         </a>
                                                                     </div> 
                                                                   </div>
@@ -486,68 +471,790 @@
                     </div>
                 </section>
 
-                <section class="flat-featured flat-home" >
-                    <div class="container">
+                <section class="flat-featured wg-dream" >
+                    <div class="container3">
                         <div class="row">                      
                             <div class="col-lg-12">
                                 <div class="heading-section center">
                                     <h2>Featured properties</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo</p>
+                                    <p class="text-color-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo</p>
                                 </div>
                                 <div class="flat-tabs themesflat-tabs">
                                     <div class="box-tab center">
-                                        <ul class="menu-tab tab-title flex">
+                                        <ul class="menu-tab tab-title flex justify-center">
                                             <li class="item-title active">
-                                                <h5 class="inner fw-4">Houses</h5>
+                                                <h5 class="inner hv-tool" data-tooltip="8 Property">Houses</h5>
                                             </li>
                                             <li class="item-title style">
-                                                <h5 class="inner fw-4"> Smart home </h5>
+                                                <h5 class="inner hv-tool" data-tooltip="6 Property"> Smart home </h5>
                                             </li>
                                             <li class="item-title ">
-                                                <h5 class="inner fw-4">Apartments</h5>
+                                                <h5 class="inner hv-tool" data-tooltip="5 Property">Apartments</h5>
                                             </li>
                                             <li class="item-title style">
-                                                <h5 class="inner fw-4"> Office </h5>
+                                                <h5 class="inner hv-tool" data-tooltip="7 Property"> Office </h5>
                                             </li>
                                             <li class="item-title ">
-                                                <h5 class="inner fw-4">Villa</h5>
+                                                <h5 class="inner hv-tool" data-tooltip="6 Property">Villa</h5>
                                             </li>
                                             <li class="item-title style">
-                                                <h5 class="inner fw-4"> Bungalow </h5>
+                                                <h5 class="inner hv-tool" data-tooltip="3 Property"> Bungalow </h5>
                                             </li>
                                         </ul>
                                     </div>
                                    
                                     <div class="content-tab">
-                                        <div class="content-inner tab-content">
-                                            <div class="wrap-vegetables flex">
-                                                <div class="box box-hv">
-                                                    <div class="images hover-style">
-                                                        <a href="#"><img src="assets/images/img-box/featured-1.jpg" alt="images"></a>                                               
-  
-                                                        <div class="tag-text"> -20% </div>                                             
+                                        <div class="content-inner tab-content">                            
+                                            <div class="wrap-item flex">
+                                                <!-- col 1 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span>    
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person1" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
                                                     </div>
                                                     <div class="content">
-                                                        <h3 class="link-style-6"><a href="product-details.html">Chiken Egg</a> </h3>
-                                                        <div class="money">
-                                                            <span class="one">$15</span> <span class="two">$10</span>
-                                                        </div>                                                
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
                                                     </div>
                                                 </div>
+                                                <!-- col 2 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span> 
+                                                        <span class="featured style fs-12 fw-6">For sale</span>     
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person2" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-2.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
+                                                    </div>
+                                                </div>
+                                                <!-- col 3 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span>    
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person2" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-3.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
+                                                    </div>
+                                                </div>
+                                                <!-- col 4 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span>  
+                                                        <span class="featured style fs-12 fw-6">For sale</span>    
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person2" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-4.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
+                                                    </div>
+                                                </div>
+                                                <!-- col 5 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span>    
+                                                        <span class="featured style fs-12 fw-6">For sale</span>  
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person2" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-8.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-5.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
+                                                    </div>
+                                                </div>
+                                                <!-- col 6 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span>    
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person2" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-6.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-6.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
+                                                    </div>
+                                                </div>
+                                                <!-- col 7 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span>    
+                                                        <span class="featured style fs-12 fw-6">For sale</span>  
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person2" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-7.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-6.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-7.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
+                                                    </div>
+                                                </div>
+                                                <!-- col 8 -->
+                                                <div class="box box-dream">
+                                                    <div class="image-group relative hv-one">
+                                                        <span class="featured fs-12 fw-6">Featured</span>    
+                                                        <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                        <div class="swiper-container noo carousel-2 img-style" data-chat="person2" >    
+                                                            <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                            <div class="swiper-wrapper ">
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-8.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-7.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                                <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                            </div>
+                                                            <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                            <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                            <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                        <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                        <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                        <div class="icon-box flex">
+                                                            <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                            <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                            <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                        </div>   
+                                                        <div class="days-box flex justify-space align-center">
+                                                            <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                            <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-8.jpg" alt="images"></div>
+                                                            <div class="days">3 years ago</div>
+                                                        </div>                                           
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
+                             
+                                            
                                         </div>
                                         <div class="content-inner tab-content">
- 
+    
                                         </div>
                                         <div class="content-inner tab-content">
- 
+                                        
                                         </div>
                                         <div class="content-inner tab-content">
- 
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="flat-search-area " >
+                    <div class="container-full">
+                        <div class="row">                      
+                            <div class="col-lg-12">
+                                <div class="heading-section center">
+                                    <h2>Search real estate by area</h2>
+                                    <p class="text-color-4">Find your dream apartment with our listing</p>
+                                </div>
+                                <div class="wrap-search-area flex">
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-1.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-2.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-3.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-4.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>  
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-5.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-6.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-7.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="images">
+                                            <img src="assets/images/img-box/search-area-8.jpg" alt="images">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="link-style-2"><h3> California</h3></a>
+                                            <p class="text-color-1">1570 listing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="flat-sale wg-dream" >
+                    <div class="container">
+                        <div class="row">                      
+                            <div class="col-lg-12">
+                                <div class="heading-section center">
+                                    <h2>Properties for sale</h2>
+                                    <p class="text-color-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo</p>
+                                </div>
+                                <div class="swiper-container carousel-3 "  >    
+                                    <div class="swiper-wrapper ">
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person1" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person1" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-7.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person1" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-6.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person1" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-8.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                    <!-- <div class="pagi"><div class="swiper-pagination" >  </div> </div>                                        -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="flat-rent wg-dream" >
+                    <div class="container3">
+                        <div class="row">                      
+                            <div class="col-lg-12">
+                                <div class="heading-section center">
+                                    <h2>Properties for rent</h2>
+                                    <p class="text-color-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo</p>
+                                </div>
+                                <div class="swiper-container carousel-4"  >    
+                                    <div class="swiper-wrapper ">
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person1" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-1.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person20" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-7.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person2">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person20"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person20"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person30" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-6.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person30">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person30"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person30"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person40" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-8.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person40">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person40"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person40"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="box box-dream">
+                                                <div class="image-group relative hv-one">
+                                                    <span class="featured fs-12 fw-6">Featured</span>    
+                                                    <span class="icon-bookmark"><i class="far fa-bookmark"></i></span> 
+                                                    <div class="swiper-container noo carousel-2 img-style" data-chat="person1" >    
+                                                        <a href="#" class="icon-plus"><img src="assets/images/icon/plus.svg" alt="images"></a>
+                                                        <div class="swiper-wrapper ">
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-6.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-2.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-3.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-4.jpg" alt="images"></div>
+                                                            <div class="swiper-slide"><img src="assets/images/img-box/featured-5.jpg" alt="images"></div>
+                                                        </div>
+                                                        <div class="pagi2"><div class="swiper-pagination2" data-chat="person1">  </div> </div>
+                                                        <div class="swiper-button-next2 " data-chat="person1"><i class="fal fa-arrow-right"></i></div>
+                                                        <div class="swiper-button-prev2 " data-chat="person1"><i class="fal fa-arrow-left"></i> </div>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h3>
+                                                    <div class="text-address"><p class="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
+                                                    <div class="money fs-18 fw-6 text-color-3"><a href="single-property.html">$7,500</a></div>  
+                                                    <div class="icon-box flex">
+                                                        <div class="icons icon-1 flex text-color-4"><span>Beds: </span><span class="fw-6">4</span></div>
+                                                        <div class="icons icon-2 flex"><span>Baths: </span><span class="fw-6">2</span></div>
+                                                        <div class="icons icon-3 flex"><span>Sqft: </span><span class="fw-6">1150</span></div>
+                                                    </div>   
+                                                    <div class="days-box flex justify-space align-center">
+                                                        <a class="compare flex align-center fw-6" href="#">Compare</a>
+                                                        <div class="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="assets/images/img-box/author-1.jpg" alt="images"></div>
+                                                        <div class="days">3 years ago</div>
+                                                    </div>                                           
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagi3"><div class="swiper-pagination3" >  </div> </div>                                       
+                                </div>
                             </div>
                         </div>
                     </div>

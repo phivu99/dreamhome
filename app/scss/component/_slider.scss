@@ -101,40 +101,38 @@
 }
 
 // slider home 02
-.swiper-button-next3 {
-    right: 30px; 
+.swiper-button-next2 {
+    right: 34.5%; 
     left : auto; 
 }
 
-.swiper-button-prev3 {
+.swiper-button-prev2 {
     right: auto; 
-    left : 30px; 
+    left : 34.5%; 
 }
 
-.swiper-button-next3,
-.swiper-button-prev3 {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%; 
-    top  : 45.7%;
+.swiper-button-next2,
+.swiper-button-prev2 {
+    width: 0px;
+    height: 0px;
+    bottom  : 20px;
     position: absolute;
     z-index: 99;
-    opacity: 0;
+    opacity: 1;
     @include transition3;
-    background: $color-1;
-    color: $color-7;
-    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+    color: $color-1;
     @include flex-center;
-    &:hover,
-    &.swiper-button-disabled {
-        background: $color-7 ;
-        color: $color-1;
-        opacity: 0;
-        box-shadow: -3px -3px 0 $color-2;
-    }
+    opacity: 0;
+    // &:hover,
+    // &.swiper-button-disabled {
+    //     background: $color-7 ;
+    //     color: $color-1;
+    //     opacity: 1;
+    //     box-shadow: -3px -3px 0 $color-2;
+    // }
     i {
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 100;
     }
 }
 
@@ -178,9 +176,8 @@
     font-weight: 500;
     position: absolute;
     bottom: 43px;
-    z-index: 99;
+    z-index: 100;
     color: #fff;
-    text-transform:uppercase;
     &:hover {
         color: $color-3
     }
@@ -223,7 +220,7 @@
             
             .heading {
                 margin-bottom: 60px;
-                width: 61%;
+                width: 44.5%;
             }
             .sub-title {
                 background: #5C28CA;
@@ -246,41 +243,44 @@
             right: -131px;
         }
     }
+    //flat tabs 
+    .flat-tabs {
+        position: relative;
+        z-index: 9;
+        .tab-title {
+            li {
+                border-top-left-radius: 10px;
+                position    : relative;
+                cursor      : pointer;
+                width: 115px;
+                height: 40px;
+                background-color: #FFF5E0;
+                @include flex-center;
+                @include transition3;
+                h4 {
+                    @include transition3;
+                }
+                &:hover,
+                &.active {
+                    background-color: $color-3;
+                    h4 {
+                        color: $color-1;
+                    }
+                }
+                &.style {
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 10px;
+                }
+            
+            }
+        }
+    }  
+    .themesflat-tabs {
+        margin-bottom: 56px;
+    }
 }
 
-//flat tabs 
-.flat-tabs {
-    .tab-title {
-        li {
-            border-top-left-radius: 10px;
-            position    : relative;
-            cursor      : pointer;
-            width: 115px;
-            height: 40px;
-            background-color: #FFF5E0;
-            @include flex-center;
-            @include transition3;
-            h4 {
-                @include transition3;
-            }
-            &:hover,
-            &.active {
-                background-color: $color-3;
-                h4 {
-                    color: $color-1;
-                }
-            }
-            &.style {
-                border-top-left-radius: 0px;
-                border-top-right-radius: 10px;
-            }
-         
-        }
-    }
-}  
-.themesflat-tabs {
-    margin-bottom: 56px;
-}
+
 
 .counter-box {
     position      : relative;
@@ -433,34 +433,28 @@
 
 .pagi2 {
     .swiper-pagination2 {
-        position: relative;
-        z-index: 2;
-        margin-top: 62px;
+        position: absolute;
+        bottom: 10px;
+        z-index: 100;
+        left: 50%;
+        opacity: 0;
+        /* text-align: center; */
+        transform: translateX(-50%);
     }
     .swiper-pagination-bullet {
-        background: $color-8;
-        width: 7px;
-        height: 7px;
-        margin: 0 4px !important;
+        background: $color-1;
+        width: 6px;
+        height: 6px;
+        margin: 0 2px !important;
         opacity: 1;
         @include transition3;
         &.swiper-pagination-bullet-active {
             position: relative;
-            margin: 0 10px !important;
-            background: $color-7;
-               &::before {
-                @include transition3;
-                position: absolute;
-                transform: translate(-50%, -50%);
-                top: 50%;
-                left: 50%;
-                border-radius: 50%;
-                content: "";
-                width : 21px;
-                height: 21px;
-                border: 1px solid $color-7;
-                overflow: visible;
-            }
+            margin: 0px 2px -1px 2px !important;
+            background: transparent;
+            border: 2px solid $color-1;
+            width: 8px;
+            height: 8px;
         }
     }
 }
@@ -523,6 +517,7 @@
 	margin-bottom: 30px;
 	box-shadow: 0px 4px 26px 0px #42474C14;
     border-radius: 10px;
+    display: table-cell;
 }
 
 .icon-filter {

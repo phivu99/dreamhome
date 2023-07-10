@@ -13,6 +13,8 @@
 @import "../dist/font-awesome.css";
 @import "magnific-popup.css";
 @import "swiper-bundle.min.css";
+@import "nice-select.css";
+@import "../../assets/fonts/style.css";
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "bootstrap.css";
 
@@ -100,20 +102,26 @@ ul, li {
     text-align: center;
 }
 
+.container3 {
+    max-width: 1520px;
+}
+
 .container2 {
     max-width: 1482px;
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1140px;
 }
 
+.container3,
 .container2,
 .container {
     width: 100%;
     margin: auto;
 }
 
+.container3,
 .container2,
 .container-fluid,
 .container {
@@ -211,10 +219,9 @@ p {
     color: $color-2;
 }
 
-.p-14 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 26px;
+.p-12 {
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .p-16 {
@@ -258,6 +265,7 @@ h1 {
 h2 {
     font-size: 45px;
     line-height: 54px;
+    font-weight: 700;
 }
 
 h3 {
@@ -383,10 +391,6 @@ label.error {
     position: relative;
 }
 
-.j-content {
-    justify-content: center;
-}
-
 .text-t {
     text-transform: capitalize;
 }
@@ -399,6 +403,13 @@ label.error {
     text-transform: unset !important;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
 
 .align-center {
     align-items: center;
@@ -421,12 +432,12 @@ label.error {
 }
 
 button {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 
 .font {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .font-2 {
@@ -481,12 +492,20 @@ button {
     margin-bottom: 203px
 }
 
+.fs-12 {
+    font-size: 12px
+}
+
 .fs-13 {
     font-size: 13px
 }
 
 .fs-16 {
     font-size: 16px
+}
+
+.fs-18 {
+    font-size: 18px
 }
 
 .fs-20 {
@@ -627,11 +646,11 @@ a {
 }
 
 .text-color-3 {
-    color: $color-3!important;
+    color: $color-3 !important;
 }
 
 .text-color-4 {
-    color: #8E8E93 !important;
+    color: $color-4 !important;
 }
 
 .text-color-5 {
@@ -1126,8 +1145,9 @@ body {
         box-shadow: 5px 5px 0 $color-2;
     }
     h2 {
-        letter-spacing: -0.9px;
-        text-transform: capitalize;
+        // letter-spacing: -0.9px;
+        // text-transform: capitalize;
+        margin-bottom: 14px;
     }
     &.style {
         margin-bottom: 24px;
