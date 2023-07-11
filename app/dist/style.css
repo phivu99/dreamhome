@@ -207,7 +207,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #120A21;
+  color: #8E8E93;
 }
 
 .p-12 {
@@ -219,7 +219,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  color: #120A21;
+  color: #8E8E93;
 }
 
 .tp-16 {
@@ -450,6 +450,10 @@ button {
   font-weight: 700;
 }
 
+.fw-8 {
+  font-weight: 800;
+}
+
 .lh-24 {
   line-height: 24px;
 }
@@ -474,8 +478,8 @@ button {
   line-height: 30px;
 }
 
-.lh-36 {
-  line-height: 36px;
+.lh-37 {
+  line-height: 37px;
 }
 
 .mb-203 {
@@ -500,6 +504,10 @@ button {
 
 .fs-20 {
   font-size: 20px;
+}
+
+.fs-30 {
+  font-size: 30px;
 }
 
 /* link style
@@ -611,7 +619,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .link-style-4 a:focus, .link-style-4 a:hover {
-  color: #F43FE2;
+  color: #3A3A3C;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -693,7 +701,7 @@ a:focus, a:hover {
 }
 
 .text-color-4 {
-  color: #3A3A3C !important;
+  color: #8E8E93 !important;
 }
 
 .text-color-5 {
@@ -705,11 +713,11 @@ a:focus, a:hover {
 }
 
 .text-color-7 {
-  color: #617798 !important;
+  color: #3A3A3C !important;
 }
 
 .text-color-8 {
-  color: #F43FE2 !important;
+  color: #3A3A3C !important;
 }
 
 /* Search */

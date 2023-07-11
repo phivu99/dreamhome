@@ -14,7 +14,7 @@
         font-weight       : 700;
         font-size         : 15px;
         position          : relative;
-        text-transform    : capitalize;
+        // text-transform    : capitalize;
         @include transition3;
     }
     &:hover,
