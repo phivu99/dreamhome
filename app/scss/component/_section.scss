@@ -422,7 +422,7 @@
 
 .flat-meet {
     padding: 100px 0;
-    .wrap-meet {
+    .box {
         &:hover {
             .icon-socials {
                 right: 0;
@@ -631,6 +631,94 @@
     }
 }
 
+.flat-blog {
+    background-color: #F7F7F7;
+    padding: 100px 0;
+    .sub-box {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: 152px;
+        height: 32px;
+        background-color: $color-1;
+        border-radius: 6px;
+        transform: translateX(-50%);
+        padding: 0px 15px;
+        .title-1 {
+            margin-right: 17px;
+        }
+        .title-2 {
+            &::before {
+                font-family      : 'Font Awesome 5 Pro';
+                font-size        : 14px;
+                font-weight      : 100;
+                content          : "\f07c";
+                margin-right: 6px;
+                color: $color-4;
+            }
+        }
+     
+    }
+    .content {
+        padding: 20px 5px;
+        h3 {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.meta {
+    .btn-button {
+        &:hover {
+            svg {
+                animation: 0.3s link-icon linear;
+            }
+        }
+        svg {
+            margin-left: 11px;
+            path {
+                @include transition3
+            }
+        }
+    }
+}
+
+.flat-testimonial {
+    padding: 100px 0;
+    .swiper-container {
+        margin: -5px;
+        padding: 5px;
+    }
+    .box {
+        .inner {
+            box-shadow: 0px 4px 26px 0px #42474C14;
+            padding: 27px 30px 30px;
+            svg {
+                margin-bottom: 21px;
+            }
+            .texts {
+                font-style: italic;
+            }
+        }
+        .author-box {
+            padding: 30px 5px;
+            .images {
+                border-radius: 50%;
+                width: 65px;
+                height: 65px;
+                margin: 0 auto 15px auto;
+            }
+        }
+    }
+    .box-text {
+        padding-top: 28px;
+        .title-1 {
+            margin-right: 10px;
+        }
+    }
+}
+
+
 
 
 
@@ -727,106 +815,6 @@
 
 
 
-
-
-.flat-testimonials {
-    .box-testi {
-        padding: 131px 97px 122px 307px;
-        width: 50%;
-        background: url(./../../assets/images/section/bg-testimonials-1.png) center no-repeat;
-        background-size: cover;
-        flex: none;
-        .heading-section2 {
-            margin-bottom: 40px;
-            padding-right: 70px;
-            h6 {
-                margin-bottom: 22px;
-            }
-        }
-    }
-    .box-inner {         
-        .inner {
-            padding: 33px 50px;
-            background: $color-1;
-            border-radius: 12px;
-            margin-bottom: 50px;
-            position: relative;
-            box-shadow: 0px 10px 60px rgba(92, 40, 202, 0.07);
-            &::after {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border: 40px solid transparent;
-                border-top: 0;
-                bottom: 0;
-                margin-bottom: -33px;
-            }
-            h6 {
-                margin-bottom: 12px;
-            }
-            &.inner-bottom::after {
-                left: 87px;
-                border-right-color: $color-1;
-                border-left: 0;
-            }
-        }
-        .author-box {
-            margin-left: 85px;
-            .image {
-                border-radius: 50%;
-                overflow: hidden;
-                margin-right: 15px;
-            }
-            .content {
-                margin-top: 4px;
-                h4 {
-                    margin-bottom: 1px;
-                }               
-            }
-        }       
-    }
-    .pagi2 .swiper-pagination2 {
-        margin-top: 64px;
-    }
-
-    .box-images {
-        width: 50%;
-        padding: 110px 0px 120px 214px;
-        background: url(./../../assets/images/section/bg-testimonials-2.png) center no-repeat;
-        background-size: cover;
-        .images {
-            width: 110px; 
-            height: 200px;
-            border-radius: 55px;
-            margin-right: 30px;
-            margin-bottom: -10px;
-            @include transition3;
-            position: relative;
-            overflow: hidden;
-            &::before {
-                @include transition3;
-            }
-            &:hover {
-                &::before {
-                    border: 5px solid #fff;
-                    border-radius: 55px;
-                    position: absolute;
-                    width: 100%;
-                    content: "";
-                    height: 100%;
-                    z-index: 99;
-                }
-            }
-            &.style {
-                margin-top: 40px;
-            }
-        }
-        .image2 {
-            margin-left: 139px;
-        }
-    }
-}
 
 
 .flat-count {
