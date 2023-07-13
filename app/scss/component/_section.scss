@@ -564,19 +564,9 @@
             position     : relative;
             width        : 100%;
             margin-bottom: 24px;
-
-            // &.email-wrap {
-            //     padding-right: 12px;
-            // }
-            // &.phone-wrap {
-            //     padding-left: 12px;
-            // }
             &.message-wrap {
                 margin-bottom: 16px;
             }
-            
-            
-           
             input {
                 border: 1px solid $color-5;
                 padding: 11px 14px 13px 46px;     
@@ -620,10 +610,6 @@
                 } 
             }            
         }
-        // .style-text {
-        //     width: 50%;
-        //     float: left;
-        // }
         button {
             padding: 16px 29px 16px 29px;
             border: unset;

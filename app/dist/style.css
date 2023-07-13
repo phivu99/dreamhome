@@ -381,6 +381,10 @@ label.error {
   position: relative;
 }
 
+.flex-none {
+  flex: none !important;
+}
+
 .text-t {
   text-transform: capitalize;
 }
@@ -454,6 +458,10 @@ button {
   font-weight: 800;
 }
 
+.lh-18 {
+  line-height: 18px;
+}
+
 .lh-24 {
   line-height: 24px;
 }
@@ -480,6 +488,10 @@ button {
 
 .lh-37 {
   line-height: 37px;
+}
+
+.lh-45 {
+  line-height: 45px;
 }
 
 .mb-203 {
@@ -717,7 +729,7 @@ a:focus, a:hover {
 }
 
 .text-color-8 {
-  color: #3A3A3C !important;
+  color: #F1FAEE;
 }
 
 /* Search */
