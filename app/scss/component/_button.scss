@@ -21,9 +21,16 @@
     &.active {
         border-color: transparent;
         outline: 0 none;
+        background-color: rgb(242, 149, 0);
+        svg {
+          animation: 0.3s link-icon2 linear;
+        }
     }
     svg {
       margin-right: 17px;
+      path {
+        @include transition3;
+      }
     }
 }
 

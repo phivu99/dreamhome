@@ -398,35 +398,24 @@
 }
 
 .pagi {
+
     .swiper-pagination {
         position: relative;
         z-index: 2;
         margin-top: 35px;
     }
     .swiper-pagination-bullet {
-        background: $color-8;
-        width: 7px;
-        height: 7px;
+        background: #FFF5E0;
+        width: 50px;
+        height: 4px;
         margin: 0 4px !important;
+        border-radius: 0;
         opacity: 1;
         @include transition3;
         &.swiper-pagination-bullet-active {
             position: relative;
-            margin: 0 10px !important;
-            background: $color-7;
-               &::before {
-                @include transition3;
-                position: absolute;
-                transform: translate(-50%, -50%);
-                top: 50%;
-                left: 50%;
-                border-radius: 50%;
-                content: "";
-                width : 21px;
-                height: 21px;
-                border: 1px solid $color-7;
-                overflow: visible;
-            }
+            margin: 0 4px !important;
+            background: $color-3;
         }
     }
 }

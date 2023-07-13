@@ -4,7 +4,7 @@
 -------------------------------------------------------------- */
 
 #footer {
-    padding: 100px 0 66px;
+    padding: 100px 0 43px;
     background: $color-2;
     position: relative;
     color: $color-1;
@@ -17,9 +17,17 @@
             .images {
                 flex: none;
                 margin-right: 30px;
+                img {
+                    transition: all 0.8s ease;
+                }
             }
             .title-icon {
                 margin-bottom: 13px;
+            }
+            &:hover {
+                .images img {
+                    transform: rotateY(180deg);
+                }
             }
         }
         .button-footer {
@@ -36,7 +44,6 @@
 }
 
 .widget-info {
-    
     .sub-title {
         margin-bottom: 6px;
     }
@@ -52,56 +59,6 @@
 /* Widget
 -------------------------------------------------------------- */
 
-/*widget-logo*/
-
-.widget-logo {
-    .logo-footer {
-        margin-bottom: 31px;
-        a {
-            font-size: 36px;
-            font-weight: bold;
-            color: $color-3;
-        }
-    }
-    p {
-        padding-right: 35px;
-        color: $color-2;
-        margin-bottom: 31px;
-    }
-
-    h6 {
-        margin-bottom: 20px;
-        font-family: $font-2;
-        color: #f1f1f1;
-    }
-}
-
-.icon-social {
-    a {
-        i {
-            color: $color-2;
-            font-size: 14px;
-            width: 40px;
-            height: 40px;
-            background-color: $color-6;
-            text-align: center;
-            line-height: 40px;
-            border-radius: 200px;
-            margin-right: 7px;
-            @include transition3;
-        }
-        &:hover {
-           
-            i {
-                background-color: $color-3;
-                color: $color-1;
-                box-shadow: 0px 5px 0 $color-2;
-            }
-        }
-    }
-}
-
-
 /* widget-menu */
 .widget-menu {
 
@@ -109,16 +66,13 @@
         font-size: 22px;
         margin-bottom: 28px;
     } 
-    
     .box-menu {
         li {
             a {
-        
                 margin-bottom: 12px;
                 position: relative;
                 padding-left: 4px;
                 color: rgba(#fff ,0.5);
-
                 &::before {
                     content: '\f105';
                     font-family      : 'Font Awesome 5 Pro';
@@ -132,8 +86,10 @@
                     @include transition3;
                     color: $color-3;
                     &::before {
-                        // display: none;
-                        // @include transition3;
+                        opacity: 0;
+                        visibility: hidden;
+                    
+                        margin-right: 0;
                     }
                 }
             }
@@ -145,6 +101,20 @@
         border-radius: 50%;
         overflow: hidden;
         margin-right: 16px;
+    }
+    .button-author {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border: 1px solid #FFFFFF1A;
+        background-color: rgba( $color-1, 0.1);
+        border-radius: 50%;
+        font-size: 10px;
+        &:hover {
+            background-color: $color-3;
+            border: 1px solid $color-3;
+        }
     }
     .box-icon {
         margin-bottom: 27px;
@@ -159,10 +129,7 @@
                 }
             }
         }
-
     }
- 
-
 }
 
 .widget-form {
@@ -203,8 +170,8 @@
     }
 
     label input:checked~.btn-checkbox {
-        background-color: var(--primary-color3);
-        border: 1px solid var(--primary-color3);
+        background-color: $color-3;
+        border: 1px solid $color-3;
     }
     label input:checked~.btn-checkbox:after {
         display: block;
@@ -249,6 +216,7 @@
         font-weight: 700;
         border-radius: 10px;
         margin-bottom: 17px;
+        @include transition3;
         &::after {
             content: '\f30b';
             font-family      : 'Font Awesome 5 Pro';
@@ -257,108 +225,67 @@
             margin-left: 9px;
             font-weight: 400;
         }
+        &:hover {
+            background-color: $color-3;
+            border: 1px solid $color-3;
+        }
     }
 }
 
-
-/* widget-subcribe */
-
-.widget-subcribe {
-   margin-bottom: 20px;
-    .form-subcribe {
-        form {
-            position: relative;
-        }
-        input {
-            background: #fff;
-            width: 100%;
-            padding: 18px 50px 18px 56px;
-            font-size: 16px;
-            font-weight: 400;
-            font-family: $font-2;
-            border: 1px solid rgba(255, 255, 255, 0.031372549);
-            color: $color-2;
-            border-radius: 0;
-            &:focus {
-                border: 1px solid $color-6;
-            }
-            &::placeholder {
-                font-size: 16px;
-                font-weight: 500;
-                letter-spacing: -0.1px;
-                white-space: nowrap;
-                max-width: 70%;
-                overflow: hidden;
-                color: $color-2;
-                font-family: $font-2;
-                border-radius: 0;
-            }
-        }
-        i {
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            font-weight: 400;
-            font-size: 18px;
-            color: $color-4;
-        }
-        button {
-            right: 15px;
-            top: 10px;
-            position: absolute;
-            border: 0;
-            padding: 6px 18px 7px 20px;
-            color: $color-1;
-            @include transition3;
-            span {
-                font-size: 14px;
-                font-weight: 400;
-            }
-            svg {
-                width: 14px;
-                height: 14px;
-            }
-        } 
-    }
-}
-
-.go-top {
-    position: absolute;
-    bottom: 25px;
-    right: 7.8%;
-    transform: rotate(90deg);
-    cursor: pointer; 
-    h5 {
-        letter-spacing: -0.3px;
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 46px;
-            top: 13px;
-            left: -52px;
-            background: #ff9c00;
-        }        
-    }
-   
-}
 /* widget social footer */
-.widget-social-footer {
-    padding: 30px 0 40px;
-    border-top: 1px solid rgba(18,10,33,0.1);
-    &.home {
-        background: url(./../../assets/images/section/bg-footer-1.jpg)  center center no-repeat;
-        background-position: bottom;
-    }
+.widget-bottom-footer {
+    padding: 30px 0 30px;
+    background: $color-2;
+    border-top: 1px solid rgba( $color-1, 0.1);
     .title-bottom {
-        color: $color-2;
+        color: rgba( #F1FAEE, 0.5);
     }
-    .menu-bottom {
-        padding-top: 2px;
-        justify-content: end;
-        li {
-            margin-left: 23px;
+}
+
+.widget-logo-footer {
+    padding: 28px 0 28px;
+    border-top: 1px solid rgba( $color-1, 0.1);
+    color: $color-1;
+    background: $color-2;
+    .box-menu {
+        margin-left: 144px;
+        ul {
+            li {
+                margin-right: 40.5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    color: $color-3;
+                }
+            }
+        }
+    }
+}
+
+.icon-social {
+    a {
+        i {
+            color: $color-1;
+            font-size: 16px;
+            width: 44px;
+            height: 44px;
+            background-color: $color-2;
+            border: 1px solid rgba( $color-1, 0.2);
+            text-align: center;
+            line-height: 44px;
+            border-radius: 50%;
+            margin-right: 3px;
+            @include transition3;
+            &::last-child {
+                margin-right: 0;
+            }
+        }
+        &:hover {
+            i {
+                background-color: $color-3;
+                color: $color-1;
+            }
         }
     }
 }

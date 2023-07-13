@@ -125,14 +125,22 @@ Swiper();
 // });
 // })(jQuery);​
 
-
+// function setAciveChat(f) {
+//     friends.list.querySelector('.active').classList.remove('active')
+//     f.classList.add('active')
+//     chat.current = chat.container.querySelector('.active-chat')
+//     chat.person = f.getAttribute('data-chat')
+//     chat.current.classList.remove('active-chat')
+//     chat.container.querySelector('[data-chat="' + chat.person + '"]').classList.add('active-chat')
+  
+//   }
 function setAciveChat(f) {
     friends.list.querySelector('.active').classList.remove('active')
     f.classList.add('active')
-    chat.current = chat.container.querySelector('.active-chat')
+    chat.current = chat.container.querySelector('.swiper-slide')
     chat.person = f.getAttribute('data-chat')
-    chat.current.classList.remove('active-chat')
-    chat.container.querySelector('[data-chat="' + chat.person + '"]').classList.add('active-chat')
+    chat.current.classList.remove('swiper-slide')
+    chat.container.querySelector('[data-chat="' + chat.person + '"]').classList.add('swiper-slide')
   
   }
 
@@ -180,21 +188,21 @@ var swiper =  new Swiper(".carousel-2" , {
 });
 
 
-var slide = $(".carousel-2");
-var slideIndex = -1;
-var numSlides = 3;
+// var slide = $(".carousel-2");
+// var slideIndex = -1;
+// var numSlides = 3;
 
-function showNextSlide() {
-    if (slideIndex < 2* numSlides) {
-        ++slideIndex;
-        slide.eq(slideIndex % slide.length)
-            .fadeIn(700)
-            .delay(4000)
-            .fadeOut(700, showNextSlide)
-            .delay(11000);
-            $('.carousel-2:first-child').fadeIn(700);
-    } else slideIndex = -1;
-}  
+// function showNextSlide() {
+//     if (slideIndex < 2* numSlides) {
+//         ++slideIndex;
+//         slide.eq(slideIndex % slide.length)
+//             .fadeIn(700)
+//             .delay(4000)
+//             .fadeOut(700, showNextSlide)
+//             .delay(11000);
+//             $('.carousel-2:first-child').fadeIn(700);
+//     } else slideIndex = -1;
+// }  
 
 // var swiper =  new Swiper(".carousel-2", {
 //     autoplay: {
@@ -237,7 +245,7 @@ var swiper =  new Swiper(".carousel-3", {
     loop: false,
     spaceBetween: 30,
     pagination: {
-        el: ".swiper-pagination3",
+        el: ".swiper-pagination",
         clickable: true,
       },
     breakpoints: {

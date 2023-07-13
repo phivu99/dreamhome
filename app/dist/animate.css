@@ -1885,6 +1885,21 @@
 	}
 }
 
+@keyframes link-icon2 {
+	0% {
+		transform: translateY(0); opacity: 1;
+	}
+	49% { 
+		transform: translateY(20px); opacity: 0;
+	}
+	50% { 
+		transform: translateY(-20px); opacity: 0;
+	}
+	100% {
+		transform: translateY(0); opacity: 1;
+	}
+}
+
 @keyframes criss-cross-left {
   0% {
     left: -20px;
