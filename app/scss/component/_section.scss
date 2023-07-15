@@ -146,7 +146,7 @@
 /* flat 
 --------------------------------------------------*/
 .flat-brand {
-    padding: 100px 0px 103px 0px;
+    padding: 100px 0px 101px 0px;
     .title-section {
         margin-bottom: 19px;
     }
@@ -166,6 +166,12 @@
 //flat tabs 
 .flat-featured {
     padding: 0px 0 71px;
+    &.home2 {
+        padding: 100px 0 71px;
+        .box {
+            width: 100%;
+        }
+    }
     .heading-section {
         margin-bottom: 30px;
     }

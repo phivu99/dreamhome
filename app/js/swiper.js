@@ -357,6 +357,37 @@ var swiper =  new Swiper(".carousel-6", {
     },
 });
 
+if ($(".swiper-container2")) {
+    var swiper = new Swiper(".location-slider", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        clickable: true,
+        nextEl: ".button-lo-next",
+        prevEl: ".button-lo-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 19.5,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 19.5,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
+
 var swiper =  new Swiper(".carousel-7", {
     autoplay: {
         delay: 5000,

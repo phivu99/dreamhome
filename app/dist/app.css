@@ -1673,7 +1673,7 @@ path.two {
 /* flat 
 --------------------------------------------------*/
 .flat-brand {
-  padding: 100px 0px 103px 0px;
+  padding: 100px 0px 101px 0px;
 }
 .flat-brand .title-section {
   margin-bottom: 19px;
@@ -1684,6 +1684,12 @@ path.two {
 
 .flat-featured {
   padding: 0px 0 71px;
+}
+.flat-featured.home2 {
+  padding: 100px 0 71px;
+}
+.flat-featured.home2 .box {
+  width: 100%;
 }
 .flat-featured .heading-section {
   margin-bottom: 30px;
@@ -3251,6 +3257,14 @@ path.two {
 }
 .slider .themesflat-tabs {
   margin-bottom: 56px;
+}
+.slider.home2 .slider-item {
+  position: relative;
+}
+.slider.home2 .slider-item .content .heading {
+  padding: 0 150px;
+  margin-bottom: 60px;
+  width: unset;
 }
 
 .counter-box {
@@ -5208,7 +5222,7 @@ body .dribbble img {
 }
 
 .heading-section {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 }
 .heading-section h6 {
   margin-bottom: 26px;

@@ -278,6 +278,21 @@
     .themesflat-tabs {
         margin-bottom: 56px;
     }
+    &.home2 {
+        .slider-item {
+            position: relative;
+            // padding: 200px 0 157px;
+           
+            .content {
+                
+                .heading {
+                    padding: 0 150px ;
+                    margin-bottom: 60px;
+                    width: unset;
+                }
+            }
+        }
+    }
 }
 
 
