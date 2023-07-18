@@ -83,57 +83,10 @@ var Swiper = function(){
     Swiper = $(this).data(".carousel-2");
 }   
 Swiper();
-// if ( $( ".carousel-2" + sliderNUmber ).is( ":hidden" ) ) {
-//     $( ".carousel-2" + sliderNUmber ).slideDown( "slow" );
-// }
-// else {
-//     $( ".carousel-2" + sliderNUmber ).slideUp( "slow" );
-// }
-// var swiper =  new Swiper(".carousel-2" , {
 
-// });
 })(jQuery);
 
-// (function($) {
-//     $('.carousel-2').each(function(){
-//         var slider = $(this).find('div'),
-//         parent = $(this),
-//         step = 500,
-//         left = parseInt(slider.css('left'), 10),
-//         max = parent.width() - slider.width(),
-//         min = 0;
 
-//     parent.find("#left").click(function() {
-//         if (left > max) {
-//             var newLeft = left - step;
-//             left = (newLeft>max) ? newLeft : max;
-//             slider.animate({
-//                 "left": left + 'px'
-//             }, "slow");
-//         }
-//     });
-
-//     parent.find("#right").click(function() {
-//         if (left < 0) {
-//             var newLeft = left + step;
-//             left = (newLeft<min) ? newLeft : min;
-//             slider.animate({
-//                 "left": left + 'px'
-//             }, "slow");
-//         }
-//     });
-// });
-// })(jQuery);​
-
-// function setAciveChat(f) {
-//     friends.list.querySelector('.active').classList.remove('active')
-//     f.classList.add('active')
-//     chat.current = chat.container.querySelector('.active-chat')
-//     chat.person = f.getAttribute('data-chat')
-//     chat.current.classList.remove('active-chat')
-//     chat.container.querySelector('[data-chat="' + chat.person + '"]').classList.add('active-chat')
-  
-//   }
 function setAciveChat(f) {
     friends.list.querySelector('.active').classList.remove('active')
     f.classList.add('active')
@@ -188,53 +141,6 @@ var swiper =  new Swiper(".carousel-2" , {
 });
 
 
-// var slide = $(".carousel-2");
-// var slideIndex = -1;
-// var numSlides = 3;
-
-// function showNextSlide() {
-//     if (slideIndex < 2* numSlides) {
-//         ++slideIndex;
-//         slide.eq(slideIndex % slide.length)
-//             .fadeIn(700)
-//             .delay(4000)
-//             .fadeOut(700, showNextSlide)
-//             .delay(11000);
-//             $('.carousel-2:first-child').fadeIn(700);
-//     } else slideIndex = -1;
-// }  
-
-// var swiper =  new Swiper(".carousel-2", {
-//     autoplay: {
-//         delay: 5000,
-//         disableOnInteraction: false,
-//         },
-//     loop:true,
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     // initialSlide: 1,
-//     centeredSlides: true,
-//     navigation: {
-//         clickable: true,
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//         el: ".swiper-pagination2",
-//         clickable: true,
-//     },
-//     breakpoints: {
-//         768: {
-//             slidesPerView: 2,
-//             spaceBetween: 30,
-//             centeredSlides: false,
-//         },
-//         991: {
-//             slidesPerView: 3,
-//             spaceBetween: 30,
-//         },
-//     },
-// });
 
 var swiper =  new Swiper(".carousel-3", {
     autoplay: {
@@ -357,119 +263,13 @@ var swiper =  new Swiper(".carousel-6", {
     },
 });
 
-// var swiper2 = new Swiper(".location-slider", {
-//     loop: true,
-//     autoplay: {
-//         delay: 5000,
-//     },
-//     slidesPerView: 1,
-//     spaceBetween:0,
-//     thumbs: {
-//         swiper: swiperthump,
-//     },
-// });
 
-// if ($(".swiper-container2").hasClass(".swiper-container2")) {
-
-// const $ = selector => {
-//     return document.querySelector(selector);
-//   };
-  
-//   function next() {
-//     if ($(".hide")) {
-//       $(".hide").remove(); 
-//     }
-  
-    /* Step */
-  
-//     if ($(".prev")) {
-//       $(".prev").classList.add("hide");
-//       $(".prev").classList.remove("prev");
-//     }
-  
-//     $(".act").classList.add("prev");
-//     $(".act").classList.remove("act");
-  
-//     $(".next").classList.add("act");
-//     $(".next").classList.remove("next");
-  
-//     /* New Next */
-  
-//     $(".new-next").classList.remove("new-next");
-  
-//     const addedEl = document.createElement('li');
-  
-//     $(".list").appendChild(addedEl);
-//     addedEl.classList.add("next","new-next");
-//   }
-  
-//   function prev() {
-//     $(".new-next").remove();
-      
-//     /* Step */
-  
-//     $(".next").classList.add("new-next");
-  
-//     $(".act").classList.add("next");
-//     $(".act").classList.remove("act");
-  
-//     $(".prev").classList.add("act");
-//     $(".prev").classList.remove("prev");
-  
-//     /* New Prev */
-  
-//     $(".hide").classList.add("prev");
-//     $(".hide").classList.remove("hide");
-  
-//     const addedEl = document.createElement('li');
-  
-//     $(".swiper-wrapper").insertBefore(addedEl, $(".swiper-wrapper").firstChild);
-//     addedEl.classList.add("hide");
-//   }
-  
-//   slide = element => {
-//     /* Next slide */
-    
-//     if (element.classList.contains('next')) {
-//       next();
-      
-//     /* Previous slide */
-      
-//     } else if (element.classList.contains('prev')) {
-//       prev();
-//     }
-//   }
-  
-//   const slider = $(".list"),
-//         swipe = new Hammer($(".swipe"));
-  
-//   slider.onclick = event => {
-//     slide(event.target);
-//   }
-  
-//   swipe.on("swipeleft", (ev) => {
-//     next();
-//   });
-  
-//   swipe.on("swiperight", (ev) => {
-//     prev();
-//   });
-
-
-// document.getElementById("rightView").addEventListener("click", scrollRight);
-// document.getElementById("leftView").addEventListener("click", scrollLeft);
 if ($('.one-carousel').length) {
     $('.one-carousel').owlCarousel({
         loop:false,
         margin:30,
-
         smartSpeed: 500,
         autoplay: 4000,
-        pagination: {
-            el: ".swiper-pagination1",
-            clickable: true,
-            
-          },
         responsive:{
             0:{
                 items:2
@@ -485,6 +285,35 @@ if ($('.one-carousel').length) {
             },
             1024:{
                 items:3
+            }
+        }
+    });    		
+}
+
+if ($('.two-carousel').length) {
+    $('.two-carousel').owlCarousel({
+        loop:false,
+        margin:30,
+        smartSpeed: 500,
+        autoplay: 4000,
+        pagination: {
+            clickable: true,
+          },
+        responsive:{
+            0:{
+                items:2
+            },
+            480:{
+                items:3
+            },
+            600:{
+                items:3
+            },
+            800:{
+                items:3
+            },
+            1024:{
+                items:4
             }
         }
     });    		
