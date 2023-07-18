@@ -1876,10 +1876,11 @@ path.two {
   width: calc(25% - 0px);
   position: relative;
 }
-.flat-search-area .box .images {
+
+.wg-search-area .box .images {
   position: relative;
 }
-.flat-search-area .box .images::after {
+.wg-search-area .box .images::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1892,17 +1893,17 @@ path.two {
   z-index: 1;
   opacity: 0.7;
 }
-.flat-search-area .box:hover .images::after {
+.wg-search-area .box:hover .images::after {
   height: 200%;
 }
-.flat-search-area .box .content {
+.wg-search-area .box .content {
   position: absolute;
   bottom: 18px;
   left: 20px;
   color: #fff;
   z-index: 2;
 }
-.flat-search-area .box .content h3 {
+.wg-search-area .box .content h3 {
   margin-bottom: 6px;
 }
 
@@ -2153,8 +2154,17 @@ path.two {
   margin-bottom: 16px;
 }
 
+.meta .btn-button:hover i,
 .meta .btn-button:hover svg {
   animation: 0.3s link-icon linear;
+}
+.meta .btn-button i {
+  margin-left: 9px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .meta .btn-button svg {
   margin-left: 11px;
@@ -2198,6 +2208,27 @@ path.two {
 }
 .flat-testimonial .box-text .title-1 {
   margin-right: 10px;
+}
+
+.flat-find-neighborhood .box .images {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flat-estate-near {
+  padding: 100px 0 100px;
+}
+.flat-estate-near .box {
+  margin-bottom: 30px;
+}
+.flat-estate-near .box .images {
+  margin-right: 20px;
+}
+.flat-estate-near .box .content h3 {
+  margin-bottom: 6px;
+}
+.flat-estate-near .box .content p {
+  margin-bottom: 12px;
 }
 
 .flat-video {
@@ -3251,6 +3282,10 @@ path.two {
   width: unset;
 }
 
+.hide {
+  opacity: 0.5;
+}
+
 .counter-box {
   position: relative;
   margin-right: 81px;
@@ -3361,12 +3396,12 @@ path.two {
   overflow: visible;
 }
 
-.pagi .swiper-pagination {
+.pagi .swiper-pagination1 {
   position: relative;
   z-index: 2;
   margin-top: 35px;
 }
-.pagi .swiper-pagination-bullet {
+.pagi .swiper-pagination-bullet1 {
   background: #FFF5E0;
   width: 50px;
   height: 4px;
@@ -3379,7 +3414,36 @@ path.two {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.pagi .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.pagi .swiper-pagination-bullet1.swiper-pagination-bullet-active {
+  position: relative;
+  margin: 0 4px !important;
+  background: #FFA920;
+}
+
+.wg-dream .owl-nav {
+  display: none;
+}
+.wg-dream .owl-dots {
+  position: relative;
+  z-index: 2;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+.wg-dream .owl-dots .owl-dot {
+  background: #FFF5E0;
+  width: 50px;
+  height: 4px;
+  margin: 0 4px !important;
+  border-radius: 0;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.wg-dream .owl-dots .owl-dot.active {
   position: relative;
   margin: 0 4px !important;
   background: #FFA920;

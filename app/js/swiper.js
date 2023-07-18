@@ -357,7 +357,171 @@ var swiper =  new Swiper(".carousel-6", {
     },
 });
 
-if ($(".swiper-container2")) {
+// var swiper2 = new Swiper(".location-slider", {
+//     loop: true,
+//     autoplay: {
+//         delay: 5000,
+//     },
+//     slidesPerView: 1,
+//     spaceBetween:0,
+//     thumbs: {
+//         swiper: swiperthump,
+//     },
+// });
+
+// if ($(".swiper-container2").hasClass(".swiper-container2")) {
+
+// const $ = selector => {
+//     return document.querySelector(selector);
+//   };
+  
+//   function next() {
+//     if ($(".hide")) {
+//       $(".hide").remove(); 
+//     }
+  
+    /* Step */
+  
+//     if ($(".prev")) {
+//       $(".prev").classList.add("hide");
+//       $(".prev").classList.remove("prev");
+//     }
+  
+//     $(".act").classList.add("prev");
+//     $(".act").classList.remove("act");
+  
+//     $(".next").classList.add("act");
+//     $(".next").classList.remove("next");
+  
+//     /* New Next */
+  
+//     $(".new-next").classList.remove("new-next");
+  
+//     const addedEl = document.createElement('li');
+  
+//     $(".list").appendChild(addedEl);
+//     addedEl.classList.add("next","new-next");
+//   }
+  
+//   function prev() {
+//     $(".new-next").remove();
+      
+//     /* Step */
+  
+//     $(".next").classList.add("new-next");
+  
+//     $(".act").classList.add("next");
+//     $(".act").classList.remove("act");
+  
+//     $(".prev").classList.add("act");
+//     $(".prev").classList.remove("prev");
+  
+//     /* New Prev */
+  
+//     $(".hide").classList.add("prev");
+//     $(".hide").classList.remove("hide");
+  
+//     const addedEl = document.createElement('li');
+  
+//     $(".swiper-wrapper").insertBefore(addedEl, $(".swiper-wrapper").firstChild);
+//     addedEl.classList.add("hide");
+//   }
+  
+//   slide = element => {
+//     /* Next slide */
+    
+//     if (element.classList.contains('next')) {
+//       next();
+      
+//     /* Previous slide */
+      
+//     } else if (element.classList.contains('prev')) {
+//       prev();
+//     }
+//   }
+  
+//   const slider = $(".list"),
+//         swipe = new Hammer($(".swipe"));
+  
+//   slider.onclick = event => {
+//     slide(event.target);
+//   }
+  
+//   swipe.on("swipeleft", (ev) => {
+//     next();
+//   });
+  
+//   swipe.on("swiperight", (ev) => {
+//     prev();
+//   });
+
+
+// document.getElementById("rightView").addEventListener("click", scrollRight);
+// document.getElementById("leftView").addEventListener("click", scrollLeft);
+if ($('.one-carousel').length) {
+    $('.one-carousel').owlCarousel({
+        loop:false,
+        margin:30,
+
+        smartSpeed: 500,
+        autoplay: 4000,
+        pagination: {
+            el: ".swiper-pagination1",
+            clickable: true,
+            
+          },
+        responsive:{
+            0:{
+                items:2
+            },
+            480:{
+                items:3
+            },
+            600:{
+                items:3
+            },
+            800:{
+                items:3
+            },
+            1024:{
+                items:3
+            }
+        }
+    });    		
+}
+
+if ($('.sponsors-carousel').length) {
+    $('.sponsors-carousel').owlCarousel({
+        loop:false,
+        margin:30,
+        nav:true,
+        smartSpeed: 500,
+        autoplay: 4000,
+        navigation: {
+            clickable: true,
+            nextEl: ".swiper-button-next4",
+            prevEl: ".swiper-button-prev4",
+        },
+        responsive:{
+            0:{
+                items:2
+            },
+            480:{
+                items:3
+            },
+            600:{
+                items:3
+            },
+            800:{
+                items:3
+            },
+            1024:{
+                items:3
+            }
+        }
+    });    		
+}
+
     var swiper = new Swiper(".location-slider", {
       loop: true,
       slidesPerView: 1,
@@ -370,7 +534,12 @@ if ($(".swiper-container2")) {
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        
       },
+
+    //       thumbs: {
+    //     swiper: swiperthump,
+    // },
       breakpoints: {
         600: {
           slidesPerView: 2,
@@ -386,7 +555,7 @@ if ($(".swiper-container2")) {
         },
       },
     });
-  }
+  
 
 var swiper =  new Swiper(".carousel-7", {
     autoplay: {

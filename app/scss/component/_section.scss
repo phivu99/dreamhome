@@ -381,6 +381,10 @@
     .box {
         width: calc(25% - 0px);
         position: relative;
+    }
+}
+.wg-search-area {
+    .box {
         .images {
             position: relative;
             &::after {
@@ -411,9 +415,9 @@
                 margin-bottom: 6px;
             }
         }
-        
     }
 }
+
 
 .flat-sale {
     padding: 100px 0 100px;
@@ -662,10 +666,15 @@
 .meta {
     .btn-button {
         &:hover {
+            i,
             svg {
                 animation: 0.3s link-icon linear;
             }
         } 
+        i {
+            margin-left: 9px;
+            @include transition3
+        }
         svg {
             margin-left: 11px;
             path {
@@ -710,7 +719,31 @@
     }
 }
 
+.flat-find-neighborhood {
+   
+    .box .images {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
 
+.flat-estate-near {
+    padding: 100px 0 100px; 
+    .box {
+        margin-bottom: 30px;
+        .images {
+            margin-right: 20px;
+        }
+        .content {
+            h3 {
+                margin-bottom: 6px;
+            }
+            p {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
 
 
 
