@@ -160,6 +160,14 @@
     &.page {
         background: $bg-color;
     }
+    &.home2 {
+        .swiper-container {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 
@@ -720,7 +728,6 @@
 }
 
 .flat-find-neighborhood {
-   
     .box .images {
         border-radius: 10px;
         overflow: hidden;
@@ -744,6 +751,243 @@
         }
     }
 }
+
+.flat-properties-rent {
+    background-color: #F7F7F7;
+    .box {
+        padding: 17px 14px 16px 17px;
+        .image-group {
+            width: 53.2%;  
+            margin-bottom: 0;
+        }
+        .content {
+            width: 46.8%;
+            padding-left: 16px;
+            .money,
+            .text-address {
+                margin-bottom: 20px;
+            }
+            .icon-box {
+                padding-bottom: 8px;
+                .icons {
+                    margin-right: 0px;
+                    margin-bottom: 8px;
+                }
+            }
+            p {
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+            }
+            .img-author {
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+            }
+            .icon-repeat {
+                width: 30px;
+                height: 30px;
+                background-color: #F3F3F3;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 30px;
+                svg {
+                    transition: all 0.8s ease;
+                }
+                &:hover {
+                    svg {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.curved-text{
+    position:relative;
+    display:inline-block;
+    margin:0 auto;
+    font-size:32px;
+  }
+   
+  .curved-text span{
+    min-width:0.5em;
+    text-align:center;
+    padding:30px;
+    margin:0px;
+  }
+  .curved-container {
+    position: absolute;
+    top: 47%;
+    left: 55.5%;
+    border-radius: 50%;
+    width: 146px;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    height: 146px;
+    background-color: #FFF5E0;
+    h2 {
+        transform: rotate(-87deg);
+        -moz-transform: rotate(-87deg);
+        -webkit-transform: rotate(-87deg);
+        height: 146px;
+    width: 146px;
+    position: relative;
+    &::before {
+        font-family: "Font Awesome 5 Pro";
+        font-size: 42px;
+        font-weight: 100;
+        content: "\f178";
+        position: absolute;
+        color: #FFA920;
+        right: 37%;
+        top: 33%;
+        transform: rotate(40deg);
+    }
+
+    }
+}
+
+.curved-container div {
+  font-size: 16px;
+  font-weight: 700;
+  height: 83px;
+  position: absolute;
+  width: unset;
+  left: 37px;
+    top: -11px;
+  transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+  text-transform: capitalize;
+}
+
+@for $i from 1 through 28 {
+    .curved-container div:nth-child(#{$i}) {
+      transform: rotate(12.7deg * $i);
+      span {
+        transform: rotate(-180deg * $i);
+      }
+    }
+  }
+
+  .curved-container div:nth-child(22) {
+    transform: rotate(279.4deg);
+    top: -13px;
+  }
+  .curved-container div:nth-child(23) {
+    transform: rotate(292.1deg);
+    top: -14px;
+    left: 39px;
+}
+.flat-testimonial2 {
+    .heading-tesi {
+        padding-top: 37px;
+        h2 {
+            margin-bottom: 16px;
+        }
+        .text-1 {
+            margin-bottom: 49px;
+        }
+        .icon-testi {
+            margin-bottom: 23px;
+        }
+        .img-author img {
+            margin-right: 13px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+        }
+    }
+    .text-testi {
+        border-bottom: 4px solid $color-3;
+        padding-bottom: 21px;
+        font-style: italic;
+        margin-bottom: 27px;
+        &::after {
+            content: "";
+            border: 7px solid transparent;
+            border-top-color: #FFA920;
+            position: absolute;
+            bottom: -18px;
+            left: 23px;
+        }
+    }
+    .box {
+        &.box-1 {
+            margin-right: 29px;
+            .media:nth-child(1) {
+                margin-bottom: 29px;
+            }
+        }
+        &.box-2 {
+            .media:nth-child(1) {
+                margin-bottom: 30px;
+            }
+            .media:nth-child(2) {
+                margin-bottom: 30px;
+            }
+        }
+        .button-testi {
+            margin-right: -15px;
+            i {
+                margin-right: 9px;
+            }
+            a {
+                padding: 16px 18px 16px 20px;
+            }
+        }
+    }
+}
+
+.flat-are-interested {
+    background: #F7F7F7;
+}
+
+.flat-agents {
+    background-image: url(../../../assets/images/section/bg-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFF5E0;
+    .heading-section {
+        margin-bottom: 0;
+        margin-top: 76px;
+        padding: 0 67px;
+        .text-1 {
+            margin-bottom: 53px;
+        }
+        .icon-img {
+            margin-bottom: 24px;
+        }
+        .text-2 {
+            font-style: italic;
+            margin-bottom: 45px;
+        }
+        .title-content {
+            margin-bottom: 29px;
+        }
+        .signature {
+            margin-bottom: 45px;
+        }
+        .button-one {
+            margin-right: 10px
+        }
+        .button-two {
+            margin-left: 10px;
+        }
+    }
+}
+
+
+
+
 
 
 
@@ -774,6 +1018,13 @@
         }
     }
 }
+.video-box {
+    // background: url(./../../assets/images/img-box/video-agents.jpg)  center center no-repeat;
+    //     background-size: cover;
+    // margin-left: 57px;
+    // height: 904px;
+    // border-radius: 20px;
+}
 
 .flat-video-page {
     padding-bottom: 104px;
@@ -781,22 +1032,35 @@
 
 // video
 .post-video {
+    img {
+        border-radius: 30px;
+    }
     a {
-        position: relative;
-        width: 50px;
-        height: 50px;
+        // position: relative;
+        // width: 50px;
+        // height: 50px;
+        // background: $color-1;
+        // border-radius: 50%;
+        // text-align: center;
+        // @include flex-center;
+        // padding-left: 5px;
+        // border: 1px solid $color-2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 86px;
+        height: 86px;
         background: $color-1;
         border-radius: 50%;
         text-align: center;
-        @include flex-center;
-        padding-left: 5px;
-        border: 1px solid $color-2;
-        svg {
+        line-height: 86px;
+        svg path{
             @include transition3;
         }
         &:hover {
-            background: $color-2;
-            svg {
+            background: $color-3;
+            svg path {
                 fill: $color-1;
             }
         }
@@ -808,8 +1072,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50px;
-    height: 50px;
+    width: 86px;
+    height: 86px;
     border-radius: 50%;
     -ms-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -817,9 +1081,9 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     transform: translate(-50%, -50%);
-    -ms-box-shadow: 0 0 0 0px rgba(139, 84, 255, 0.04);
-    -o-box-shadow: 0 0px 0 0px rgba(139, 84, 255, 0.04);
-    box-shadow: 0px 0px 0px 10px rgb(139 84 255 / 30%);
+    -ms-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.04);
+    -o-box-shadow: 0 0px 0 50px rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 0px 0px 20px rgb(255 255 255 / 30%);
     -webkit-animation: ripple 2s infinite;
     animation: ripple 2s infinite;
 }

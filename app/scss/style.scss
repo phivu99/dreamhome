@@ -102,6 +102,10 @@ ul, li {
     text-align: center;
 }
 
+.container4 {
+    max-width: 1710px;
+}
+
 .container3 {
     max-width: 1520px;
 }
@@ -113,14 +117,14 @@ ul, li {
 .container {
     max-width: 1140px;
 }
-
+.container4,
 .container3,
 .container2,
 .container {
     width: 100%;
     margin: auto;
 }
-
+.container4,
 .container3,
 .container2,
 .container-fluid,
@@ -504,8 +508,8 @@ button {
     line-height: 45px
 }
 
-.mb-203 {
-    margin-bottom: 203px
+.lh-56 {
+    line-height: 56px
 }
 
 .fs-12 {
@@ -530,6 +534,10 @@ button {
 
 .fs-30 {
     font-size: 30px
+}
+
+.tf-section {
+    padding: 100px 0
 }
 
 /* link style
