@@ -220,7 +220,7 @@
             
             .heading {
                 margin-bottom: 60px;
-                width: 44.5%;
+                width: 58.5%;
             }
             .sub-title {
                 background: #5C28CA;
@@ -240,7 +240,7 @@
         .images {
             position: absolute;
             top: 83px;
-            right: -131px;
+            right: -143px;
         }
     }
     //flat tabs 
@@ -448,13 +448,13 @@
     .owl-nav{
         display: none;
     }
-    .owl-dots{
+    .owl-dots {
         position: relative;
         z-index: 2;
-        margin-top: 35px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
-        .owl-dot{
+        .owl-dot {
             background: #FFF5E0;
             width: 50px;
             height: 4px;
@@ -465,6 +465,14 @@
             &.active {
                 position: relative;
                 margin: 0 4px !important;
+                background: $color-3;
+            }
+        }
+    }
+    &.dots-style {
+        .owl-dots .owl-dot { 
+            background: $color-1; 
+            &.active {
                 background: $color-3;
             }
         }
