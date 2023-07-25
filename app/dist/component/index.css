@@ -22,8 +22,79 @@
   width: 100%;
   height: 78px;
   position: relative;
-  padding: 0 79px 0 104px;
+  padding: 0px 83px 0 100px;
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.0784313725);
+}
+.main-header.home3 {
+  position: absolute;
+  color: #fff;
+  box-shadow: unset;
+}
+.main-header.home3 .main-menu .navigation > li > a {
+  color: #fff;
+}
+.main-header.home2 {
+  position: absolute;
+  box-shadow: unset;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.main-header.home2 .main-menu {
+  margin-left: 0;
+}
+.main-header.home2 .main-menu .navigation > li > a {
+  color: #fff;
+}
+.main-header.home2 .main-menu .navigation > li:hover > a,
+.main-header.home2 .main-menu .navigation > li.current > a {
+  color: #fff;
+}
+.main-header.home2 .search-form .search-field {
+  width: 284px;
+  height: 41px;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  color: #fff;
+  margin-top: -2px;
+  padding: 10px 17px 14px 15px;
+}
+.main-header.home2 .search-form .search-field::placeholder {
+  color: #fff !important;
+}
+.main-header.home2 .icon-socials {
+  margin-right: 41px;
+}
+.main-header.home2 .icon-socials a i {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 22px;
+}
+.main-header.home2 .icon-socials a i:hover {
+  color: #fff;
+}
+.main-header.home2 .icon-socials a:last-child i {
+  margin-right: 0;
+}
+
+.wrap-top {
+  width: 100%;
+  height: 78px;
+  position: relative;
+  padding: 12px 83px 0 100px;
+}
+.wrap-top .icon-tell-box .icon {
+  margin-right: 29px;
+}
+.wrap-top .icon-tell-box .icon::after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: #D9D9D9;
+  top: 24px;
+  position: absolute;
+  margin-left: 14px;
+}
+.wrap-top .logo-box {
+  margin-left: 152px;
 }
 
 .header-top {
@@ -297,7 +368,7 @@
 .main-header .main-menu .navigation > li:hover > a,
 .main-header .main-menu .navigation > li.current > a {
   opacity: 1;
-  color: var(--main-color);
+  color: #120A21;
 }
 
 .main-header .main-menu .navigation > li > ul {
@@ -2660,6 +2731,46 @@ path.two {
   margin-left: 10px;
 }
 
+.flat-search-home {
+  background-image: url(../../../assets/images/section/bg-search-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 350px;
+  color: #fff;
+}
+
+.flat-slider-home3 {
+  margin-top: -250px;
+}
+
+.flat-why-choose {
+  padding: 100px 0 100px;
+}
+.flat-why-choose .wrap-why-choose {
+  margin-left: -1px;
+  flex-wrap: wrap;
+}
+.flat-why-choose .wrap-why-choose .box {
+  width: calc(33.333% - 1px);
+  margin-left: 1px;
+  border-right: 1px solid #EFEFEF;
+}
+.flat-why-choose .wrap-why-choose .box:last-child {
+  border-right: 0px solid #EFEFEF;
+}
+.flat-why-choose .wrap-why-choose .box .icon {
+  margin-bottom: 10px;
+}
+.flat-why-choose .wrap-why-choose .box h4 {
+  margin-bottom: 10px;
+}
+.flat-why-choose .wrap-why-choose .box .images {
+  margin-bottom: 10px;
+}
+.flat-why-choose .wrap-why-choose .box p {
+  margin-bottom: 10px;
+}
+
 .flat-video {
   padding-top: 144px;
   padding-bottom: 150px;
@@ -3659,7 +3770,7 @@ path.two {
 .slider .slider-item .images {
   position: absolute;
   top: 83px;
-  right: -143px;
+  right: -138px;
 }
 .slider .flat-tabs {
   position: relative;
@@ -3704,10 +3815,40 @@ path.two {
 .slider.home2 .slider-item {
   position: relative;
 }
+.slider.home2 .slider-item .content {
+  padding: 244px 0 373px;
+}
 .slider.home2 .slider-item .content .heading {
   padding: 0 150px;
-  margin-bottom: 60px;
+  margin-bottom: 74px;
   width: unset;
+}
+.slider.home2 .flat-tabs {
+  margin-bottom: 35px;
+}
+.slider.home2 .flat-tabs .tab-title li.style {
+  margin-right: 34px;
+}
+.slider.home2 .wrap-icon {
+  color: #fff;
+}
+.slider.home2 .wrap-icon .icon-box {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+.slider.home2 .wrap-icon .icon-box:last-child {
+  margin-right: 21px;
+}
+.slider.home2 .wrap-icon span {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin-right: 6px;
 }
 
 .hide {

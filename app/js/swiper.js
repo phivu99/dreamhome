@@ -160,7 +160,7 @@ var swiper =  new Swiper(".carousel-3", {
             spaceBetween: 30,
         },
         991: {
-            slidesPerView: 3,
+            slidesPerView: 5,
             spaceBetween: 30,
         },
     },

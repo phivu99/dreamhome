@@ -213,8 +213,6 @@
     }
     .slider-item {
         position: relative;
-        // padding: 200px 0 157px;
-       
         .content {
             padding: 210px 0 163px;
             
@@ -235,12 +233,11 @@
                 // text-transform: capitalize;
                 margin-bottom: 22px;
             }
-
         }
         .images {
             position: absolute;
             top: 83px;
-            right: -143px;
+            right: -138px;
         }
     }
     //flat tabs 
@@ -284,17 +281,44 @@
             // padding: 200px 0 157px;
            
             .content {
-                
+                padding: 244px 0 373px;
                 .heading {
                     padding: 0 150px ;
-                    margin-bottom: 60px;
+                    margin-bottom: 74px;
                     width: unset;
                 }
             }
         }
-        
+        .flat-tabs {
+            margin-bottom: 35px;
+            .tab-title li.style {
+                margin-right: 34px;
+            }
+        }
+        .wrap-icon {
+            color: $color-1;
+            .icon-box {
+                display: flex;
+                align-items: center;
+                margin-right: 32px;
+                &:last-child {
+                    margin-right: 21px;
+                }
+            }
+			span {
+				width: 26px;
+				height: 26px;
+                line-height: 26px;
+                text-align: center;
+				border-radius: 50%;
+				background: #FFFFFF33;
+				display: inline-block;
+                margin-right: 6px;
+			}
+		}
     }
 }
+
 .hide {
     opacity: 0.5;
 }

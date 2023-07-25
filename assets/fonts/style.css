@@ -25,16 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-house-1:before {
+  content: "\e903";
+  color: #fff;
+}
+
+.icon-house-2:before {
+  content: "\e904";
+  color: #fff;
+}
+
+.icon-house-3:before {
+  content: "\e905";
+  color: #fff;
+}
+
+.icon-house-4:before {
+  content: "\e906";
+  color: #fff;
+}
+
+.icon-icon-5:before {
+  content: "\e907";
+}
+
 .icon-icon-baths:before {
   content: "\e901";
   color: #8e8e93;
 }
+
 .icon-Icon-bed:before {
   content: "\e902";
   color: #8e8e93;
 }
+
 .icon-icon-size:before {
   content: "\e900";
   color: #8e8e93;
 }
-
