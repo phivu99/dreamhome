@@ -1002,8 +1002,34 @@
     background-image: url(../../../assets/images/section/bg-search-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0 350px;
+    padding: 101px 0 297px;
     color: $color-1;
+    p {
+        color: rgba($color-1, 0.8 );
+    }
+    .heading-section {
+        padding: 0 230px;
+    }
+    .box-icon {
+        .icon {
+            margin-right: 49px;
+            margin-top: 5px;
+            &::after {
+                content: "";
+                width: 1px;
+                height: 50px;
+                background-color: rgba($color-1, 0.5 );
+                top: 0px;
+                transform: rotate(21deg);
+                position: absolute;
+                margin-left: 24px;
+            }
+        }
+        .content p {
+            margin-bottom: 14px;
+           
+        }
+    }
 }
 
 .flat-slider-home3 {
@@ -1011,7 +1037,7 @@
 }
 
 .flat-why-choose {
-    padding: 100px 0 100px;
+    padding: 100px 0 0px;
     .wrap-why-choose {
             margin-left: -1px;
             flex-wrap: wrap;
@@ -1038,6 +1064,108 @@
     }
 }
 
+.flat-your {
+    .swiper-slide img {
+        width: 100%;
+        height: 354px;
+    }
+    .content {
+        margin-top: -75px;
+        position: relative;
+        z-index: 9;
+        padding: 12px 12px 20px;
+        a {
+            color: $color-1;
+        }
+    }
+}
+
+.flat-testimonial3 {
+    color: $color-1;
+    .bg-image {
+        margin-top: -301px;
+    }
+    .group-testi {
+        position: relative;
+        z-index: 1;
+    }
+    .wrap-testi {
+        width: 65.8%;
+        z-index: 1;
+        .swiper-container {
+            margin-top: -50px;
+            padding-top: 50px;
+        }
+        .box {
+            background-color: $color-3;
+            border-radius: 10px 10px 0px 10px;
+            padding: 0px 10px 29px;
+        }
+        .images {
+            margin-bottom: 25px;
+            img {
+                margin-top: -56px;
+                border-radius: 50%;
+                width: 112px;
+                height: 112px;
+                border: 6px solid #FFF5E0;
+                box-shadow: 0px 20px 30px 0px #0000003D;
+            }
+        }
+        .texts {
+            margin-bottom: 19px;
+        }
+        svg {
+            margin-bottom: 21px;
+        }
+    }
+    .wrap-heading {
+        width: 35.2%;
+        .box-heading {
+            margin-top: 207px;
+            background-color: $color-1;
+            padding: 31px 30px;
+            border-radius: 0px 0px 10px 10px;
+            h2 {
+                margin-bottom: 14px;
+            }
+        }
+    }
+}
+
+.flat-contact2 {
+    background-image: url(../../../assets/images/section/bg-contact2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 62px;
+    .heading-section {
+        padding-right: 414px;
+        margin-bottom: 0;
+        p {
+            margin-bottom: 82px;
+        }
+        .sc-button {
+            width: 212px;
+        }
+    }
+    .mark-img {
+        position: absolute;
+        top: -158px;
+        right: 14px;
+    }
+}
+
+// home 4
+.flat-explore {
+    .box {
+        .images {
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin-bottom: 6px;
+        }
+    }
+}
 
 
 

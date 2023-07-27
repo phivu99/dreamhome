@@ -160,7 +160,7 @@ var swiper =  new Swiper(".carousel-3", {
             spaceBetween: 30,
         },
         991: {
-            slidesPerView: 5,
+            slidesPerView: 3,
             spaceBetween: 30,
         },
     },
@@ -175,11 +175,7 @@ var swiper =  new Swiper(".carousel-4", {
     slidesPerView: 1,   
     loop: false,
     spaceBetween: 30,
-    navigation: {
-        clickable: true,
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    grabCursor: true,
     pagination: {
         el: ".swiper-pagination3",
         clickable: true,
@@ -190,7 +186,7 @@ var swiper =  new Swiper(".carousel-4", {
             spaceBetween: 30,
         },
         991: {
-            slidesPerView: 4,
+            slidesPerView: 7,
             spaceBetween: 30,
         },
     },
@@ -387,10 +383,10 @@ if ($('.sponsors-carousel').length) {
   
 
 var swiper =  new Swiper(".carousel-7", {
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
     loop:false,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -409,13 +405,13 @@ var swiper =  new Swiper(".carousel-7", {
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30,
         },
     },
 });
 
-var swiper =  new Swiper(".carousel-9", {
+var swiper =  new Swiper(".carousel-8", {
     // autoplay: {
     //     delay: 5000,
     //     disableOnInteraction: false,
@@ -435,7 +431,7 @@ var swiper =  new Swiper(".carousel-9", {
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 3,
+            slidesPerView: 6,
             spaceBetween: 30,
         },
     },

@@ -317,6 +317,26 @@
 			}
 		}
     }
+    &.home4 {
+        .heading {
+            padding: 201px 0 0;
+            h1 {
+                margin-bottom: 20px;
+            }
+        }
+        .flat-tabs {
+            padding-left: 5px;
+        }
+        .form-sl {
+            display: block;
+        }
+        .wd-find-select .group-select .nice-select {
+            width: 100%;
+        }
+        .wd-find-select div {
+            margin-bottom: 12px;
+        }
+    }
 }
 
 .hide {
