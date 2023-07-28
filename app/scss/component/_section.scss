@@ -1167,6 +1167,65 @@
     }
 }
 
+.flat-sale.home4 {
+    padding-bottom: 100px;
+}
+
+.flat-search-today {
+    background-color: #FFF5E0;
+    .wrap-search-today {
+        padding: 101px 0px 20px 21px;
+        overflow: hidden;
+        .heading-section {
+            padding-right: 100px;
+            margin-bottom: 133px;
+        }
+        .images {
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            background-color: $color-1;
+            padding: 20px;
+            h3 {
+                margin-bottom: 4px;
+            }
+            p {
+                margin-bottom: 13px;
+            }
+        }
+    }
+    .swiper-slide {
+        width: 350px !important;
+    }
+}
+
+.flat-why-choose2 {
+    .images {
+        margin-right: -10px;
+    }
+    .heading-section {
+        margin-top: 90px;
+    }
+    .wrap-icon {
+        padding-right: 55px;
+        .box {
+            margin-bottom: 39px;
+            .icon {
+                margin-right: 25px;
+            }
+            .content {
+                padding-top: 1px;
+                h4 {
+                    margin-bottom: 15px;
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+}
 
 
 
