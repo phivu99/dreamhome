@@ -467,6 +467,36 @@ var swiper =  new Swiper(".carousel-9", {
     },
 });
 
+var swiper =  new Swiper(".carousel-10", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+    pagination: {
+        el: ".swiper-pagination3",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+
+    },
+});
+
 var swiper =  new Swiper(".carousel-testi2", {
     // autoplay: {
     //     delay: 5000,

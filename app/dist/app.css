@@ -2086,6 +2086,10 @@ path.two {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.flat-contact.home5 {
+  background-image: url(../../../assets/images/section/bg-contact3.png);
+  padding: 100px 0;
+}
 .flat-contact .heading-section {
   margin-bottom: 54px;
   padding-right: 10px;
@@ -2112,6 +2116,7 @@ path.two {
   box-shadow: 0px 4px 26px 0px rgba(66, 71, 76, 0.0784313725);
   position: relative;
   background-color: #fff;
+  border-radius: 10px;
 }
 .flat-contact .wrap-contact .box-title {
   margin-bottom: 24px;
@@ -2309,6 +2314,25 @@ path.two {
 .flat-find-neighborhood .box .images {
   border-radius: 10px;
   overflow: hidden;
+}
+.flat-find-neighborhood.home5 {
+  padding: 100px 0 0;
+}
+.flat-find-neighborhood.home5 .wrap-find {
+  position: relative;
+  flex-wrap: wrap;
+  margin-left: -10px;
+}
+.flat-find-neighborhood.home5 .wrap-find.find-1 .box {
+  width: calc(50% - 10px);
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.flat-find-neighborhood.home5 .wrap-find.find-2 .box {
+  width: calc(25% - 10px);
+  position: relative;
+  margin-left: 10px;
 }
 
 .flat-estate-near {
@@ -2961,6 +2985,116 @@ path.two {
 }
 .flat-why-choose2 .wrap-icon .box .content p {
   margin-bottom: 10px;
+}
+
+.flat-icon {
+  background-image: url(../../../assets/images/section/bg-icon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 62px;
+}
+.flat-icon .container {
+  max-width: 1070px;
+}
+.flat-icon .box {
+  background-color: #fff;
+  padding: 25px 28px;
+}
+.flat-icon .box .icon {
+  margin-bottom: 15px;
+}
+.flat-icon .box h3 {
+  margin-bottom: 10px;
+}
+.flat-icon .box p {
+  margin-bottom: 60px;
+}
+
+.flat-testimonial4 {
+  background-image: url(../../../assets/images/section/bg-testimonial2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flat-testimonial4 .box {
+  padding: 2px 190px;
+}
+.flat-testimonial4 .box svg {
+  margin-bottom: 11px;
+}
+.flat-testimonial4 .box .texts {
+  margin-bottom: 39px;
+}
+.flat-testimonial4 .box .images {
+  margin-bottom: 15px;
+}
+
+.flat-pricing {
+  padding-bottom: 100px;
+}
+.flat-pricing .box {
+  background: #fff;
+  padding: 49px 50px 55px;
+  box-shadow: 7px 7px 0 transparent, 0px 10px 60px rgba(139, 84, 255, 0.12);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-pricing .box .sub-title {
+  margin-bottom: 18px;
+}
+.flat-pricing .box .text-sub {
+  margin-bottom: 20px;
+}
+.flat-pricing .box .title-price {
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.flat-pricing .box .title-price h2 {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-pricing .box .texts {
+  margin-bottom: 40px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-pricing .box .check {
+  margin-bottom: 51px;
+}
+.flat-pricing .box .check li {
+  margin-bottom: 20px;
+  font-family: "Mulish", sans-serif;
+}
+.flat-pricing .box .check li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 10px;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFA920;
+  border-radius: 50%;
+  flex: none;
+}
+.flat-pricing .box .button-pricing a {
+  width: 100%;
+  text-align: center;
+}
+.flat-pricing .box .cta {
+  transition: 0.4s;
 }
 
 .flat-video {
