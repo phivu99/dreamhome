@@ -1609,59 +1609,24 @@ path.two {
 /* Page Title Inner
 -------------------------------------------------------------- */
 .flat-title-page.inner {
-  padding: 176px 0 62px 0px;
+  padding: 250px 0 50px 0px;
   position: relative;
-  background-image: url(../../assets/images/section/img-page-inner.jpg);
+  background-image: url(../../assets/images/section/bg-page.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
 }
-.flat-title-page .page-title-heading {
-  margin-top: 77px;
-  position: absolute;
-  padding: 50px 61px 51px 60px;
-  box-shadow: 10px 10px 0 black;
-  background: #FFA920;
-}
 .flat-title-page .page-title-heading .heading {
   color: #fff;
   margin-bottom: 25px;
-  line-height: 66px;
-  font-size: 55px;
-  font-weight: 600;
-  letter-spacing: -1px;
-}
-.flat-title-page .page-title-heading .heading span {
-  position: relative;
-}
-.flat-title-page .page-title-heading .heading span::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  bottom: 5px;
-  left: 0;
-  background: #fff;
+  line-height: 45px;
+  font-size: 45px;
+  font-weight: 700;
 }
 .flat-title-page .page-title-heading.style-2 {
   margin-right: 12px;
-}
-.flat-title-page .images {
-  text-align: end;
-  margin-top: -6px;
-  margin-right: -6px;
-}
-
-.overlay {
-  background: #000000;
-  opacity: 0.75;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .overlay {
@@ -1675,8 +1640,7 @@ path.two {
 }
 
 .overlay2 {
-  background: linear-gradient(180deg, rgba(92, 40, 202, 0.07) 0%, rgba(244, 63, 226, 0.07) 104.02%);
-  opacity: 0.2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40.43%, rgba(0, 0, 0, 0.7) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -2088,7 +2052,18 @@ path.two {
 }
 .flat-contact.home5 {
   background-image: url(../../../assets/images/section/bg-contact3.png);
-  padding: 100px 0;
+  background-color: #1c1c1e;
+}
+.flat-contact.home5 .heading-section {
+  margin-bottom: 50px;
+  padding-top: 63px;
+  padding-right: 0;
+}
+.flat-contact.home5 .box-info {
+  padding-right: 180px;
+}
+.flat-contact.home5 .box-info .icon-info {
+  margin-right: 48px;
 }
 .flat-contact .heading-section {
   margin-bottom: 54px;
@@ -2100,10 +2075,21 @@ path.two {
 .flat-contact .box-info {
   margin-bottom: 31px;
 }
-.flat-contact .icon-info {
+.flat-contact .box-info .icon-info {
   margin-right: 61px;
+  position: relative;
 }
-.flat-contact .content h5 {
+.flat-contact .box-info .icon-info::after {
+  content: "";
+  width: 1px;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0px;
+  transform: rotate(21deg);
+  position: absolute;
+  margin-left: 23px;
+}
+.flat-contact .box-info .content h5 {
   margin-bottom: 3px;
 }
 .flat-contact .mark-contact {
