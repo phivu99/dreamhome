@@ -96,6 +96,10 @@ ul, li {
   text-align: center;
 }
 
+.container5 {
+  max-width: 1734px;
+}
+
 .container4 {
   max-width: 1710px;
 }
@@ -112,6 +116,7 @@ ul, li {
   max-width: 1140px;
 }
 
+.container5,
 .container4,
 .container3,
 .container2,
@@ -120,6 +125,7 @@ ul, li {
   margin: auto;
 }
 
+.container5,
 .container4,
 .container3,
 .container2,
@@ -411,6 +417,10 @@ label.error {
   justify-content: space-between;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .align-center {
   align-items: center;
 }
@@ -466,6 +476,10 @@ button {
 
 .fw-8 {
   font-weight: 800;
+}
+
+.lh-16 {
+  line-height: 16px;
 }
 
 .lh-18 {
@@ -530,6 +544,10 @@ button {
 
 .fs-30 {
   font-size: 30px;
+}
+
+.z-2 {
+  z-index: 2;
 }
 
 .tf-section {

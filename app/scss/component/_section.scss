@@ -1543,7 +1543,32 @@
     .box {
         margin-left: 0;
     }
-    
+}
+
+.flat-property-2 {
+    .wrap-property {
+        margin-left: -30px;
+        flex-wrap: wrap;
+    }
+    .post {
+        width: 78.3%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .side-bar {
+        width: 21.7%;
+    }
+}
+
+.flat-property-3 {
+
+    .wrap-item {
+
+    }
+    .box {
+        width: calc(50% - 30px);
+    }
+
 }
 
 
