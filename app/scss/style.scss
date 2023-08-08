@@ -460,97 +460,51 @@ button {
     font-family: $font-2  ;
 }
 
-.fw-4 {
-    font-weight: 400
-}
+.fw-4 { font-weight: 400 }
 
-.fw-5 {
-    font-weight: 500
-}
+.fw-5 { font-weight: 500 }
 
-.fw-6 {
-    font-weight: 600
-}
+.fw-6 { font-weight: 600 }
 
-.fw-7 {
-    font-weight: 700
-}
+.fw-7 { font-weight: 700 }
 
-.fw-8 {
-    font-weight: 800
-}
+.fw-8 { font-weight: 800 }
 
-.lh-16 {
-    line-height: 16px
-}
+.lh-16 { line-height: 16px }
 
-.lh-18 {
-    line-height: 18px
-}
+.lh-18 { line-height: 18px }
 
-.lh-24 {
-    line-height: 24px
-}
+.lh-24 { line-height: 24px }
 
-.lh-26 {
-    line-height: 26px
-}
+.lh-26 { line-height: 26px }
 
-.lh-27 {
-    line-height: 27px
-}
+.lh-27 { line-height: 27px }
 
-.lh-28 {
-    line-height: 28px
-}
+.lh-28 { line-height: 28px }
 
-.lh-29 {
-    line-height: 29px
-}
+.lh-29 { line-height: 29px }
 
-.lh-30 {
-    line-height: 30px
-}
+.lh-30 { line-height: 30px }
 
-.lh-37 {
-    line-height: 37px
-}
+.lh-37 { line-height: 37px }
 
-.lh-45 {
-    line-height: 45px
-}
+.lh-45 { line-height: 45px }
 
-.lh-56 {
-    line-height: 56px
-}
+.lh-56 { line-height: 56px }
 
-.fs-12 {
-    font-size: 12px
-}
+.fs-12 { font-size: 12px }
 
-.fs-13 {
-    font-size: 13px
-}
+.fs-13 { font-size: 13px }
 
-.fs-16 {
-    font-size: 16px
-}
+.fs-16 { font-size: 16px }
 
-.fs-18 {
-    font-size: 18px
-}
+.fs-18 { font-size: 18px }
 
-.fs-20 {
-    font-size: 20px
-}
+.fs-20 { font-size: 20px }
 
-.fs-30 {
-    font-size: 30px
-}
+.fs-30 { font-size: 30px }
 
-.z-2 {
-    z-index: 2;
-}
+.z-2 { z-index: 2 }
 
 .tf-section { padding: 100px 0 }
 
@@ -561,6 +515,10 @@ button {
 .tf-section01 { padding: 100px 0 99px}
 
 .tf-section02 { padding: 100px 0 98px}
+
+.bg-1 {
+    background-color: #F7F7F7;
+}
 
 /* link style
 -------------------------------------------------------------- */
@@ -807,80 +765,50 @@ a {
 -------------------------------------------------------------- */
 
 .themesflat-pagination {
-    display: inline-block;
-    background-color: $bg-color;
-    border: 1px solid $color-2;
-    padding: 21px 50px 31px;
-    margin-top: 59px;
+    margin-top: 30px;
     ul {
         position: relative;
-       
         li {
             display     : inline-block;
-            margin-right: 15px;
+            margin-right: 6px;
             &:last-child {
                 margin-right: 0;
             }
-            &.style-left {
-                margin-right: 42px;
-            }
-            &.style-right {
-                margin-left: 25px;
-            }
             .page-numbers {
                 display      : inline-block;
-                width        : 10px;
-                height       : 10px;           
-                border-radius: 200px;
-                background-color: $color-2;
+                font-size    : 16px;
+                font-weight  : 600;
+                color        : $color-2;
+                text-align   : center;
+                width        : 44px;
+                height       : 44px;
+                line-height  : 44px;
+                border-radius: 10px;
                 object-fit   : cover;  
                 position: relative;  
-                @include transition3;;
-                &.numbers {
-                    margin-top: 16px !important;
-                }
-                &::before { 
-                    @include transition3;
-                }
-
+                @include transition3;
+                overflow: hidden;
+                border: 1px solid $color-8;
                 &:hover,
-                &.current {                   
-                    &.numbers {
-                        margin: 0 15px;
-                        &::before {
-                            content: "";
-                            width: 40px;
-                            height: 40px;
-                            border: 1px solid $color-2;
-                            border-radius: 50%;
-                            position: absolute;
-                            transform: translate(-50%, -50%);
-                            top: 50%;
-                            left: 50%;
-                        }
-                    }               
+                &.current {
+                    background-color: $color-3;
+                    color           : #fff;
+                    border-color    : $color-3;
                 }  
+
                 &.style {
-                    width        : 65px;
-                    height       : 65px;
-                    color        : $color-1;
-                    text-align   : center;
-                    line-height  : 65px;
-                    box-shadow: 2px 6px 0 $color-6;
+                    line-height: 42px;
                     i {
                         font-size: 22px;
                         font-weight: 400;
                         vertical-align: middle;
-                    }
-                    &:hover {
-                        box-shadow: 2px 6px 0 $color-2;
-                        background: $color-3;
                     }
                 }
             }
         }
     }
 }
+
 
 /* Scroll Top
 -------------------------------------------------------------- */
