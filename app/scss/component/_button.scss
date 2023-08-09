@@ -17,6 +17,9 @@
         // text-transform    : capitalize;
         @include transition3;
     }
+    i {
+      @include transition3;
+    }
     &:hover,
     &.active {
         border-color: transparent;

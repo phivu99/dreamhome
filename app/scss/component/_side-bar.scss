@@ -163,6 +163,18 @@
     padding: 29px 29px 28px;
     background: #FAFAFA;
     margin-bottom: 40px;
+    .search-form {
+        .search-field { 
+            padding: 14px 15px 14px 43px;
+        }
+        i {
+            position: absolute;
+            color: #8E8E93;
+            top: 21px;
+            left: 19px;
+            cursor: pointer;
+        }
+    }
     .flat-tabs.style2 {
         .tab-title li {
             width: 140px;
