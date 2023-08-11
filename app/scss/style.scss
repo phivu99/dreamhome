@@ -102,6 +102,10 @@ ul, li {
     text-align: center;
 }
 
+.container6 {
+    max-width: 1750px;
+}
+
 .container5 {
     max-width: 1734px;
 }
@@ -121,6 +125,7 @@ ul, li {
 .container {
     max-width: 1140px;
 }
+.container6,
 .container5,
 .container4,
 .container3,
@@ -129,6 +134,7 @@ ul, li {
     width: 100%;
     margin: auto;
 }
+.container6,
 .container5,
 .container4,
 .container3,
@@ -1291,6 +1297,317 @@ body {
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
+
+
+// map
+
+/* MAP */
+.map-marker-container {
+    position: absolute;
+    margin-top: 10px;
+    transform: translate3d(-50%, -100%, 0);
+  }
+  
+  .marker-container {
+    position: relative;
+    top: 25px;
+    left: 10px;
+    width: 46px;
+    height: 46px;
+    z-index: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-perspective: 1000;
+  }
+  
+  .face {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    color: #fff;
+    z-index: 100;
+    background: #6E55FF;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background-clip: content-box;
+    line-height: 46px;
+    font-size: 24px;
+  }
+
+  .face::before,
+  .face::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 50px rgba(110, 85, 255, 0.1);
+    -o-box-shadow: 0 0px 0 50px rgba(110, 85, 255, 0.1);
+    box-shadow: 0px 0px 0px 20px rgb(110 85 255 / 20%);
+    -webkit-animation: ripple 2s infinite;
+    animation: ripple 2s infinite;
+}
+
+.face::before {
+    content: "";
+    position: absolute;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.face::after {
+    content: "";
+    position: absolute;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+  
+//   .face:before {
+//     position: absolute;
+//     left: -8px;
+//     top: -8px;
+//     height: 44px;
+//     width: 44px;
+//     border-radius: 50%;
+//     border: 8px solid rgba(255, 255, 255);
+//     box-shadow: 0 2px 30px rgba(20, 159, 117, 0.2);
+//     content: "";
+//   }
+  
+  .face>div {
+    background-image: url(../../../assets/images/section/bg-icon.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 99;
+  }
+  
+//   .map-marker-container:hover .marker-container .marker-card,
+//   .clicked .marker-container .marker-card,
+//   .map-marker-container.clicked .marker-card {
+//     transform: rotateY(360deg);
+//     transition: all 0.4s ease-in-out;
+//   }
+  
+  #singleListingMap .marker-container {
+    cursor: default;
+  }
+  
+  .marker-card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #map .infoBox {
+    margin-left: 170px;
+    margin-bottom: -100px;
+  }
+
+.map-listing-item {
+    position: relative;
+  }
+  
+  .map-listing-item .infoBox-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    color: #202124;
+    line-height: 24px;
+    font-size: 20px;
+    border-radius: 8px;
+    z-index: 9;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  
+  .map-listing-item .infoBox-close:hover {
+    font-weight: 700;
+    color: $color-3;
+  }
+  
+  .map-listing-item .inner-box {
+    position: relative;
+    // padding: 16px;
+    // padding-left: 93px;
+    border-radius: 10px;
+    background: #ffffff;
+    min-width: 359px;
+    box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  }
+  
+//   .map-listing-item .image-box {
+//     position: absolute;
+//     left: 20px;
+//     top: 20px;
+//   }
+  
+//   .map-listing-item .image {
+//     display: block;
+//     height: 60px;
+//     width: 60px;
+//     overflow: hidden;
+//     margin-bottom: 0;
+//   }
+  
+  .map-listing-item .image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all 500ms ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .map-listing-item .content {
+    position: relative;
+    padding: 21px 20px;
+  }
+  
+  .map-listing-item .title {
+    color: #ffffff;
+    opacity: 0.6;
+    margin-left: 3px;
+  }
+  
+  .map-listing-item h4 {
+    position: relative;
+    font-family: $font-1;
+    margin-bottom: 5px;
+  }
+
+  .map-listing-item h4 a {
+    transition: all 300ms ease;
+  }
+  
+  .map-listing-item h4 a:hover {
+    color: $color-3;
+  }
+  
+//   .map-listing-item h4 a {
+//     font-size: 14px;
+//     font-weight: 600;
+//     line-height: 24px;
+//     color: #14a077;
+//     transition: all 300ms ease;
+//   }
+  
+//   .map-listing-item h4 a:hover {
+//     color: #14a077;
+//   }
+  
+  .map-listing-item h3 {
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-3;
+  }
+  
+  
+  .map-listing-item .location {
+    // color: #64666c;
+    // font-size: 14px;
+    // line-height: 22px;
+    // cursor: pointer;
+    // margin-top: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: $font-1;
+    color: $color-2;
+    margin-bottom: 6px;
+    &::before {
+        content: "\f279";
+        font-family: "Font Awesome 5 Pro";
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 5px;
+        color: #8E8E93;
+    }
+  }
+  
+  .map-listing-item .location .type {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #14a077;
+    background: rgba(20, 129, 96, 0.1);
+    border-radius: 24px;
+    padding: 7px 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .map-listing-item .location .type:hover {
+    color: #fff;
+    background: #14a077;
+  }
+  
+  .map-listing-item .job-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .map-listing-item .job-info li {
+    position: relative;
+    font-size: 14px;
+    line-height: 22px;
+    color: #696969;
+    font-weight: 400;
+    padding-left: 25px;
+    margin-right: 20px;
+  }
+  
+  .map-listing-item .job-info li .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 22px;
+    color: #696969;
+  }
+  
+  .map-listing-item .job-info li a {
+    color: #696969;
+  }
+
+  .cluster-map-visible {
+    text-align: center;
+    font-size: 16px !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    background-color: #14a077;
+    border: 7px solid rgba(25, 103, 210, 0.2);
+    box-shadow: 0 7px 30px rgba(33, 33, 33, 0.3);
+    box-sizing: content-box;
+    background-clip: content-box;
+  }
+
+  
 
 
 
