@@ -411,13 +411,9 @@ label.error {
     flex: none !important;
 }
 
-.text-t {
-    text-transform: capitalize;
-}
+.text-t { text-transform: capitalize; }
 
-.text-u {
-    text-transform: uppercase;
-}
+.text-u { text-transform: uppercase; }
 
 .text-unset { text-transform: unset !important; }
 
@@ -425,17 +421,11 @@ label.error {
 
 .justify-space { justify-content: space-between; }
 
-.flex-wrap {
-    flex-wrap: wrap;
-}
+.flex-wrap { flex-wrap: wrap; }
 
-.align-center {
-    align-items: center;
-}
+.align-center { align-items: center; }
 
-.font-italic {
-    font-style: italic;
-}
+.font-italic { font-style: italic; }
 
 .show-boder {
     margin-top: -140px !important;
@@ -492,6 +482,8 @@ button {
 
 .lh-30 { line-height: 30px }
 
+.lh-33 { line-height: 33px }
+
 .lh-37 { line-height: 37px }
 
 .lh-45 { line-height: 45px }
@@ -507,6 +499,8 @@ button {
 .fs-18 { font-size: 18px }
 
 .fs-20 { font-size: 20px }
+
+.fs-22 { font-size: 22px }
 
 .fs-30 { font-size: 30px }
 

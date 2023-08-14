@@ -23,18 +23,37 @@
     
         }
     }
+    .img-style2 {
+        overflow     : hidden; 
+        .img-hv {
+            width             : 100%;
+            object-fit        : cover;
+            -webkit-transition: all 1s cubic-bezier(0.30, 1, 0.35, 1) 0s;
+            transition: all 1s cubic-bezier(0.30, 1, 0.35, 1) 0s;
+            transition: transform 500ms ease;
+        }
+    }
+    &:hover {
+        .img-hv {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+            -webkit-transition: all 2s cubic-bezier(0.30, 1, 0.35, 2) 0s;
+            transition: all 2s cubic-bezier(0.30, 1, 0.35, 2) 0s;   
+    
+        }
+    }
 } 
 
 .hover-img2 {
     .img-style2 {
         overflow: hidden;
-        img {
+        .img2 {
             @include transition3;
         }
     }
     &:hover {
-        img {
-            transform:  scale(1.05) rotate(10deg);
+        .img2 {
+            transform:  scale(1.1) rotate(5deg);
         }
     }
 } 

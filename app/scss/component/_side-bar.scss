@@ -155,7 +155,20 @@
             // }
         }
   
-
+    &.side-bar-1 {
+        .widget-rent {
+            padding: 19px 29px 28px;
+            margin-bottom: 42px;
+        }
+        .wd-find-select .form-group-3 .group-select .nice-select {
+            margin-bottom: 26px;
+        }
+        .title-list {
+            margin-bottom: 21px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid #EFEFEF;
+        }
+    }
 }
 
 .widget-rent {

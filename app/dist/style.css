@@ -516,6 +516,10 @@ button {
   line-height: 30px;
 }
 
+.lh-33 {
+  line-height: 33px;
+}
+
 .lh-37 {
   line-height: 37px;
 }
@@ -546,6 +550,10 @@ button {
 
 .fs-20 {
   font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
 }
 
 .fs-30 {
