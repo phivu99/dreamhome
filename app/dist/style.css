@@ -588,6 +588,10 @@ button {
   background-color: #F7F7F7;
 }
 
+.img-border {
+  border-radius: 10px;
+}
+
 /* link style
 -------------------------------------------------------------- */
 a {

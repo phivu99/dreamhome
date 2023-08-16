@@ -171,6 +171,24 @@
     }
 }
 
+.search-group {
+    margin-right: 10px;
+    .search-form {
+        .search-field { 
+            padding: 14px 15px 14px 43px;
+            height: 40px;
+            width: 280px;
+        }
+        i {
+            position: absolute;
+            color: #8E8E93;
+            top: 15px;
+            left: 19px;
+            cursor: pointer;
+        }
+    }
+}
+
 .widget-rent {
     border: 1px solid #F0F0F0;
     padding: 29px 29px 28px;

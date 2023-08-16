@@ -1,0 +1,386 @@
+@use '../abstracts/' as *;
+/* dashboard menu */
+.hamburger-icon {
+    width: 20px;
+    height: 14px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.hamburger-icon span {
+    background-color: #878a99;
+    position: absolute;
+    border-radius: 2px;
+    -webkit-transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+
+.hamburger-icon span:nth-child(1) {
+    top: 0;
+    width: 80%;
+}
+
+.hamburger-icon span:nth-child(2) {
+    top: 6px;
+}
+
+.hamburger-icon span:nth-child(3) {
+    bottom: 0;
+    width: 60%;
+}
+
+.dashboard .dashboard__sidebar .sidebar__menu::-webkit-scrollbar {
+    width: 3px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dashboard .dashboard__sidebar .sidebar__menu::-webkit-scrollbar-thumb {
+    background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+}
+
+.dashboard.show .dashboard__content {
+    margin-left: 289px;
+    transition: all 0.2s ease-out;
+}
+
+.dashboard.show-job .dashboard__content {
+    margin-left: 70px;
+    transition: all 0.2s ease-out;
+}
+
+.downmenu .ff-collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+}
+
+.left-menu {
+    width: 280px;
+    z-index: 100;
+    background: #fff;
+    bottom: 0;
+    position: fixed;
+    top: 81px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+    box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+}
+
+.left-menu::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(0, 0, 0, 0);
+    display: none;
+}
+
+.left-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#sidebar-menu {
+    padding: 21px 17px 17px;
+}
+
+#sidebar-menu .ff-active>.has-arrow:after {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#sidebar-menu .has-arrow:after {
+    content: "\e9a2";
+    font-family: "icomoon";
+    position: absolute;
+    right: 15px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    font-size: 1rem;
+}
+
+#sidebar-menu ul li .dash-icon {
+    margin-right: 12px;
+    font-size: 24px;
+}
+
+#sidebar-menu ul li a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #121212;
+    padding: 13.5px 10px;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    justify-content: flex-start;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#sidebar-menu ul li a:hover {
+    color: #0b0d0e;
+}
+
+#sidebar-menu ul li .badge {
+    margin-top: 4px;
+}
+
+#sidebar-menu ul li ul.sub-menu2 {
+    padding: 0;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li a {
+    padding: 0.4rem 1.5rem 0.4rem 2rem;
+    font-size: 15px;
+    color: #64666c;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li a::before {
+    content: "";
+    width: 7px;
+    height: 2px;
+    margin-right: 4px;
+    background-color: #64666c;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li ul.sub-menu2 {
+    padding: 0;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li ul.sub-menu2 li a {
+    padding: 0.4rem 1.5rem 0.4rem 4.5rem;
+    font-size: 14px;
+}
+
+.menu-title {
+    padding: 12px 20px !important;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+    cursor: default;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #464b50 !important;
+    font-weight: 500;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li a.acti {
+    color: #14a077;
+    background-color: #fff;
+}
+
+#sidebar-menu ul li a.active,
+#sidebar-menu ul li a:hover {
+    color: #000;
+    background-color: #f5f5f2;
+}
+
+.show-job #sidebar-menu ul li a.active,
+.show-job #sidebar-menu ul li a:hover {
+    color: #14a077;
+    background-color: #fff;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li a:hover {
+    background-color: #f5f5f2;
+    color: #14a077 !important;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li a:hover::before {
+    background-color: #14a077;
+}
+
+.show-job #sidebar-menu ul li a:hover {
+    background: #fff;
+}
+
+.show-job .left-menu {
+    overflow: unset;
+}
+
+.show-job #sidebar-menu {
+    padding: 21px 10px 17px 10px;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li:hover>a span {
+    color: #14a077;
+}
+
+.show-job .left-menu {
+    width: 70px;
+    z-index: 5;
+}
+
+.show-job .left-menu .simplebar-content-wrapper,
+.show-job .left-menu .simplebar-mask {
+    overflow: visible !important;
+}
+
+.show-job .left-menu .simplebar-scrollbar {
+    display: none !important;
+}
+
+.show-job .left-menu .simplebar-offset {
+    bottom: 0 !important;
+}
+
+.show-job .left-menu #sidebar-menu .badge,
+.show-job .left-menu #sidebar-menu .collapse.in,
+.show-job .left-menu #sidebar-menu .menu-title {
+    display: none !important;
+}
+
+.show-job .left-menu #sidebar-menu .nav.collapse {
+    height: inherit !important;
+}
+
+.show-job .left-menu #sidebar-menu .has-arrow:after {
+    display: none;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li>a {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li>a i {
+    font-size: 1.1rem;
+    margin-left: 6px;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li>a .dash-titles {
+    display: none;
+    padding-left: 25px;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li:hover>a {
+    position: relative;
+    width: calc(190px + 70px);
+    -webkit-transition: none;
+    transition: none;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li:hover>a span {
+    display: inline;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li:hover>ul {
+    display: block;
+    left: 60px;
+    position: absolute;
+    width: 200px;
+    height: auto !important;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li:hover>ul ul {
+    -webkit-box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
+    box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, 0.1);
+}
+
+.show-job .left-menu #sidebar-menu>ul>li:hover>ul a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 8px 20px;
+    position: relative;
+    width: 195px;
+    z-index: 6;
+    color: #464b50;
+}
+
+.show-job .left-menu #sidebar-menu>ul>li:hover>ul a:hover {
+    color: #0b0d0e;
+}
+
+.show-job .left-menu #sidebar-menu>ul ul {
+    padding: 5px 0;
+    z-index: 9990;
+    display: none;
+    background-color: #fff;
+}
+
+.show-job .left-menu #sidebar-menu>ul ul li:hover>ul {
+    display: block;
+    left: 190px;
+    height: auto !important;
+    margin-top: -36px;
+    position: absolute;
+    width: 190px;
+}
+
+.show-job .left-menu #sidebar-menu>ul ul li>a span.pull-right {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+#sidebar-menu ul li ul.sub-menu2 li.ff-active a {
+    background: #f5f5f2;
+    color: #14a077;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li.ff-active a::before {
+    background-color: #14a077;
+}
+
+#sidebar-menu ul .ff-active a .dash-icon::before,
+#sidebar-menu ul .ff-active a .dash-icon,
+#sidebar-menu ul li a:hover .dash-icon::before,
+#sidebar-menu ul li a:hover .dash-icon {
+    color: #14a077;
+}
+
+#sidebar-menu ul li a .dash-icon::before,
+#sidebar-menu ul li a .dash-icon {
+    color: #64666c;
+}
+
+.down-menu {
+    margin: 0;
+}
+
+.downmenu li {
+    display: block;
+    width: 100%;
+}
+
+.downmenu .ff-collapse {
+    display: none;
+}
+
+.downmenu .ff-collapse:not(.ff-show) {
+    display: none;
+}
+
+.downmenu .ff-collapse.ff-show {
+    display: block;
+}
+
+.downmenu .ff-collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+}
