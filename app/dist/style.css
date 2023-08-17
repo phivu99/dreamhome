@@ -96,6 +96,10 @@ ul, li {
   text-align: center;
 }
 
+.container7 {
+  max-width: 1580px;
+}
+
 .container6 {
   max-width: 1750px;
 }
@@ -120,6 +124,7 @@ ul, li {
   max-width: 1140px;
 }
 
+.container7,
 .container6,
 .container5,
 .container4,
@@ -130,6 +135,7 @@ ul, li {
   margin: auto;
 }
 
+.container7,
 .container6,
 .container5,
 .container4,

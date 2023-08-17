@@ -6,6 +6,9 @@
     position: relative;
     cursor: pointer;
     display: inline-block;
+    position: absolute;
+    top: 35px;
+    left: 305px;
 }
 
 .hamburger-icon span {
@@ -67,14 +70,61 @@
 .left-menu {
     width: 280px;
     z-index: 100;
-    background: #fff;
+    background: #1C1C1E;
     bottom: 0;
     position: fixed;
-    top: 81px;
+    top: 0px;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
     box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+    color: $color-1;
+    .logo-box {
+        border-bottom: 1px solid #FFFFFF0D;
+        margin-bottom: 34px;
+        padding: 37px 30px 30px;
+    }
+    .title-1 {
+        margin-bottom: 9px;
+        color: rgba($color-1,0.4 );
+    }
+    
+    .profile-box {
+        border-bottom: 1px solid #FFFFFF0D;
+        margin-bottom: 30px;
+        padding: 0px 41px 30px 30px;
+        .avatar {
+            margin-right: 10px;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+        }
+        .titles a {
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+        // .content {
+        //     @include transition3;
+        // }
+    }
+    .sub-title {
+        color: rgba($color-1,0.5);
+    }
+    .title-2 {
+        padding: 0px 30px;
+        margin-bottom: 9px;
+        color: rgba($color-1,0.4 );
+    }
+    
+   
+}
+
+.toggle-logo {
+    display: none;
 }
 
 .left-menu::-webkit-scrollbar {
@@ -88,7 +138,8 @@
 }
 
 #sidebar-menu {
-    padding: 21px 17px 17px;
+    // padding: 37px 30px 22px;
+    
 }
 
 #sidebar-menu .ff-active>.has-arrow:after {
@@ -111,26 +162,38 @@
 #sidebar-menu ul li .dash-icon {
     margin-right: 12px;
     font-size: 24px;
+    ellipse,
+    circle,
+    path {
+        stroke: rgba($color-1,0.2 );
+        transition: all 0.4s;
+    }
 }
 
 #sidebar-menu ul li a {
     display: flex;
     align-items: center;
     position: relative;
-    color: #121212;
-    padding: 13.5px 10px;
-    background-color: #fff;
+    color: $color-1;
+    padding: 12.3px 30px;
+    // background-color: #fff;
     width: 100%;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
-    text-transform: capitalize;
     justify-content: flex-start;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
+    margin-bottom: 6px;
 }
 
 #sidebar-menu ul li a:hover {
     color: #0b0d0e;
+    ellipse,
+    circle,
+    path {
+        stroke: $color-1;
+        transition: all 0.4s;
+    }
 }
 
 #sidebar-menu ul li .badge {
@@ -182,8 +245,8 @@
 
 #sidebar-menu ul li a.active,
 #sidebar-menu ul li a:hover {
-    color: #000;
-    background-color: #f5f5f2;
+    color: $color-1;
+    background-color: $color-3;
 }
 
 .show-job #sidebar-menu ul li a.active,
@@ -205,21 +268,63 @@
     background: #fff;
 }
 
+.show-job {
+    .img-logo {
+        display: none;
+    }
+    .toggle-logo {
+        display: unset;
+    }
+    .left-menu .logo-box {
+        padding: 37px 0px 30px;
+    }
+    #sidebar-menu ul li a {
+        padding: 12.3px 9px;
+    }
+    .profile-box { 
+        padding: 0px 0px 30px;
+        .content {
+            opacity: 0;
+            a {
+                transition: all 0s ease;
+            }
+        }
+    }
+    .title-2 {
+        padding: 0;
+    }
+    
+    .avatar-box:hover {
+        .content {
+            opacity: 1;
+            color: $color-2;
+            // @include transition3;
+            .sub-title {
+                color: $color-2;
+            }
+        }
+    }
+    .hamburger-icon {
+        left: 100px;
+    }
+}
+
 .show-job .left-menu {
     overflow: unset;
 }
 
 .show-job #sidebar-menu {
-    padding: 21px 10px 17px 10px;
+    padding: 0px 8px 17px 8px;
 }
 
 .show-job .left-menu #sidebar-menu>ul>li:hover>a span {
-    color: #14a077;
+    color: $color-1;
 }
 
 .show-job .left-menu {
     width: 70px;
     z-index: 5;
+
 }
 
 .show-job .left-menu .simplebar-content-wrapper,
@@ -271,9 +376,10 @@
 
 .show-job .left-menu #sidebar-menu>ul>li:hover>a {
     position: relative;
-    width: calc(190px + 70px);
+    width: calc(190px + 60px);
     -webkit-transition: none;
     transition: none;
+    background-color: $color-3;
 }
 
 .show-job .left-menu #sidebar-menu>ul>li:hover>a span {
@@ -383,4 +489,9 @@
     transition-duration: 0.35s;
     -webkit-transition-property: height, visibility;
     transition-property: height, visibility;
+}
+
+// 
+.flat-title2 {
+    padding: 47px 0px 17px;
 }

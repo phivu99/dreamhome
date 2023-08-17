@@ -2236,3 +2236,27 @@
 	width:3px;
 }
 
+
+.dashboard {
+	background-color: #f7f7f7;
+	.main-header .main-menu {
+		margin-left: 780px;
+	}
+	.avatars-box {
+		margin-right: 31px;
+		.images {
+			margin-right: 11px;
+		}
+		.title-avatar a {
+			&::after {
+				content: "\f078";
+				font-family: "Font Awesome 5 Pro";
+				font-weight: 900;
+				font-size: 11px;
+				margin-left: 8px;
+				vertical-align: bottom;
+			}
+		}
+	}
+	
+}
