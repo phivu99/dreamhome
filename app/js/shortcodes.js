@@ -388,6 +388,22 @@
             btn.text(txt);
         });
     }
+
+     // img upload style 1
+     $("#profileimg").click(function (e) {
+        $("#tf-upload-img").click();
+    });
+    
+    function fasterPreview(uploader) {
+        if (uploader.files && uploader.files[0]) {
+            $('#profileimg').attr('src',
+                window.URL.createObjectURL(uploader.files[0]));
+        }
+    }
+    
+    $("#tf-upload-img").change(function () {
+        fasterPreview(this);
+    });
     
 
     // Dom Ready

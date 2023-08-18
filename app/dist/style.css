@@ -97,7 +97,7 @@ ul, li {
 }
 
 .container7 {
-  max-width: 1580px;
+  max-width: 1570px;
 }
 
 .container6 {
@@ -592,6 +592,10 @@ button {
 
 .bg-1 {
   background-color: #F7F7F7;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .img-border {
@@ -1326,7 +1330,7 @@ body .dribbble img {
 .dropdown ul.show {
   opacity: 1;
   position: absolute;
-  width: 150px;
+  width: 100%;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
@@ -1661,6 +1665,30 @@ body .dribbble img {
   box-shadow: 0 7px 30px rgba(33, 33, 33, 0.3);
   box-sizing: content-box;
   background-clip: content-box;
+}
+
+/* up file */
+.btn-upload {
+  padding: 16px 47px;
+}
+
+#upload-profile {
+  margin-bottom: 15px;
+}
+
+#tf-upload-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
