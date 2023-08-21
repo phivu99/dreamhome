@@ -35,6 +35,19 @@
         @include transition3;
       }
     }
+    &.btn-1 {
+      background-color: #FFF5E0;
+      span {
+        color             : #000;
+      }
+      &:hover,
+      &.active {
+        background-color: rgba(#FFF5E0, 0.6);
+        svg {
+          animation: 0.3s link-icon2 linear;
+        }
+    }
+    }
 }
 
 .cta {

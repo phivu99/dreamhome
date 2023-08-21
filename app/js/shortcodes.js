@@ -404,6 +404,14 @@
     $("#tf-upload-img").change(function () {
         fasterPreview(this);
     });
+
+    var delete_img = function (e) {
+        $(".remove-file").on("click", function (e) {
+          e.preventDefault();
+          var $this = $(this);
+          $this.closest(".file-delete").remove();
+        });
+      };
     
 
     // Dom Ready
@@ -428,6 +436,7 @@
         dropdown('#item_category2');
         donatProgress();
         tabs();
+        delete_img();
         Preloader();
         AOS.init();
     });

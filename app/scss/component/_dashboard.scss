@@ -531,14 +531,14 @@
     .titles {
         margin-bottom: 20px;
     }
-    .group-upload {
+    .tf-upload {
         background-color: $color-1;
         padding: 29px 31px 31px;
         box-shadow: 0px 4px 10px 0px #0000000A;
         border-radius: 12px;
         margin-bottom: 20px;
         
-        .tf-upload {
+        .box-upload {
             border: 2px solid #E5E5EA;
             padding: 60px 30px;
             margin-bottom: 14px;
@@ -546,7 +546,7 @@
                 margin-bottom: 15px;
             }
         }
-        .tf-photo {
+        .box-photo {
             ul li {
                 position: relative;
                 margin-right: 20px;
@@ -565,7 +565,7 @@
             }
         }
     }
-    .group-infomation {
+    .tf-infomation {
         padding: 29px 31px 31px;
         box-shadow: 0px 4px 10px 0px #0000000A;
         border-radius: 12px;
@@ -595,7 +595,7 @@
           
         }
     }
-    .group-price {
+    .tf-price {
         padding: 30px 31px 31px;
        .month {
         position: absolute;
@@ -651,4 +651,176 @@
             }
         } 
     }
+//     input[type="checkbox"],
+// input[type='submit'] {
+//     width: 20px;
+//     height: 20px;
+//     position: relative;
+//     @include flex-center;
+//     border-radius: 6px;
+//     border: 1px solid #E5E5EA;
+// }
+
+// input[type="checkbox"]:checked {
+//     border-radius: 6px;
+//     border: 1px solid $color-5 !important;
+// }
+
+// input[type='checkbox']:checked::before {
+//     content: "\f00c";
+//     font-family: 'Font Awesome 5 Pro';
+//     color: #fff;
+//     font-size: 14px;
+//     position: absolute;
+//     z-index: 2;
+// }
+
+// input[type="checkbox"]:checked:after,
+// input[type='submit']:after,
+// input[type='submit']:checked:after {
+//     width: 20px;
+//     height: 20px;
+//     position: absolute;
+//     background-color: #14a077;
+//     content: "";
+   
+// }
+
+
+
 }
+
+.tf-amenities {
+    padding: 29px 31px 29px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0392156863);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    label {
+        position: relative;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            &:checked~.btn-checkbox {
+                background-color: $color-3;
+                border: 1px solid $color-3;
+            }
+            &:checked~.btn-checkbox:after {
+                display: block;
+            }
+        }
+    }
+    .btn-checkbox {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color-5;
+        // background-color: rgba( $color-1, 0.1);
+        border-radius: 6px;
+        @include flex-center;
+        margin-right: 10px;
+        &::after {
+            content: "\f00c";
+            font-family: 'Font Awesome 5 Pro';
+            color: #fff;
+            display: none;
+            font-size: 14px;
+            font-weight: 200;
+        }
+    }
+    .subtitle {
+        margin-bottom: 21px;
+    }
+    .inner-1 {
+        width: 50.2%;
+        padding-right: 15px;
+    }
+    .inner-2 {
+        margin-top: 42px;
+    }
+    .box:nth-child(1) {
+        width: 33.5%;
+    }
+    .box:nth-child(2) {
+        width: 33.7%;
+    }
+    .box:nth-child(3) {
+        width: 32.8%;
+        .inner-1 {
+            width: 52%;
+        }
+    }
+}
+
+.tf-save {
+    .sc-button {
+        width: 180px;
+        text-align: center;
+        padding: 16px 15px;
+        border: unset;
+        &:nth-child(1) {
+            margin-right: 5px;
+        }
+        &:nth-child(2) {
+            margin-left: 5px;
+        }
+    }
+}
+
+.tf-bottom {
+    padding: 20px 0 25px;
+}
+
+.flat-counter {
+    margin-bottom: 30px;
+    .icons {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid #E2E2E2;
+        @include flex-center
+    }
+
+    .counter-box {
+        position: relative;
+        margin-right: 0px;
+        padding: 7px 10px 0;
+        .count-number {
+            align-items: baseline;
+        }
+        .title-count {
+            margin-bottom: 15px;
+        }
+        .number {
+            margin-bottom: 0;
+        }
+        .sub-title {
+            margin-left: 5px;
+        }
+    }
+    .wrap-count {
+        margin-left: -20px;
+        .box {
+            width: calc(25% - 20px);
+            margin-left: 20px;
+            padding: 19px 20px;
+            box-shadow: 0px 4px 10px 0px #0000000A;
+            border-radius: 10px;
+        }
+    }
+   
+}
+
+#chart {
+    max-width: 650px;
+    margin: 35px auto;
+  }
