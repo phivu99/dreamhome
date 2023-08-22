@@ -198,9 +198,14 @@ input[type="search"]::placeholder,
 input[type="tel"]::placeholder, 
 input[type="color"]::placeholder {
     font-family: $font-1;
-    font-size: 16px;
+    // font-size: 16px;
+    // line-height: 26px;
+    // color: $color-1;
+    color: $color-2;
     line-height: 26px;
-    color: $color-1;
+    font-size: 14px;
+    font-weight: 400;
+    @include transition3;
 }
 
 
