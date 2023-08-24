@@ -404,377 +404,100 @@
             </div>
         </div>
     </section>
-    <section class="flat-upload-photo" >
+    <section class="flat-profile flat-upload-photo" >
         <div class="container7">
             <div class="row">                      
                 <div class="col-lg-12">
-                    <div class="tf-upload">
-                        <h3 class="titles">Upload photo</h3>
+                    <div class="tf-uploads bg-white">
+                        <h3 class="titles">Avatar</h3>
 
-                        <div class="wrap-upload center">
-                            <div class="box-upload">
+                        <div class="wrap-upload ">
+                            <div class="box-upload flex">
                                 <div class="img-up relative">                                
-                                    <img class="avatar" id="profileimg" src="assets/images/icon/icon-upload.png" alt="">                                    
-                                </div>                      
-                                <div class="button-box relative" id="upload-profile">
-                                    <a href="#" class="btn-upload sc-button">
-                                        <span>Select photos</span> </a>
-                                        <input id="tf-upload-img" type="file" name="profile" required="">
-                                </div> 
-                                <div class="text-up-box">
-                                    <p class="text-color-2">or drag photos here</p>
-                                    <p> (Up to 10 photos)</p>
+                                    <img class="avatar" id="profileimg" src="assets/images/author/author-dashboard-profile2.jpg" alt="">                                    
                                 </div>  
-                            </div>
-                            <div class="box-photo">
-                                <ul class="flex">
-                                    <li class="file-delete"><img src="assets/images/img-box/dashboard-upload-1.jpg" alt=""><a
-                                        class="icon-clear remove-file"><i class="far fa-trash-alt"></i> </li></a>
-                                    <li class="file-delete"><img src="assets/images/img-box/dashboard-upload-2.jpg" alt=""> <a
-                                        class="icon-clear remove-file"><i class="far fa-trash-alt"></i> </li></a> 
-                                    <li class="file-delete"><img src="assets/images/img-box/dashboard-upload-3.jpg" alt=""> <a
-                                        class="icon-clear remove-file"><i class="far fa-trash-alt"></i> </li></a> 
-                                    <li class="file-delete"><img src="assets/images/img-box/dashboard-upload-4.jpg" alt=""> <a
-                                        class="icon-clear remove-file"><i class="far fa-trash-alt"></i> </li></a> 
-                                    <li class="file-delete"><img src="assets/images/img-box/dashboard-upload-5.jpg" alt=""> <a
-                                        class="icon-clear remove-file"><i class="far fa-trash-alt"></i> </li></a> 
-                                </ul>
-                            </div>               
+                                <div class="content">
+                                    <div class="subtitle">Upload a new avatar”</div>
+                                    <div class="button-box relative flex align-center" id="upload-profile">
+                                        <a href="#" class="btn-upload sc-button">
+                                            <span class="fw-14 fw-6">Choose file</span> </a>
+                                            <input id="tf-upload-img" type="file" name="profile" required="">
+                                            <div class="">No files selected</div> 
+                                    </div>
+                                    <p class="fs-12 lh-18">JPEG 100x100</p> 
+                                    
+                                </div>                     
+                            </div>              
                         </div> 
                         
                     </div>
                     <div class="tf-infomation bg-white">
                         <h3 class="titles">Infomation</h3>
                         <div class="info-box info-wg">
-                            <div class="inner-1 select-group">
-                                <label class="title-user fw-6">Street address *</label>
-                                <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                    <ul class="list">                                                          
-                                        <li data-value="Japan" class="option">Japan</li>
-                                        <li data-value="America" class="option">America</li>
-                                        <li data-value="England" class="option selected">England</li>                                                                  
-                                        <li data-value="VietNam" class="option">VietNam</li>
-                                    </ul>
-                                </div>
+                            <div class="inner-1">
+                                <fieldset>
+                                    <label class="title-user fw-6">Full name</label>
+                                    <input type="text" placeholder="Ralph Edwards" class="input-form" required>
+                                </fieldset>
                             </div>
-                            <div class="inner-2 form-wg flex ">
-                                <div class="wg-box2 select-group">
+                            <div class="inner-2">
+                                <fieldset class="message-wrap">
+                                    <label class="fw-6">Description</label>
+                                    <textarea id="comment-message" name="message" rows="4" tabindex="4"  aria-required="true"></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="inner-3 inner form-wg flex ">
+                                <div class="wg-box3 select-group">
                                     <fieldset>
-                                        <label class="title-user fw-6">Unit number *</label>
+                                        <label class="title-user fw-6">Your company</label>
                                         <input type="tel" placeholder="Choose" class="input-form" required>
                                     </fieldset>
                                 </div> 
-                                <div class="wg-box2 select-group">
+                                <div class="wg-box3 select-group">
                                     <fieldset>
-                                        <label class="title-user fw-6">Zip code *</label>
+                                        <label class="title-user fw-6">Job</label>
                                         <input type="text" placeholder="Choose" class="input-form" required>
                                     </fieldset>
                                 </div> 
-                                <div class="wg-box2 select-group">
-                                    <label class="title-user fw-6">State</label>
-                                    <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
+                                <div class="wg-box3 select-group">
+                                    <fieldset>
+                                        <label class="title-user fw-6">Email address</label>
+                                        <input type="email" placeholder="Choose" class="input-form" required>
+                                    </fieldset>
+                                </div> 
+                                <div class="wg-box3 select-group">
+                                    <fieldset>
+                                        <label class="title-user fw-6">Your phone</label>
+                                        <input type="tel" placeholder="Choose" class="input-form" required>
+                                    </fieldset>
                                 </div> 
                             </div> 
+                            <div class="inner-4 inner">
+                                <fieldset>
+                                    <label class="title-user fw-6">Location</label>
+                                    <input type="text" placeholder="Ralph Edwards" class="input-form" required>
+                                </fieldset>
+                            </div>
+                            <div class="inner-5 ">
+                                <iframe class="map-content"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="inner-6 inner">
+                                <fieldset>
+                                    <label class="title-user fw-6">Socials</label>
+                                    <input type="url" placeholder="url" class="input-form" required>
+                                </fieldset>
+                            </div>
+                            <div class="wrap-button tf-save">
+                                <button class="sc-button" name="submit" type="submit">
+                                    <span>Save & Update</span>
+                                </button>
+                            </div>
                         </div>
                     </div>  
 
-                    <div class="tf-price tf-infomation bg-white">
-                        <h3 class="titles">Price & Duration</h3>
-                        <div class="info-box info-wg">
-                            <div class="inner-1 form-wg flex">
-                                <div class="wg-box">
-                                    <label class="title-user fw-6">Rental costs *</label>
-                                    <div class="nice-select" tabindex="0"><span class="current font-2 fw-7">$ 750.00</span><span class="month">Per-Month</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="wg-box">
-                                    <label class="title-user fw-6">Late charge  (Optinal)</label>
-                                    <div class="nice-select " tabindex="0"><span class="current font-2 fw-7">$ 56.00</span><span class="month">Per-3Month</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner-2 form-wg flex">
-                                <div class="wg-box">
-                                    <label class="title-user fw-6">Minimum down payment (Optinal)</label>
-                                    <div class="nice-select" tabindex="0"><span class="current font-2 fw-7">$ 56.00</span><span class="month">Per-3Month</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="wg-box">
-                                    <label class="title-user fw-6">Minimum rental time *</label>
-                                    <div class="box-quantity flex align-center">
-                                        <div class="title-sub fs-13"><span class="fw-7">Minimum duration</span><span> (in months)</span></div>
-                                        <div class="quantity flex align-center">
-                                            <a class="btn-quantity plus-btn"><i class="far fa-plus"></i></a>
-                                            <div class="input-text"><input type="text" name="name" value="1" class="quantity-number"></div>                                                                                                           
-                                            <a class="btn-quantity minus-btn"><i class="far fa-minus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> 
-
-                    <div class="tf-infomation bg-white">
-                        <h3 class="titles">Additional information</h3>
-                        <div class="info-box info-wg">
-                            <div class="inner-1 form-wg flex ">
-                                <div class="wg-box2 select-group">
-                                    <label class="title-user fw-6">Parent property</label>
-                                    <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                                <div class="wg-box2 select-group">
-                                    <label class="title-user fw-6">Status</label>
-                                    <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                                <div class="wg-box2 select-group">
-                                    <label class="title-user fw-6">State</label>
-                                    <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div> 
-                            <div class="inner-1 form-wg flex ">
-                                <div class="wg-box2 select-group">
-                                    <fieldset>
-                                        <label class="title-user fw-6">Material</label>
-                                        <input type="text" placeholder="Choose" class="input-form" required>
-                                    </fieldset>
-                                </div> 
-                                <div class="wg-box2 select-group">
-                                    <fieldset>
-                                        <label class="title-user fw-6">Rooms</label>
-                                        <input type="text" placeholder="Choose" class="input-form" required>
-                                    </fieldset>
-                                </div> 
-                                <div class="wg-box2 select-group">
-                                    <label class="title-user fw-6">Beds</label>
-                                    <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div> 
-                            <div class="inner-1 form-wg flex ">
-                                <div class="wg-box2 select-group">
-                                    <label class="title-user fw-6">Baths</label>
-                                    <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div>  
-                                <div class="wg-box2 select-group">
-                                    <fieldset>
-                                        <label class="title-user fw-6">Garages</label>
-                                        <input type="text" placeholder="Choose" class="input-form" required>
-                                    </fieldset>
-                                </div> 
-                                <div class="wg-box2 select-group">
-                                    <label class="title-user fw-6">Year built</label>
-                                    <div class="nice-select" tabindex="0"><span class="current">Choose</span>
-                                        <ul class="list">                                                          
-                                            <li data-value="Japan" class="option">Japan</li>
-                                            <li data-value="America" class="option">America</li>
-                                            <li data-value="England" class="option selected">England</li>                                                                  
-                                            <li data-value="VietNam" class="option">VietNam</li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div> 
-                            <div class="inner-4 form-wg flex ">
-                                <div class="wg-box2 select-group">
-                                    <fieldset>
-                                        <label class="title-user fw-6">Home area (sqft)</label>
-                                        <input type="text" placeholder="Choose" class="input-form" required>
-                                    </fieldset>
-                                </div>  
-                                <div class="wg-box2 select-group">
-                                    <fieldset>
-                                        <label class="title-user fw-6">Lot dimensions</label>
-                                        <input type="text" placeholder="Choose" class="input-form" required>
-                                    </fieldset>
-                                </div> 
-                                <div class="wg-box2 select-group">
-                                    <fieldset>
-                                        <label class="title-user fw-6">Lot area (sqft)</label>
-                                        <input type="text" placeholder="Choose" class="input-form" required>
-                                    </fieldset>
-                                </div> 
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="tf-amenities bg-white">
-                        <h3 class="titles">Amenities</h3>
-                        <div class="wrap-amenities flex">
-                            <div class="box box-1 flex">
-                                <div class="inner-1">
-                                    <div class="subtitle title-1 fw-6">Outdoor features</div>
-                                    <label class="flex"><input name="newsletter" type="checkbox" checked /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Swimming pool</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" checked /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Balcony</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Undercover parking</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Fully fenced</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Outdoor spa</span> 
-                                    </label>
-                                </div>
-                                <div class="inner-2">
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Tennis court</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Garage</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" checked  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Outdoor area</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Shed</span> 
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="box box-2 flex">
-                                <div class="inner-1">
-                                    <div class="subtitle title-1 fw-6">Indoor features</div>
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Ensuite</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" checked /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Study</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Alarm system</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Floorboards</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" checked /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Rumpus room</span> 
-                                    </label>
-                                </div>
-                                <div class="inner-2">
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Dishwasher</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Built in robes</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Broadband</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Gym</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Workshop</span> 
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="box box-3 flex">
-                                <div class="inner-1">
-                                    <div class="subtitle title-1 fw-6">Climate control & energy</div>
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Air conditioning</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Heating</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" checked  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Water tank</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Solar panels</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox" /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Solar hot water</span> 
-                                    </label>
-                                </div>
-                                <div class="inner-2">
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Electric stove system</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Heating system</span> 
-                                    </label>
-                                    <label class="flex"><input name="newsletter" type="checkbox"  /> 
-                                        <span class="btn-checkbox"></span><span class="fs-13">Dust filter</span> 
-                                    </label>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div> 
-                    <div class="tf-save">
-                        <div class="wrap-button flex justify-center">
-                            <button class="sc-button" name="submit" type="submit" >
-                                <span>List Now</span>
-                            </button>
-                            <button class="sc-button btn-1" name="submit" type="submit">
-                                <span>Save & Preview</span>
-                            </button>
-                        </div>
-                    </div>
-
                     <div class="tf-bottom">
-                        <div class="title-bottom center"> Copyright © 2023 <a href="https://themeforest.net/user/themesflat/portfolio" class="text-color-2 fw-6">Themesflat.</a> </div>
+                        <div class="title-bottom center text-color-4"> Copyright © 2023 <a href="https://themeforest.net/user/themesflat/portfolio" class="text-color-4 fw-6">Themesflat.</a> </div>
                     </div>
                 </div> 
             </div>

@@ -523,6 +523,10 @@
         width: calc(33.333% - 30px);
         margin-left: 30px;
     }
+    .wg-box3 {
+        width: calc(25% - 30px);
+        margin-left: 30px;
+    }
 }
 
 
@@ -955,53 +959,49 @@
     }
     .tf-sidebar {
         width: 25%;
-        
-        .messages-sidebar {
-            padding: 30px 30px 30px 30px;
-            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0392156863);
-            border-radius: 12px;
-            margin-bottom: 20px;
-            .titles {
-                margin-bottom: 14px;
-            }
-            li {
-                padding-bottom: 21px;
-                margin-bottom: 19px;
-                border-bottom: 1px solid $color-5;
-                .image-box {
-                    margin-bottom: 12px;
-                    .images img {
-                        width: 34px;
-                        height: 34px;
-                        border-radius: 50%;
-                        margin-right: 12px;
-                    }
-                    .title-flat {
-                        margin-right: 12px;
-                    }
-                }
-                &:last-child {
-                    padding-bottom: 0;
-                    border-bottom: 0;
-                    margin-bottom: 0;
-                }
-            }
-            
-        }
-        .reviews-sidebar {
-            .content p {
-                margin-bottom: 12px;
-            }
-            .star {
-                margin-left: 1px;
-                svg {
-                    margin-right: 2px;
-                }
-            }
-        }
-
-        
     }
+    .messages-sidebar {
+        padding: 30px 30px 30px 30px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0392156863);
+        border-radius: 12px;
+        margin-bottom: 20px;
+        .titles {
+            margin-bottom: 14px;
+        }
+        li {
+            padding-bottom: 21px;
+            margin-bottom: 19px;
+            border-bottom: 1px solid $color-5;
+            .image-box {
+                margin-bottom: 12px;
+                .images img {
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    margin-right: 12px;
+                }
+                .title-flat {
+                    margin-right: 12px;
+                }
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+                margin-bottom: 0;
+            }
+        } 
+    }
+    .reviews-sidebar {
+        .content p {
+            margin-bottom: 12px;
+        }
+        .star {
+            margin-left: 1px;
+            svg {
+                margin-right: 2px;
+            }
+        }
+    } 
 }
 
 table {
@@ -1053,4 +1053,74 @@ tbody {
         vertical-align: top;
         border-bottom: 1px solid $color-5;
     }
+}
+
+.flat-profile {
+    .tf-uploads {
+        padding: 30px 30px 30px 30px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0392156863);
+        border-radius: 12px;
+    }
+    // #tf-upload-img {
+    //     position: relative;
+    //     opacity: 1;
+    //     width: unset;
+    // }
+    .box-upload {
+        .img-up {
+            margin-right: 30px;
+            img {
+                width: 128px;
+                height: 128px;
+                border-radius: 50%;
+            }
+        }
+        .button-box {
+            padding: 5px;
+            border: 1px solid $color-5;
+        }
+        .subtitle {
+            margin-bottom: 9px;
+        }
+        #upload-profile {
+            padding: 10px 9px;
+        }
+        .btn-upload {
+            padding: 5.5px 20px;
+        }
+        .sc-button {
+            margin-right: 10px;
+            span {
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+    .tf-infomation {
+        textarea {
+            border: 1px solid #E5E5EA;
+            padding: 12px 15px 12px 16px;
+            color: #120A21;
+            font-weight: 500;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .inner {
+            margin-bottom: 30px;
+        }
+        .inner-2 {
+            margin-bottom: 25px;
+        }
+        .inner-5 {
+            margin-bottom: 26px;
+            iframe {
+                height: 360px;
+                width: 100%;
+            } 
+        }
+        .sc-button {
+            width: 224px;
+        }
+    }
+    
 }
