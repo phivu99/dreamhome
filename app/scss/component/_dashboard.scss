@@ -251,8 +251,13 @@
 
 .show-job #sidebar-menu ul li a.active,
 .show-job #sidebar-menu ul li a:hover {
-    color: #14a077;
-    background-color: #fff;
+    background-color: unset;
+    ellipse,
+    circle,
+    path {
+        stroke: rgba($color-1, 1 );
+        transition: all 0.4s;
+    }
 }
 
 #sidebar-menu ul li ul.sub-menu2 li a:hover {

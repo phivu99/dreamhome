@@ -6052,8 +6052,16 @@ path.two {
 
 .show-job #sidebar-menu ul li a.active,
 .show-job #sidebar-menu ul li a:hover {
-  color: #14a077;
-  background-color: #fff;
+  background-color: unset;
+}
+.show-job #sidebar-menu ul li a.active ellipse,
+.show-job #sidebar-menu ul li a.active circle,
+.show-job #sidebar-menu ul li a.active path,
+.show-job #sidebar-menu ul li a:hover ellipse,
+.show-job #sidebar-menu ul li a:hover circle,
+.show-job #sidebar-menu ul li a:hover path {
+  stroke: white;
+  transition: all 0.4s;
 }
 
 #sidebar-menu ul li ul.sub-menu2 li a:hover {
