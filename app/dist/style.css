@@ -403,6 +403,10 @@ label.error {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .absolute {
   position: absolute;
 }
@@ -568,8 +572,16 @@ button {
   font-size: 22px;
 }
 
+.fs-26 {
+  font-size: 26px;
+}
+
 .fs-30 {
   font-size: 30px;
+}
+
+.fs-40 {
+  font-size: 40px;
 }
 
 .z-2 {
@@ -816,6 +828,22 @@ a:focus, a:hover {
 
 .text-color-8 {
   color: #F1FAEE;
+}
+
+.form-wg {
+  margin-left: -30px;
+}
+.form-wg .wg-box {
+  width: calc(50% - 30px);
+  margin-left: 30px;
+}
+.form-wg .wg-box2 {
+  width: calc(33.333% - 30px) !important;
+  margin-left: 30px;
+}
+.form-wg .wg-box3 {
+  width: calc(25% - 30px);
+  margin-left: 30px;
 }
 
 /* Search */

@@ -185,7 +185,7 @@
     transition: all 0.4s;
     margin-bottom: 6px;
 }
-
+#sidebar-menu ul .ff-active a,
 #sidebar-menu ul li a:hover {
     color: #0b0d0e;
     ellipse,
@@ -517,23 +517,6 @@
         }
     }
 }
-
-.form-wg {
-    margin-left: -30px;
-    .wg-box {
-        width: calc(50% - 30px);
-        margin-left: 30px;
-    }
-    .wg-box2 {
-        width: calc(33.333% - 30px);
-        margin-left: 30px;
-    }
-    .wg-box3 {
-        width: calc(25% - 30px);
-        margin-left: 30px;
-    }
-}
-
 
 
 .flat-upload-photo {
