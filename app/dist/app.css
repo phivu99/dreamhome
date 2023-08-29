@@ -2315,6 +2315,34 @@ path.two {
   width: calc(50% - 22px);
   margin-left: 22px;
 }
+#comments .comment-form .input-item input {
+  border: 1px solid #E5E5EA;
+  padding: 11px 14px 13px 17px;
+  color: #120A21;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+#comments .comment-form .input-item input::placeholder {
+  color: #120A21;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#comments .comment-form .input-item input:focus {
+  border: 1px solid #FFA920;
+}
 #comments .comment-form fieldset {
   position: relative;
   width: 100%;
@@ -4346,6 +4374,259 @@ path.two {
 .flat-property-detail .wrap-map .map-content {
   width: 100%;
   height: 360px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .icons {
+  margin-right: 20px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .icons.icon-money span:nth-child(1) {
+  margin-right: 6px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .icons.icon-money span:nth-child(2) {
+  margin-right: 10px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .icons:last-child {
+  margin-right: 0px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .icons::before {
+  margin-right: 8px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .icons span:nth-child(1) {
+  margin-right: 10px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle:last-child {
+  margin-bottom: 0;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .toggle-title {
+  padding: 0px 0px 10px 22px;
+  cursor: pointer;
+  color: #120A21;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .toggle-title.active .btn-toggle::after {
+  content: "\f054";
+  rotate: -90deg;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .btn-toggle {
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .btn-toggle::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Pro";
+  rotate: 90deg;
+  font-weight: 400;
+  color: #120A21;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .toggle-content {
+  padding: 10px 0px 15px 0px;
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  transition: all 0s ease !important;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .toggle-content img {
+  margin-bottom: 20px;
+}
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .toggle-content .texts,
+.flat-property-detail .wrap-floor .flat-accordion .flat-toggle .toggle-content .title {
+  margin-bottom: 12px;
+}
+.flat-property-detail .wrap-video {
+  padding: 21px 20px 20px;
+}
+.flat-property-detail .wrap-video .post-video img {
+  border-radius: 10px;
+}
+.flat-property-detail .wrap-video .post-video a {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+.flat-property-detail .wrap-video .post-video .ripple::before,
+.flat-property-detail .wrap-video .post-video .ripple::after {
+  width: 60px;
+  height: 60px;
+}
+.flat-property-detail .wrap-virtual {
+  padding: 20px 20px 20px;
+}
+.flat-property-detail .wrap-walksore {
+  padding: 20px 20px 20px;
+}
+.flat-property-detail .wrap-walksore .icon-p {
+  margin-left: 2px;
+  margin-bottom: 20px;
+}
+.flat-property-detail .wrap-walksore .progress-box {
+  margin-bottom: 20px;
+}
+.flat-property-detail .wrap-walksore .progress-box .chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flat-property-detail .wrap-walksore .progress-box canvas {
+  background: #FFF5E0;
+  border-radius: 50%;
+}
+.flat-property-detail .wrap-walksore .progress-box .progress-walk {
+  margin-right: 20px;
+}
+.flat-property-detail .wrap-walksore .progress-box .progress-walk svg {
+  position: absolute;
+}
+.flat-property-detail .wrap-walksore .progress-box .content h4 {
+  margin-bottom: 5px;
+}
+.flat-property-detail .wrap-walksore .progress-box:last-child {
+  margin-bottom: 0;
+}
+.flat-property-detail .wrap-nearby {
+  padding: 20px 20px 12px;
+}
+.flat-property-detail .wrap-nearby .icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #FFA920;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.flat-property-detail .wrap-nearby .content {
+  width: 100%;
+}
+.flat-property-detail .wrap-nearby .content h4 {
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+.flat-property-detail .wrap-nearby .content .title-box {
+  margin-bottom: 8px;
+}
+.flat-property-detail .wrap-nearby .content .title-box .title-item {
+  margin-right: 10px;
+}
+.flat-property-detail .wrap-nearby .content .title-box .star {
+  margin-right: 8px;
+}
+.flat-property-detail .wrap-nearby .content .title-box .star svg {
+  margin-right: 2px;
+}
+.flat-property-detail .wrap-nearby .box-1 {
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E5E5EA;
+}
+.flat-property-detail .wrap-nearby .box-2 .content .title-box .star {
+  margin-right: 0;
+}
+.flat-property-detail .wrap-form {
+  padding: 20px 20px 20px;
+}
+.flat-property-detail .wrap-form #comments .comment-form fieldset {
+  margin-bottom: 30px;
+}
+.flat-property-detail .wrap-form #comments .comment-form fieldset input {
+  padding: 11px 14px 13px 17px;
+}
+.flat-property-detail .wrap-form #comments .comment-form .nice-select {
+  padding: 15px 20px 14px 16px;
+  margin-bottom: 30px;
+}
+.flat-property-detail .wrap-form #comments .comment-form .inner-1 .nice-select {
+  margin-top: 10px;
+}
+.flat-property-detail .wrap-form #comments .comment-form .inner-2 {
+  margin-bottom: 30px;
+}
+.flat-property-detail .wrap-form #comments .comment-form button {
+  width: 100%;
+}
+.flat-property-detail .wrap-review {
+  padding: 20px 20px 20px;
+}
+.flat-property-detail .wrap-review .box-title {
+  margin-bottom: 12px;
+}
+.flat-property-detail .wrap-review .box-title .star {
+  margin-left: 0;
+}
+.flat-property-detail .wrap-review .box-title .star svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.flat-property-detail .wrap-review .box-title h3 {
+  margin-right: 10px;
+}
+.flat-property-detail .wrap-review .box-title .sort-inner span {
+  margin-right: 5px;
+}
+.flat-property-detail .wrap-review .box-title .sort-inner a::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  color: #120A21;
+  font-size: 12px;
+  margin-left: 12px;
+}
+.flat-property-detail .wrap-review .comment-list .content {
+  padding: 1px 6px 0 21px;
+}
+.flat-property-detail .wrap-review .comment-list .content .title-item {
+  margin-bottom: 5px;
+}
+.flat-property-detail .wrap-review .comment-list .content .star {
+  margin-bottom: 16px;
+  margin-left: 0;
+}
+.flat-property-detail .wrap-review .comment-list .content .star svg {
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+}
+.flat-property-detail .wrap-review .comment-list .content .texts {
+  margin-bottom: 16px;
+}
+.flat-property-detail .wrap-review .comment-list .content .img-box {
+  margin-bottom: 14px;
+}
+.flat-property-detail .wrap-review .comment-list .content .img-box img {
+  margin-right: 6px;
+  border-radius: 10px;
+}
+.flat-property-detail .wrap-review .comment-list .content .icon-box .icon {
+  margin-right: 17px;
+}
+.flat-property-detail .wrap-review .comment-list .content .icon-box .icon svg {
+  margin-right: 8px;
 }
 
 .flat-video {

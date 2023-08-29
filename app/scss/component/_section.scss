@@ -721,6 +721,29 @@
                 margin-left: 22px;
             }
         }
+        .input-item {
+            input {
+                border: 1px solid $color-5;
+                padding: 11px 14px 13px 17px;     
+                color: $color-2;
+                font-weight: 500;
+                background-color: $color-1;
+                border-radius: 10px;
+                @include transition3;
+                position: relative;
+                &::placeholder {
+                    color: $color-2;
+                    line-height: 26px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    @include transition3;
+                }
+                &:focus {
+                    border: 1px solid $color-3;
+                }  
+              
+            }
+        }
         fieldset {
             position     : relative;
             width        : 100%;
@@ -2661,6 +2684,272 @@
             height: 360px;
         }
     }
+    .wrap-floor {
+        .flat-accordion {
+            .icons {
+                margin-right: 20px;
+                &.icon-money {
+                    span:nth-child(1) {
+                        margin-right: 6px
+                    }
+                    span:nth-child(2) {
+                        margin-right: 10px
+                    }
+                }
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &::before {
+                    margin-right: 8px;
+                }
+                span:nth-child(1) {
+                    margin-right: 10px
+                }
+            }
+            .flat-toggle {           
+                @include transition3;
+                position: relative;
+                margin-bottom: 20px;
+                background-color: $color-1;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .toggle-title {
+                    padding: 0px 0px 10px 22px;
+                    cursor          : pointer;
+                    color: $color-2;
+                    width: 100%;
+                    @include transition3;
+                    position: relative;
+                    &.active {
+                        .btn-toggle {
+                            &::after {
+                                content    : '\f054';
+                                rotate: -90deg;
+                            }
+                        }
+                    } 
+                }
+                .btn-toggle {
+                    position: absolute;
+                    left: 4px;
+                    top: 0px;
+                    @include transition3;
+                    &::after {
+                        content    : '\f054';
+                        font-family: "Font Awesome 5 Pro";
+                        rotate: 90deg;
+                        font-weight: 400;
+                        color      : $color-2;
+                        font-size  : 14px;      
+                        @include flex-center;
+                    }
+                }          
+                .toggle-content {
+                    padding: 10px 0px 15px 0px;
+                    display         : none;
+                    background-color: $color-1;
+                    width: 100%;
+                    transition        : all 0s ease !important;
+                    img {
+                        margin-bottom: 20px;
+                    }
+                    .texts,
+                    .title {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .wrap-video {
+        padding: 21px 20px 20px;
+        .post-video {
+            img {
+                border-radius: 10px;
+            }
+            a {
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }
+            .ripple::before,
+            .ripple::after {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    .wrap-virtual {
+        padding: 20px 20px 20px;
+    }
+    .wrap-walksore {
+        padding: 20px 20px 20px;
+        .icon-p {
+            margin-left: 2px;
+            margin-bottom: 20px;
+        }
+        .progress-box {
+            margin-bottom: 20px;
+            .chart {
+                @include flex-center;
+            }
+            canvas {
+                background: #FFF5E0;
+                border-radius: 50%;
+            }
+            .progress-walk {
+                margin-right: 20px;
+                svg {
+                    position: absolute;
+                }
+            }
+            .content h4 {
+                margin-bottom: 5px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .wrap-nearby {
+        padding: 20px 20px 12px;
+        .icon {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background-color: $color-3;
+            @include flex-center;
+            margin-right: 20px;
+        }
+        .content {
+            width: 100%;
+            h4 {
+                margin-bottom: 5px;
+                margin-top: 1px;
+            }
+            .title-box {
+                margin-bottom: 8px;
+                .title-item {
+                    margin-right: 10px;
+                }
+                .star {
+                    margin-right: 8px;
+                    svg {
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+        .box-1 {
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $color-5;
+        }
+        .box-2 {
+            .content .title-box .star {
+                margin-right: 0;
+            }
+        }
+    }
+    .wrap-form {
+        padding: 20px 20px 20px;
+        #comments .comment-form {
+            fieldset {
+                margin-bottom: 30px;
+                input {
+                    padding: 11px 14px 13px 17px;
+                }
+            }
+            .nice-select {
+                padding: 15px 20px 14px 16px;
+                margin-bottom: 30px;
+            }
+            .inner-1 .nice-select {
+                margin-top: 10px;
+            }
+            .inner-2 {
+                margin-bottom: 30px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    }
+    .wrap-review {
+        padding: 20px 20px 20px;
+        .box-title {
+            margin-bottom: 12px;
+            .star {
+                margin-left: 0;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+            }
+            h3 {
+                margin-right: 10px;
+            }
+            .sort-inner {
+                span {
+                    margin-right: 5px;
+                }
+                a {
+                    &::after {
+                        content: "\f078";
+                        font-family: "Font Awesome 5 Pro";
+                        font-weight: 400;
+                        color: #120A21;
+                        font-size: 12px;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+        .comment-list {
+            
+            .content {
+                padding: 1px 6px 0 21px;
+                .title-item {
+                    margin-bottom: 5px;
+                }
+                .star {
+                    margin-bottom: 16px;
+                    margin-left: 0;
+                    svg {
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 2px;
+                    }
+                }
+                .texts {
+                    margin-bottom: 16px;
+                }
+                .img-box {
+                    margin-bottom: 14px;
+                    img {
+                        margin-right: 6px;
+                        border-radius: 10px;
+                    }
+                }
+                .icon-box {
+                    .icon {
+                        margin-right: 17px;
+                        svg {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
 }
 
 
