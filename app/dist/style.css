@@ -834,7 +834,7 @@ a:focus, a:hover {
   margin-left: -30px;
 }
 .form-wg .wg-box {
-  width: calc(50% - 30px);
+  width: calc(50% - 30px) !important;
   margin-left: 30px;
 }
 .form-wg .wg-box2 {

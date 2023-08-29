@@ -4554,7 +4554,7 @@ path.two {
   width: 100%;
 }
 .flat-property-detail .wrap-review {
-  padding: 20px 20px 20px;
+  padding: 20px 20px 18px;
 }
 .flat-property-detail .wrap-review .box-title {
   margin-bottom: 12px;
@@ -4581,6 +4581,16 @@ path.two {
   font-size: 12px;
   margin-left: 12px;
 }
+.flat-property-detail .wrap-review .comment-list li {
+  margin-bottom: 33px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #E5E5EA;
+}
+.flat-property-detail .wrap-review .comment-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
 .flat-property-detail .wrap-review .comment-list .content {
   padding: 1px 6px 0 21px;
 }
@@ -4606,11 +4616,35 @@ path.two {
   margin-right: 6px;
   border-radius: 10px;
 }
-.flat-property-detail .wrap-review .comment-list .content .icon-box .icon {
+.flat-property-detail .wrap-review .comment-list .content .icon-box a {
   margin-right: 17px;
 }
-.flat-property-detail .wrap-review .comment-list .content .icon-box .icon svg {
+.flat-property-detail .wrap-review .comment-list .content .icon-box a svg {
   margin-right: 8px;
+}
+.flat-property-detail .wrap-review .comment-list .content .icon-box a:hover path,
+.flat-property-detail .wrap-review .comment-list .content .icon-box a:hover svg {
+  stroke: #FFA920;
+}
+.flat-property-detail .wrap-review .comment-list .content .icon-box a:hover p {
+  color: #FFA920;
+}
+.flat-property-detail .wrap-contact h3 {
+  margin-bottom: 5px;
+}
+.flat-property-detail .wrap-contact .titles {
+  margin-bottom: 12px;
+}
+.flat-property-detail .wrap-contact .star svg {
+  width: 19px;
+  height: 19px;
+  margin-right: 7px;
+}
+.flat-property-detail .wrap-contact #comments .comment-form .message-wrap {
+  margin-bottom: 21px;
+}
+.flat-property-detail .wrap-contact .title-rating {
+  margin-right: 24px;
 }
 
 .flat-video {
