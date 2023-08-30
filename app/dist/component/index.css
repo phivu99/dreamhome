@@ -1803,6 +1803,11 @@ path.two {
 .title-inner.style {
   margin-bottom: 40px;
 }
+.title-inner.style-detail {
+  padding: 28px 0 29px;
+  border-bottom: 0;
+  margin-bottom: 0px;
+}
 
 .themes-container {
   position: relative;
@@ -4646,6 +4651,15 @@ path.two {
 .flat-property-detail .wrap-contact .title-rating {
   margin-right: 24px;
 }
+.flat-property-detail.style2 {
+  padding-top: 0;
+}
+.flat-property-detail.style2 .wrap-house {
+  margin-top: -73px;
+  padding: 19px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.0784313725);
+}
 
 .flat-video {
   padding-top: 144px;
@@ -6013,6 +6027,60 @@ path.two {
   height: 40px;
   border: 1px solid #120A21;
   overflow: visible;
+}
+
+.swiper-pagination5 {
+  position: absolute;
+  z-index: 2;
+  bottom: 21.9% !important;
+  right: 101px !important;
+  left: unset !important;
+  width: unset !important;
+}
+.swiper-pagination5 .swiper-pagination-bullet {
+  width: 120px;
+  height: 120px;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.0784313725);
+  border: 5px solid #fff;
+  display: grid;
+  margin: 17px 0px 17px !important;
+}
+.swiper-pagination5 .swiper-pagination-bullet:nth-child(1) {
+  background-image: url(../../../assets/images/slider/slider-pagi-1.jpg);
+}
+.swiper-pagination5 .swiper-pagination-bullet:nth-child(2) {
+  background-image: url(../../../assets/images/slider/slider-pagi-2.jpg);
+}
+.swiper-pagination5 .swiper-pagination-bullet:nth-child(3) {
+  background-image: url(../../../assets/images/slider/slider-pagi-3.jpg);
+}
+
+.flat-slider01 .swiper-wrapper,
+.flat-slider01 .swiper-container {
+  z-index: unset;
+}
+
+.button-custom-slider .swiper-button-next5,
+.button-custom-slider .swiper-button-prev5 {
+  position: absolute;
+  right: 146px;
+  z-index: 2;
+}
+.button-custom-slider .swiper-button-next5 i,
+.button-custom-slider .swiper-button-prev5 i {
+  font-size: 34px;
+  font-weight: 100;
+  color: #fff;
+}
+.button-custom-slider .swiper-button-next5 {
+  bottom: 16%;
+}
+.button-custom-slider .swiper-button-prev5 {
+  top: 15%;
 }
 
 .form-sl {

@@ -10,16 +10,12 @@ var swiper =  new Swiper(".mainslider", {
         crossFade: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next2",
-        prevEl: ".swiper-button-prev2",
+        nextEl: ".swiper-button-next5",
+        prevEl: ".swiper-button-prev5",
     },
     pagination: {
-        el: ".swiper-pagination2",
+        el: ".swiper-pagination5",
         clickable: true,
-
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">0' + (index + 1) + '</span>';
-          },
       
     },
 });

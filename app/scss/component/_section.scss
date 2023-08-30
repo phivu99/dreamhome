@@ -193,7 +193,11 @@
     &.style {
         margin-bottom: 40px;
     }
-  
+    &.style-detail {
+        padding: 28px 0 29px;
+        border-bottom: 0;
+        margin-bottom: 0px;
+    }
 }
 
 
@@ -2984,6 +2988,15 @@
         }
         .title-rating {
             margin-right: 24px;
+        }
+    }
+    &.style2 {
+        padding-top: 0;
+        .wrap-house {
+            margin-top: -73px;
+            padding: 19px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 18px 0px #00000014;
         }
     }
     
