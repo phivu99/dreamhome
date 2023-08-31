@@ -638,9 +638,13 @@
     .swiper-container {
         z-index: unset;
     }
+    &.style {
+        padding: 50px 0 45px;
+        background-color: #F7F7F7;
+        margin-bottom: 50px;
+    }
 }
 .button-custom-slider {
-    
     .swiper-button-next5,
     .swiper-button-prev5 {
         position: absolute;
@@ -659,6 +663,39 @@
     .swiper-button-prev5 {
         top: 15%;
     }
+}
+
+.swiper-pagination6 {
+    z-index: 2;
+    margin-top: -43px;
+    z-index: 999;
+    position: relative;
+    text-align: center;
+    bottom: 0 !important;
+    // transform: translateY(-50%) !important;
+    .swiper-pagination-bullet {
+        width: 150px;
+        height: 84px;
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.0784313725);
+        border: 5px solid $color-1;
+        margin: 0px 8px 0px !important;
+        &:nth-child(1) {
+            background-image: url(../../../assets/images/slider/slider-pagi-detail-1.jpg);
+        }
+        &:nth-child(2) {
+            background-image: url(../../../assets/images/slider/slider-pagi-detail-2.jpg);
+        }
+        &:nth-child(3) {
+            background-image: url(../../../assets/images/slider/slider-pagi-detail-3.jpg);
+        }
+        &:nth-child(4) {
+            background-image: url(../../../assets/images/slider/slider-pagi-detail-4.jpg);
+        }
+    }  
 }
 
 // 

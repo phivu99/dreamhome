@@ -36,7 +36,7 @@ var swiper =  new Swiper(".mainslider2", {
         prevEl: ".swiper-button-prev3",
     },
     pagination: {
-        el: ".swiper-pagination2",
+        el: ".swiper-pagination6",
         clickable: true,
     },
 });
