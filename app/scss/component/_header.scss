@@ -1359,6 +1359,7 @@
 .main-header .main-menu .navigation > li > ul > li > a:before{
 	position:absolute;
 	content:'\f178';
+	// content:'\f80a';
 	left:0px;
 	top:5px;
 	width:16px;
@@ -1371,7 +1372,6 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	transform:rotate(45deg);
 	font-family: 'Font Awesome 5 Pro';
 }
 
@@ -1388,7 +1388,7 @@
 	font-family: 'Font Awesome 5 Pro';
 	content: "\f105";
 	position:absolute;
-	right:10px;
+	right:5px;
 	top:1px;
 	width:10px;
 	height:20px;
@@ -1410,7 +1410,7 @@
 	left:100%;
 	top:0px;
 	width: 16rem;
-    padding: 25px 30px 30px 30px;
+    padding: 25px 25px 30px 25px;
 	-webkit-transform: scaleY(0);
 	-ms-transform: scaleY(0);
 	-o-transform: scaleY(0);
@@ -1718,7 +1718,7 @@
 
 .mobile-menu .nav-logo{
 	position:relative;
-	padding:25px 0px 20px;
+	margin-bottom: 20px;
 }
 
 .mobile-menu .nav-logo img{
@@ -1779,8 +1779,8 @@
 	height: 100%;
 	max-height: 100%;
 	overflow-y: auto;
-	background-color: var(--white-color);
-	padding: 0px 30px 50px;
+	background-color: $color-1;
+	padding: 50px 20px 50px;
 	z-index: 5;
 	border-radius: 0px;
 	
@@ -1807,19 +1807,19 @@
 	line-height: 30px;
 	width: 30px;
 	text-align: center;
-	font-size: var(--font-16);
-	color: var(--black-color);
+	font-size: 16px;
+	color: $color-2;
 	cursor: pointer;
 	z-index: 10;
 	font-family: "Flaticon";
-	-webkit-transition:all 0.5s ease;
-	-moz-transition:all 0.5s ease;
-	-ms-transition:all 0.5s ease;
-	-o-transition:all 0.5s ease;
 	transition:all 0.5s ease;
-	-webkit-transform: translateY(-50px);
-	-ms-transform: translateY(-50px);
 	transform: translateY(-50px);
+	&::before {
+		content: '\f00d';
+        font-family: "Font Awesome 5 Pro";
+        font-size: 18px;
+        font-weight: 600;
+	}
 }
 
 .mobile-menu-visible .mobile-menu .close-btn{
@@ -1846,7 +1846,6 @@
 .mobile-menu .navigation li{
 	position: relative;
 	display: block;
-	margin-bottom:var(--margin-bottom-5);
 }
 
 .mobile-menu .navigation li > ul > li:last-child{
@@ -1858,28 +1857,36 @@
 	color:#111111;
 }
 
-.mobile-menu .navigation li.dropdown2 .dropdown2-btn{
+.mobile-menu .navigation li.dropdown2 .dropdown2-btn {
 	position:absolute;
-	right:0px;
-	top:0px;
-	height:44px;
-	text-align:center;
-	font-size:16px;
-	line-height:44px;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+	text-align: end;
+	line-height: 44px;
 	cursor:pointer;
 	z-index:5;
-	color:var(--black-color);
+	&::before{
+		content: "\f078";
+		font-family: "Font Awesome 5 Pro";
+		font-size: 14px;
+		font-weight: 400;
+	}
 }
 
-.mobile-menu .navigation li.dropdown2 .dropdown2-btn:before{
-	position: absolute;
-    content: "";
-    right: -30px;
-    width: 35px;
-    height: 50px;
-    top: 0px;
-    background: url(../images/icons/icon-select-2.png) no-repeat;
+// .mobile-menu .navigation li.dropdown2 a::before {
+// 	content: "\f078";
+// 	font-family: "Font Awesome 5 Pro";
+// 	font-size: 17px;
+// 	font-weight: 600;
+// 	position: absolute;
+// 	right: 15px;
+//  cursor:pointer;
+// }
+.mobile-menu .navigation li.dropdown2 > a {
+	border-bottom: 1px solid $color-5;
 }
+
 
 .mobile-menu .navigation li.dropdown2 .dropdown2-btn span{
 	opacity:0;
@@ -1934,12 +1941,13 @@
 .main-header .mobile-menu .navigation li > a{
 	position: relative;
 	display: block;
-	font-weight:500;
+	font-weight: 600;
 	line-height: 24px;
 	padding: 10px 0px;
-	font-size: 18;
+	font-size: 16px;
 	color: $color-2;
 	text-transform: capitalize;
+	
 }
 
 .main-header .mobile-menu .navigation li:hover > a,
@@ -2035,6 +2043,76 @@
 
 .fixed-header .sticky-header .main-menu .navigation > li > a:before{
 	display:none;
+}
+
+.mobile-button {
+    display: none;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    float: right;
+    top: 50%;
+    right: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    @include transition3;
+    @include transitionY;
+    &::before,
+    &::after,
+    span {
+        background-color: $color-2;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 50%;
+        overflow: hidden;
+        text-indent: 200%;
+    }
+    &::before {
+        -webkit-transform: translate3d(0, -7px, 0);
+        -moz-transform: translate3d(0, -7px, 0);
+        transform: translate3d(0, -7px, 0);
+    }
+    &::after {
+        -webkit-transform: translate3d(0, 7px, 0);
+        -moz-transform: translate3d(0, 7px, 0);
+        transform: translate3d(0, 7px, 0);
+    }
+    &.active {
+        span {
+            opacity: 0;
+        }
+        &::before {
+            -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            -moz-transform: rotate3d(0, 0, 1, 45deg);
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+        &::after {
+            -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            -moz-transform: rotate3d(0, 0, 1, -45deg);
+            transform: rotate3d(0, 0, 1, -45deg);
+        }
+    }
 }
 
 /*** 

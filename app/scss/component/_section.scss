@@ -334,23 +334,40 @@
         padding: 17px 17px 16px 17px;
         border-radius: 16px;
         margin-bottom: 30px;
-    }
-    .image-group {
-        margin-bottom: 16px;
         &:hover {
-            .pagi2 .swiper-pagination2,
-            .swiper-button-next2,
-            .swiper-button-prev2 {
-                opacity: 1;
-            }
-            .icon-plus {
-                opacity: 1;
-                z-index: 99;
-                top: 50%;
-                transition-delay: 0.5s;
+            .image-group {
+                margin-bottom: 16px;
+                .pagi2 .swiper-pagination2,
+                .swiper-button-next2,
+                .swiper-button-prev2 {
+                    opacity: 1;
+                }
+                .icon-plus {
+                    opacity: 1;
+                    z-index: 99;
+                    top: 50%;
+                    transition-delay: 0.5s;
+                }
             }
         }
     }
+    .image-group {
+        margin-bottom: 16px;
+        // &:hover {
+        //     .pagi2 .swiper-pagination2,
+        //     .swiper-button-next2,
+        //     .swiper-button-prev2 {
+        //         opacity: 1;
+        //     }
+        //     .icon-plus {
+        //         opacity: 1;
+        //         z-index: 99;
+        //         top: 50%;
+        //         transition-delay: 0.5s;
+        //     }
+        // }
+    }
+    
     h3 {
         margin-bottom: 6px;
         margin-left: -1px;
@@ -3327,13 +3344,6 @@
         }
     }
 }
-.video-box {
-    // background: url(./../../assets/images/img-box/video-agents.jpg)  center center no-repeat;
-    //     background-size: cover;
-    // margin-left: 57px;
-    // height: 904px;
-    // border-radius: 20px;
-}
 
 .flat-video-page {
     padding-bottom: 104px;
@@ -3544,5 +3554,174 @@
         height: 403px;
     }
 }
+
+/* Modal Popup  ----------
+-------------------------*/
+.popup .modal-content{
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 12%) !important;
+    background:  #fff;
+    width: 100%;
+    // height: 660px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-body {
+    padding: 0px !important;
+    .content {
+        width: 100%;
+        padding: 40px 40px 35px;
+    }
+    .title-login {
+        margin-bottom: 40px;
+    }
+    .mark-logo {
+        position: absolute;
+        bottom: 27px;
+        left: 20px;
+    }
+    &.style2 {
+        .mark-logo {
+            bottom: 20px;
+        }
+    }
+    #comments .comment-form {
+        fieldset {
+            margin-bottom: 32px;  
+        }
+        .style-wrap {
+            margin-bottom: 20px;
+        }
+        .img-name {
+            bottom: 17px;
+            left: 20px;
+        }
+    }
+    
+    .title-forgot {
+        text-align: end;
+        margin-bottom: 30px;
+    }
+    .sc-button {
+        width: 100%;
+        margin-bottom: 17px;
+    }
+    .text-box {
+        margin-bottom: 29px;
+    }
+    .button-box {
+        margin-left: -10px;
+        a {
+            width: calc(50% - 10px) !important;
+            margin-left: 10px;
+            border: 1px solid $color-5;
+            padding: 16px 17.5px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+    .texts {
+        margin-bottom: 29px;
+    }
+}
+
+// .popup .modal-content input,
+// .popup .modal-content p {
+//     margin-bottom: 15px;
+// }
+
+.modal-body .btn.btn-primary:hover{
+    opacity: 0.8;
+}
+
+.modal-content .close{
+    overflow: hidden;
+    // height: 30px;
+    // width: 30px;
+    // border-radius: 50px;
+    position: absolute;
+    right: 42px;
+    top: 36px;
+    border: none;
+    outline: none;
+    z-index: 10 !important;
+    opacity: 1;
+}
+
+.modal-content .close:hover{
+    span {
+        color:  $color-3;
+    }
+}
+
+.modal-content .close span{
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.modal-body h2{
+    text-align: center;
+    font-weight: 600;
+}
+
+.modal{
+    z-index: 999999 !important;
+}
+
+.modal-open .modal{
+    overflow: hidden !important;
+    padding-right: 0 !important;
+}
+
+.modal-dialog-centered{
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 0rem);
+    max-width: 920px;
+    margin: 1.75rem auto;
+}
+.modal.fade.popup.show {
+    padding-right: 0 !important;
+}
+
+// /* switch mode */
+.mode_switcher {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    justify-content: center;
+    align-items: center;
+    a {
+        background: #343444;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 16px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        i {
+            margin-right: 5px;
+        }
+      }
+  }
+  .mode_switcher .light {
+    background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+  }
+  
+
 
 

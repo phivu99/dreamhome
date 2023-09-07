@@ -237,7 +237,7 @@
 
     //Submenu Dropdown Toggle
 	if($('.main-header li.dropdown2 ul').length){
-		$('.main-header li.dropdown2').append('<div class="dropdown2-btn"><span class="fa-solid fa-chevron-down fa-fw"></span></div>');
+		$('.main-header li.dropdown2').append('<div class="dropdown2-btn"></div>');
 		
 		//Dropdown Button
 		$('.main-header li.dropdown2 .dropdown2-btn').on('click', function() {
