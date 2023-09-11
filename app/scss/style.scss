@@ -123,7 +123,8 @@ ul, li {
 }
 
 .container2 {
-    max-width: 1460px;
+    // max-width: 1460px;
+    max-width: 1750px;
 }
 
 .container {
@@ -426,14 +427,17 @@ label.error {
 
 .text-line { text-decoration-line: underline !important; }
 
-
 .justify-center { justify-content: center; }
+
+.justify-end { justify-content: end; }
 
 .justify-space { justify-content: space-between; }
 
 .flex-wrap { flex-wrap: wrap; }
 
 .align-center { align-items: center; }
+
+.text-end { text-align: end; }
 
 .font-italic { font-style: italic; }
 
@@ -500,6 +504,8 @@ button {
 
 .lh-56 { line-height: 56px }
 
+.lh-75 { line-height: 75px }
+
 .fs-12 { font-size: 12px }
 
 .fs-13 { font-size: 13px }
@@ -519,6 +525,8 @@ button {
 .fs-40 { font-size: 40px }
 
 .z-2 { z-index: 2 }
+
+.br-10 { border-radius: 10px; }
 
 .tf-section { padding: 100px 0 }
 

@@ -117,7 +117,7 @@ ul, li {
 }
 
 .container2 {
-  max-width: 1460px;
+  max-width: 1750px;
 }
 
 .container {
@@ -439,6 +439,10 @@ label.error {
   justify-content: center;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .justify-space {
   justify-content: space-between;
 }
@@ -449,6 +453,10 @@ label.error {
 
 .align-center {
   align-items: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-italic {
@@ -552,6 +560,10 @@ button {
   line-height: 56px;
 }
 
+.lh-75 {
+  line-height: 75px;
+}
+
 .fs-12 {
   font-size: 12px;
 }
@@ -590,6 +602,10 @@ button {
 
 .z-2 {
   z-index: 2;
+}
+
+.br-10 {
+  border-radius: 10px;
 }
 
 .tf-section {

@@ -412,7 +412,18 @@
           $this.closest(".file-delete").remove();
         });
       };
-    
+
+
+    $('.pull-right').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass("click");
+        $(".wd-search-form").toggleClass("show");
+  
+      });
+
+
+      
 
     // Dom Ready
     $(function () {
@@ -437,6 +448,7 @@
         donatProgress();
         tabs();
         delete_img();
+        //dele_img();
         Preloader();
         AOS.init();
     });
