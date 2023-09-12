@@ -46,7 +46,23 @@
         svg {
           animation: 0.3s link-icon2 linear;
         }
+      }
     }
+    &.btn-2 {
+      svg {
+        margin-left: 10px;
+        margin-right: 0;
+      }
+      &:hover {
+        background-color: $color-3;
+        span {
+          color: $color-1;
+          
+        }
+        svg path {
+          stroke: $color-1;
+        }
+      }
     }
 }
 

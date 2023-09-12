@@ -173,7 +173,7 @@ var swiper =  new Swiper(".carousel-4", {
     spaceBetween: 30,
     grabCursor: true,
     pagination: {
-        el: ".swiper-pagination3",
+        el: ".swiper-pagination1",
         clickable: true,
       },
     breakpoints: {
@@ -419,8 +419,8 @@ var swiper =  new Swiper(".carousel-7", {
     spaceBetween: 30,
     navigation: {
         clickable: true,
-        nextEl: ".swiper-button-next4",
-        prevEl: ".swiper-button-prev4",
+        nextEl: ".swiper-button-next3",
+        prevEl: ".swiper-button-prev3",
     },
     pagination: {
         el: ".swiper-pagination3",
@@ -449,8 +449,8 @@ var swiper =  new Swiper(".carousel-8", {
     spaceBetween: 30,
     navigation: {
         clickable: true,
-        nextEl: ".swiper-button-next4",
-        prevEl: ".swiper-button-prev4",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     breakpoints: {
         768: {
@@ -478,7 +478,7 @@ var swiper =  new Swiper(".carousel-9", {
         prevEl: ".swiper-button-prev4",
     },
     pagination: {
-        el: ".swiper-pagination3",
+        el: ".swiper-pagination1",
         clickable: true,
     },
     breakpoints: {
