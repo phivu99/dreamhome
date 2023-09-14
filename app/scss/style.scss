@@ -471,6 +471,8 @@ button {
     font-family: $font-2  ;
 }
 
+.fw-1 { font-weight: 100 }
+
 .fw-4 { font-weight: 400 }
 
 .fw-5 { font-weight: 500 }
@@ -811,6 +813,12 @@ a {
 
 .themesflat-pagination {
     margin-top: 30px;
+    &.style {
+        margin-top: 19px;
+    }
+    &.style2 {
+        margin-top: 0px;
+    }
     ul {
         position: relative;
         li {

@@ -18,8 +18,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
         width: 100%;
         height: 100%;
+        &.style {
+            background-image: url(../../assets/images/section/bg-page2.jpg);
+        }
     }
     
     .page-title-heading {
@@ -56,6 +60,9 @@
     &.style {
         box-shadow: 0px 4px 18px 0px #00000014;
     }
+    &.style2 {
+        padding: 24px 0px 30px 0px;
+    }
     //flat tabs 
     .form-sl {
         padding: 0px;
@@ -88,6 +95,7 @@
         background: #FFF5E0;
         span {
             color: $color-2;
+            @include transition3;
         } 
         &:hover {
             background: $color-3;
@@ -279,6 +287,27 @@
             display: none;
         }
     }
+    &.home5 {
+        padding: 100px 0 70px;
+    }
+    &.home5-two {
+        .flat-tabs {
+            .tab-title li {
+                margin-right: 17px;
+                padding: 8px 20px;
+            }
+            .tab-title li:hover h5, 
+            .tab-title li.active h5 {
+                font-weight: 800;
+                color: $color-2;
+                font-family: $font-1;
+            }
+            .tab-title li h5 {
+                font-weight: 700;
+                font-family: $font-2;
+            }
+        }
+    }
     &.home2 {
         .wrap-tabs {
             //overflow: hidden;
@@ -409,6 +438,11 @@
                     transition-delay: 0.5s;
                 }
             }
+        }
+        &.style-dream {
+            border: 1px solid $color-5;
+            padding: 16px 16px 15px 16px;
+            box-shadow: none;
         }
     }
     .image-group {
@@ -727,6 +761,9 @@
             padding-right: 180px;
             .icon-info {
                 margin-right: 48px;
+                &::after { 
+                    margin-left: 21px;
+                }
             }
         }
     }
@@ -962,6 +999,9 @@
                 animation: 0.3s link-icon linear;
             }
         } 
+        span {
+            @include transition3;
+        }
         i {
             margin-left: 9px;
             @include transition3
@@ -970,6 +1010,18 @@
             margin-left: 11px;
             path {
                 @include transition3
+            }
+        }
+    }
+    &.style {
+        .btn-button {
+            &:hover {
+                span {
+                    color: $color-3;
+                }
+                i {
+                    color: $color-3;
+                }
             }
         }
     }
@@ -1016,16 +1068,14 @@
 }
 
 .flat-find-neighborhood {
-    .heading-section {
-        margin-bottom: 64px;
-    }
-    // .swiper-container {
-    //     margin: 0 -100px;
-    //     padding: 0 100px;
-    // }
     .box .images {
         border-radius: 10px;
         overflow: hidden;
+    }
+    &.home2 {
+        .heading-section {
+            margin-bottom: 64px;
+        }
     }
     &.home5 {
         padding: 100px 0 0;
@@ -1050,6 +1100,9 @@
             }
         }
     }
+    &.home5-two {
+        padding: 100px 0 95px;
+    }
 }
 
 .flat-estate-near {
@@ -1058,6 +1111,9 @@
         margin-bottom: 30px;
         .images {
             margin-right: 20px;
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
         }
         .content {
             h3 {
@@ -1668,21 +1724,37 @@
     background-image: url(../../../assets/images/section/bg-icon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0 62px;
+    padding: 101px 55px 63px 0px;
+    .heading-section {
+        padding-left: 58px
+    }
     .container {
-        max-width: 1070px;
+        max-width: 1080px;
     }
     .box {
         background-color: $color-1;
-        padding: 25px 28px;
+        padding: 30px 30px 30px 28px;
+        border-radius: 10px;
+        height: 363px;
+        &:hover {
+            .icon svg {
+                transform: rotateY(180deg);
+            }
+        }
         .icon {
-            margin-bottom: 15px;
+            margin-bottom: 13px;
+            svg {
+                transition: all 0.8s ease;
+            }
+        }
+        .inner {
+            min-height: 190px;
+            padding-bottom: 11px;
+            margin-bottom: 29px;
+            border-bottom: 1px solid $color-5;
         }
         h3 {
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 60px;
+            margin-bottom: 12px;
         }
     }
 }
@@ -1691,6 +1763,7 @@
     background-image: url(../../../assets/images/section/bg-testimonial2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 100px 0 111px;
     .box {
         padding: 2px 190px;
         svg {
@@ -1701,6 +1774,11 @@
         }
         .images {
             margin-bottom: 15px;
+            img {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+            }
         }
     }
 }
@@ -1717,6 +1795,9 @@
         border: 1px solid #EFEFEF;
         border-radius: 10px;
         @include transition3;
+        &:hover {
+            transform: translateY(-5px);
+        }
         .sub-title {
             margin-bottom: 14px;
         }
@@ -1766,15 +1847,14 @@
         .button-pricing a {
             width: 100%;
             text-align: center;
-            background: #FFF5E0;
-            span {
-                color: $color-2;
-            } 
-            &:hover {
-                span {
-                    color: $color-3;
-                }
-            }
+            // span {
+            //     color: $color-2;
+            // } 
+            // &:hover {
+            //     span {
+            //         color: $color-3;
+            //     }
+            // }
         }
         &.active {
             background-color: $color-3;
@@ -1803,8 +1883,14 @@
                     
                 }
             }
-            .button-pricing a span {
-                color: $color-3;
+            .button-pricing a {
+                background-color: $color-1;
+                span {
+                    color: $color-3;
+                }
+                &:hover {
+                    background-color: $color-6;
+                }
             }
         }
 
@@ -1914,16 +2000,59 @@
             margin-right: 0px;
         }
     }
+    &.style5 {
+        .category-filter {
+            margin: 0 0 30px;
+        }
+    }
 }
-.flat-property-1.home2 {
-    padding-top: 0;
-    
+.flat-property-grid {
+    padding-bottom: 94px;
     .box {
         margin-left: 0;
     }
+
 }
 
-.flat-property-2 {
+.flat-property-grid-1 {
+    padding-bottom: 94px;
+    .wrap-property {
+        margin-left: -30px;
+        flex-wrap: wrap;
+    }
+    
+    .post {
+        width: 78.3%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .side-bar {
+        width: 19.95%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .swiper-container {
+        margin-left: -17px;
+        margin-right: -17px;
+    }
+}
+
+.flat-property-grid-2 {
+    padding-bottom: 94px;
+    .post {
+        padding-right: 20px;
+    }   
+    .box-dream.style-dream {
+        padding: 15px 16px 15px 16px;
+    } 
+    .swiper-container {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+.flat-property-3 {
     .wrap-property {
         margin-left: -30px;
         flex-wrap: wrap;
@@ -1936,12 +2065,6 @@
     .side-bar {
         width: 19.7%;
         margin-left: 27px;
-    }
-}
-
-.flat-property-3 {
-    .box {
-        width: calc(50% - 30px);
     }
 }
 
@@ -2021,21 +2144,7 @@
     }
 }
 
-.flat-property-3 {
-    .wrap-property {
-        margin-left: -30px;
-        flex-wrap: wrap;
-    }
-    .post {
-        width: 78.3%;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .side-bar {
-        width: 19.7%;
-        margin-left: 27px;
-    }
-}
+
 
 .wd-feature-map #map,
 .wd-feature-map iframe {

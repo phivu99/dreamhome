@@ -492,6 +492,10 @@ button {
   font-family: "Mulish", sans-serif;
 }
 
+.fw-1 {
+  font-weight: 100;
+}
+
 .fw-4 {
   font-weight: 400;
 }
@@ -952,6 +956,12 @@ a:focus, a:hover {
 -------------------------------------------------------------- */
 .themesflat-pagination {
   margin-top: 30px;
+}
+.themesflat-pagination.style {
+  margin-top: 19px;
+}
+.themesflat-pagination.style2 {
+  margin-top: 0px;
 }
 .themesflat-pagination ul {
   position: relative;

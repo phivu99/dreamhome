@@ -423,7 +423,7 @@ var swiper =  new Swiper(".carousel-7", {
         prevEl: ".swiper-button-prev3",
     },
     pagination: {
-        el: ".swiper-pagination3",
+        el: ".swiper-pagination1",
         clickable: true,
     },
     breakpoints: {
@@ -504,11 +504,11 @@ var swiper =  new Swiper(".carousel-10", {
     spaceBetween: 30,
     navigation: {
         clickable: true,
-        nextEl: ".swiper-button-next4",
-        prevEl: ".swiper-button-prev4",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination3",
+        el: ".swiper-pagination1",
         clickable: true,
     },
     breakpoints: {
@@ -518,7 +518,7 @@ var swiper =  new Swiper(".carousel-10", {
         },
         992: {
             slidesPerView: 4,
-            spaceBetween: 30,
+            spaceBetween: 27,
         },
 
     },

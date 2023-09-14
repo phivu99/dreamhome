@@ -219,6 +219,16 @@
                 }
             }
         }
+        .flat-tabs {
+            .tab-title li {
+                box-shadow: none;
+            }
+            .box-tab {
+                margin-bottom: 0px;
+            }
+        }
+        
+                
   
     &.side-bar-1 {
         .widget-rent {

@@ -417,6 +417,12 @@
     &.home5 {
         background-image: url(../../../assets/images/slider/bg-slider-5.jpg);
         background-attachment: fixed;
+        .slider-item .content {
+            padding: 257px 0 243px;
+        }
+        .flat-tabs {
+            padding-left: 5px;
+        }
     }
 }
 
@@ -789,6 +795,7 @@
     background-color: $color-6;
     border-radius: 10px;
     @include transition3;
+    span,
     path {
         @include transition3;
     }
@@ -797,6 +804,9 @@
         background-color: $color-3;
         path {
             stroke: $color-1;
+        }
+        span {
+            color: $color-1;
         }
     }
     // &.active.click {
