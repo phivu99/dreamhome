@@ -24,6 +24,12 @@
         &.style {
             background-image: url(../../assets/images/section/bg-page2.jpg);
         }
+        &.style2 {
+            background-image: url(../../assets/images/section/bg-page3.jpg);
+        }
+        &.style3 {
+            background-image: url(../../assets/images/section/bg-page4.jpg);
+        }
     }
     
     .page-title-heading {
@@ -229,17 +235,17 @@
     max-width    : 100%;
 }
 
-.tf-section2 {
-    padding: 104px 0 110px;
-    @include transition3;
-    position     : relative;
-}
+// .tf-section2 {
+//     padding: 104px 0 110px;
+//     @include transition3;
+//     position     : relative;
+// }
 
-.tf-section {
-    padding: 130px 0;
-    @include transition3;
-    position     : relative;
-}
+// .tf-section {
+//     padding: 130px 0;
+//     @include transition3;
+//     position     : relative;
+// }
 
 
 /* flat 
@@ -417,6 +423,10 @@
         margin-left: -30px;
         flex-wrap: wrap;
     }
+    .owl-carousel .owl-stage-outer {
+        margin: -5px;
+        padding: 5px;
+    }
     .box-dream {
         background-color: $color-1;
         position: relative;
@@ -447,19 +457,6 @@
     }
     .image-group {
         margin-bottom: 16px;
-        // &:hover {
-        //     .pagi2 .swiper-pagination2,
-        //     .swiper-button-next2,
-        //     .swiper-button-prev2 {
-        //         opacity: 1;
-        //     }
-        //     .icon-plus {
-        //         opacity: 1;
-        //         z-index: 99;
-        //         top: 50%;
-        //         transition-delay: 0.5s;
-        //     }
-        // }
     }
     
     h3 {
@@ -1022,13 +1019,15 @@
                 i {
                     color: $color-3;
                 }
+                svg path {
+                    stroke: $color-3
+                } 
             }
         }
     }
 }
 
 .flat-testimonial {
-    padding: 100px 0 98px;
     .swiper-container {
         margin: -5px;
         padding: 5px;
@@ -1139,12 +1138,13 @@
     .box {
         padding: 17px 14px 16px 17px;
         .image-group {
-            width: 53.2%;  
+            width: 269px;  
+            flex: none;
             margin-bottom: 0;
         }
         .content {
             width: 46.8%;
-            padding-left: 16px;
+            padding-left: 17px;
             .money,
             .text-address {
                 margin-bottom: 20px;
@@ -1236,10 +1236,8 @@
         }
     }
     &.home {
-        top: 11%;
-        left: 49.5%;
-        // top: 19%;
-        // left: 55.2%;
+        top: 19%;
+        left: 54.2%;
         background-color: unset;
         .curved-text::before {
             color: $color-2;
@@ -2006,16 +2004,14 @@
         }
     }
 }
+
 .flat-property-grid {
-    padding-bottom: 94px;
     .box {
         margin-left: 0;
     }
-
 }
 
 .flat-property-grid-1 {
-    padding-bottom: 94px;
     .wrap-property {
         margin-left: -30px;
         flex-wrap: wrap;
@@ -2039,7 +2035,6 @@
 }
 
 .flat-property-grid-2 {
-    padding-bottom: 94px;
     .post {
         padding-right: 20px;
     }   
@@ -2052,43 +2047,29 @@
     }
 }
 
-.flat-property-3 {
-    .wrap-property {
-        margin-left: -30px;
-        flex-wrap: wrap;
+.flat-property-list {
+    .post {
+        padding-right: 20px;
     }
+    .box {
+        padding: 16px 14px 16px 16px;
+        .content {
+            width: 60%;
+        }
+    }
+}
+
+.flat-property-list1 {
     .post {
         width: 78.3%;
         padding-right: 15px;
         padding-left: 15px;
     }
     .side-bar {
-        width: 19.7%;
-        margin-left: 27px;
+        width: 19.95%;
+        margin-left: 15px;
+        margin-right: 15px;
     }
-}
-
-.flat-property-list {
-    padding-bottom: 95px;
-    
-    .post {
-        padding-right: 20px;
-    }
-    .box {
-        padding: 16px 14px 16px 16px;
-        .image-group {
-            flex: none;
-            width: 40%;
-        }
-        .content {
-            width: 60%;
-            padding-left: 15px;
-        }
-    }
-    .themesflat-pagination {
-        margin-right: 11px;
-    }
-    
 }
 
 .flat-property-list2 {
@@ -2097,7 +2078,7 @@
         padding: 16px 14px 16px 16px;
         .image-group {
             flex: none;
-            width: 50%;
+            width: 540px;
             .img-box {
                 
                 .img-2,
@@ -2144,6 +2125,12 @@
     }
 }
 
+.po-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+
 
 
 .wd-feature-map #map,
@@ -2161,18 +2148,15 @@
 .wrap-map {
     .content-left {
         width: 44.7%;
-        padding: 40px 30px 35px 92px;
+        padding: 40px 30px 35px 93px;
         .category-filter {
             margin-bottom: 21px;
         }
         .box {
-            width: calc(50% - 30px);
-            border: 1px solid $color-8;
-            box-shadow: unset;
-            margin-bottom: 22px;
+            margin-bottom: 25px;
         }
         .themesflat-pagination {
-            margin-top: 3px;
+            margin-top: 1px;
         }
     }
     .content-right {
@@ -2187,10 +2171,6 @@
             border: unset;
             box-shadow: 0px 4px 26px 0px #42474C14;
             margin-bottom: 19.5px;
-            .image-group {
-                width: 38.5%;
-
-            }
             .content {
                 width: 61.5%;
                 .icon-box {
@@ -2213,9 +2193,6 @@
             margin-bottom: 21px;
         }
         .box {
-            // width: calc(50% - 30px);
-            // border: 1px solid $color-8;
-            // box-shadow: unset;
             padding: 17px 16px 16px 16px;
             margin-bottom: 19px;
             .image-group {
@@ -2258,7 +2235,6 @@
 }
 
 .flat-agent-sidebar {
-    padding-bottom: 100px;
     .post {
         .heading-listing {
             margin-bottom: 0;
@@ -2269,24 +2245,21 @@
     }
     .wrap-list {
         position: relative;
-        margin-left: -30px;
-        flex-wrap: wrap;
         .box {
-            width: calc(50% - 30px);
-            margin-left: 30px;
             .content {
                 margin-bottom: 7px;
             }
         }
     }
 }
-.flat-agent-sidebar2 {
-    padding-bottom: 95px;
-}
+
 .flat-agent {
     &.page {
         .category-filter {
             margin-bottom: 24px;
+        }
+        .wd-find-select .group-select .nice-select {
+            width: 240px;
         }
         .box {
             padding: 0;
@@ -2312,6 +2285,9 @@
     .images {
         margin-right: 30px;
         border-radius: 10px;
+        img {
+            height: 100%;
+        }
     }
     .box {
         box-shadow: 0px 4px 18px 0px #00000014;
@@ -2380,6 +2356,7 @@
 }
 
 .flat-agent-detail {
+    padding-bottom: 105px;
     .titles {
         margin-bottom: 2px;
     }
@@ -2418,6 +2395,9 @@
         }
     }
     .wrap-item {
+        padding-bottom: 5px;
+        border-bottom: 1px solid $color-5;
+        margin-bottom: 30px;
         .box {
             padding: 20px 17px 17px;
             margin-bottom: 26px;
@@ -2430,6 +2410,18 @@
                     margin-bottom: 6px;
                 }
             }
+        }
+    }
+}
+
+.group-button-view {
+    a {
+        width: 240px;
+        span {
+            &::after {
+                background-color: rgba($color-3, 0.2);
+            }
+            margin-right: 20px;
         }
     }
 }
@@ -2480,7 +2472,6 @@
 }
 
 .flat-agencies-sidebar {
-    margin-bottom: 95px;
     .box-2 {
         margin-top: 2px;
     }
@@ -2492,22 +2483,9 @@
             margin-bottom: 24px;
         }
     }
-    .wrap-list {
-        position: relative;
-        margin-left: -30px;
-        flex-wrap: wrap;
-        .box {
-            width: calc(50% - 30px);
-            margin-left: 30px;
-        }
-    }
-    
 }
 
 .flat-agencies {
-    &.page {
-        margin-bottom: 95px;
-    }
     .images {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -2589,6 +2567,13 @@
             line-height: 38px;
             text-align: center;
             margin-right: 4px;
+            &:hover {
+                border: 1px solid $color-3;
+                background-color: $color-3;
+                path {
+                    fill: $color-1;
+                }
+            }
         }
 
         .icon-socials {
@@ -2618,7 +2603,7 @@
     }
     .wrap-description {
         box-shadow: 0px 4px 18px 0px #00000014;
-        padding: 20px;
+        padding: 20px 20px 14px 20px;
         margin-bottom: 30px;
         .titles {
             padding-bottom: 12px;
@@ -2627,7 +2612,7 @@
         }
         .inner {
             flex-wrap: wrap;
-           border-radius: 12px;
+            border-radius: 12px;
             background-color: #FFF5E0;
             padding: 20px 21px 7px;
             margin-bottom: 31px;
@@ -2643,27 +2628,17 @@
         }
         .box-text {
             margin-bottom: 31px;
-            // .title-2 {
-            //     margin-bottom: 25px;
-            // }
             .text-1 {
                 margin-bottom: 12px;
             }
-            
         }
         .map-content {
             height: 360px;
             width: 100%;
         }
     }
-    .wrap-item {
-        position: relative;
-        margin-left: -30px;
-        flex-wrap: wrap;
-    }
-    .box {
-        width: calc(50% - 30px);
-        margin-left: 30px;
+    &.wg-tabs .flat-tabs .tab-title {
+        margin-bottom: 27px;
     }
 }
 
@@ -2967,7 +2942,6 @@
         }
     }
     .post {
-        
         .titles {
             padding-bottom: 12px;
             margin-bottom: 20px;
@@ -2978,6 +2952,9 @@
         margin-bottom: 30px;
         border-radius: 10px;
         box-shadow: 0px 4px 18px 0px #00000014;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     .wrap-overview {
         padding: 10px 20px 1px;
@@ -3063,6 +3040,7 @@
         }
     }
     .wrap-floor {
+        padding: 20px 20px 6px;
         .flat-accordion {
             .icons {
                 margin-right: 20px;
@@ -3087,13 +3065,15 @@
             .flat-toggle {           
                 @include transition3;
                 position: relative;
-                margin-bottom: 20px;
+                margin-bottom: 14px;
                 background-color: $color-1;
+                border-bottom: 1px solid $color-5;
                 &:last-child {
                     margin-bottom: 0;
+                    border-bottom: 0px;
                 }
                 .toggle-title {
-                    padding: 0px 0px 10px 22px;
+                    padding: 0px 0px 13px 22px;
                     cursor          : pointer;
                     color: $color-2;
                     width: 100%;
@@ -3124,7 +3104,7 @@
                     }
                 }          
                 .toggle-content {
-                    padding: 10px 0px 15px 0px;
+                    padding: 8px 0px 20px 0px;
                     display         : none;
                     background-color: $color-1;
                     width: 100%;
@@ -3428,6 +3408,8 @@
             }
         }
         .wrap-floor {
+            padding-right: 30px;
+            margin-bottom: 38px;
             .titles {
                 padding-bottom: 21px;
                 margin-bottom: 20px;
@@ -3436,14 +3418,53 @@
                 }
             }
             .flat-accordion .flat-toggle .toggle-title {
-                padding: 0px 41px 10px 22px;
+                padding: 0px 10px 13px 22px;
+            }
+        }
+        .wrap-form,
+        .wrap-video {
+            margin-bottom: 50px;
+        }
+        .wrap-walksore,
+        .wrap-virtual {
+            margin-bottom: 51px;
+        }
+        .wrap-nearby {
+            padding-right: 39px;
+            margin-bottom: 44px;
+        }
+        .wrap-review {
+            margin-bottom: 47px;
+            .box-title {
+                margin-bottom: 22px;
+            }
+            .comment-list .content {
+                padding: 1px 0px 0 21px;
+            }
+        }
+        .wrap-contact {
+            margin-bottom: 0;
+            .titles {
+                margin-bottom: 20px;
+                padding-bottom: 13px;
+                h3::before {
+                    bottom: -40px;
+                }
             }
         }
     }
 }
 
+.flat-sale-detail {
+    .heading-section {
+        margin-bottom: 30px;
+        .title-heading {
+            margin-bottom: 10px;
+        }
+    } 
+}
+
 .flat-blog-grid {
-    margin-bottom: 95px;
     .box-heading {
         margin-bottom: 39px;
         .image {

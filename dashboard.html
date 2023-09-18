@@ -484,24 +484,26 @@
                             <h3 class="titles">New listing</h3>
                   
                             <div class="wrap-form wd-find-select date-wgs flex">
-                                <div class="form-group-1 search-form form-style">
-                                    <input type="search" class="search-field" placeholder="Type keyword..." value="" name="s" title="Search for" required="">
+                                <div class="form-group-1 search-form form-style relative">
+                                    <i class="far fa-search"></i>
+                                    <input type="search" class="search-field" placeholder="Search..." value="" name="s" title="Search for" required="">
                                 </div>
                                 <div class="form-group-2 form-style relative">
                                     <input type="date" class="date-wg" name="date" placeholder="From date" value=""  required="">
-                                <!-- <p>From date</p> -->
+                                    <p class="p-date">From date</p>
                                 </div>
-                                <div class="form-group-3 form-style">
-                                    <input type="date"  class="date-wg" name="date" placeholder="From date" value=""  required="">         
+                                <div class="form-group-3 form-style relative">
+                                    <input type="date"  class="date-wg" name="date" placeholder="From date" value=""  required="">   
+                                    <p class="p-date">To date</p>      
                                 </div>
-                                <div class="form-group-4 form-style">
+                                <div class="form-group-4">
                                     <div class="group-select">
-                                        <div class="nice-select" tabindex="0"><span class="current">Location</span>
-                                            <ul class="list">                                                          
-                                                <li data-value="Japan" class="option">Japan</li>
-                                                <li data-value="America" class="option">America</li>
-                                                <li data-value="England" class="option selected">England</li>                                                                  
-                                                <li data-value="VietNam" class="option">VietNam</li>
+                                        <div class="nice-select" tabindex="0"><span class="current">Status</span>
+                                            <ul class="list style">                                                          
+                                                <li data-value class="option selected">Status</li>
+                                                <li data-value="recently" class="option">Recently</li>
+                                                <li data-value="yesterday" class="option ">Yesterday</li>                                                                  
+                                                <li data-value="week" class="option">Week</li>
                                             </ul>
                                         </div>
                                     </div> 
@@ -527,7 +529,7 @@
                                                 <img src="assets/images/house/dashboard-house-1.jpg" alt="images">
                                             </div>
                                             <div class="content">
-                                                <h4 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h4>
+                                                <h4 class="link-style-1"><a href="property-detail-v1.html">Gorgeous Apartment Building</a> </h4>
                                                 <div class="text-date"><p class="p-12 text-color-2 lh-18">Posting date: March 22, 2023</p></div>
                                                 <div class="money fs-16 fw-6 text-color-3">$7,500</div> 
                                             </div>
@@ -556,7 +558,7 @@
                                                 <img src="assets/images/house/dashboard-house-2.jpg" alt="images">
                                             </div>
                                             <div class="content">
-                                                <h4 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h4>
+                                                <h4 class="link-style-1"><a href="property-detail-v1.html">Gorgeous Apartment Building</a> </h4>
                                                 <div class="text-date"><p class="p-12 text-color-2 lh-18">Posting date: March 22, 2023</p></div>
                                                 <div class="money fs-16 fw-6 text-color-3">$7,500</div> 
                                             </div>
@@ -585,7 +587,7 @@
                                                 <img src="assets/images/house/dashboard-house-3.jpg" alt="images">
                                             </div>
                                             <div class="content">
-                                                <h4 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h4>
+                                                <h4 class="link-style-1"><a href="property-detail-v1.html">Gorgeous Apartment Building</a> </h4>
                                                 <div class="text-date"><p class="p-12 text-color-2 lh-18">Posting date: March 22, 2023</p></div>
                                                 <div class="money fs-16 fw-6 text-color-3">$7,500</div> 
                                             </div>
@@ -614,7 +616,7 @@
                                                 <img src="assets/images/house/dashboard-house-4.jpg" alt="images">
                                             </div>
                                             <div class="content">
-                                                <h4 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h4>
+                                                <h4 class="link-style-1"><a href="property-detail-v1.html">Gorgeous Apartment Building</a> </h4>
                                                 <div class="text-date"><p class="p-12 text-color-2 lh-18">Posting date: March 22, 2023</p></div>
                                                 <div class="money fs-16 fw-6 text-color-3">$7,500</div> 
                                             </div>
@@ -643,7 +645,7 @@
                                                 <img src="assets/images/house/dashboard-house-5.jpg" alt="images">
                                             </div>
                                             <div class="content">
-                                                <h4 class="link-style-1"><a href="single-property.html">Gorgeous Apartment Building</a> </h4>
+                                                <h4 class="link-style-1"><a href="property-detail-v1.html">Gorgeous Apartment Building</a> </h4>
                                                 <div class="text-date"><p class="p-12 text-color-2 lh-18">Posting date: March 22, 2023</p></div>
                                                 <div class="money fs-16 fw-6 text-color-3">$7,500</div> 
                                             </div>
@@ -689,11 +691,13 @@
                                 <div class="dates">Week</div>
                                 <div class="dates">Month</div>
                                 <div class="dates">Year</div>
-                                <div class="form-group-3 form-style">
-                                    <input type="date"  class="date-wg" name="date" placeholder="From date" value=""  required="">         
+                                <div class="form-group-3 form-style relative">
+                                    <input type="date"  class="date-wg" name="date" placeholder="From date" value=""  required="">   
+                                    <p class="p-date">From date</p>   
                                 </div>
-                                <div class="form-group-3">
-                                    <input type="date"  class="date-wg" name="date" placeholder="From date" value=""  required="">         
+                                <div class="form-group-3 relative">
+                                    <input type="date"  class="date-wg" name="date" placeholder="From date" value=""  required="">  
+                                    <p class="p-date">To date</p>       
                                 </div>
                             </div>
                             <div class="chart-box">
@@ -844,7 +848,7 @@
                                 <li>
                                     <div class="image-box flex align-center">
                                         <div class="images">
-                                            <img src="assets/images/author/author-10.jpg" alt="images">
+                                            <img src="assets/images/author/author-11.jpg" alt="images">
                                         </div>
                                         <div class="title-flat fw-6">Albert Flores</div>
                                         <p class="fs-12 lh-18">3 day ago</p>

@@ -141,18 +141,6 @@
             position: relative;   
             padding-left: 1px;
             margin-bottom: 21px;
-            // &.title-search {
-            //     margin-bottom: 19px; 
-            // }
-            // &.title-list {
-            //     margin-bottom: 21px;
-            // }
-            // &.title-news {
-            //     margin-bottom: 21px;
-            // }
-            // &.title-tags {
-            //     margin-bottom: 24px;
-            // }
         }
 
         .widget-categories {
@@ -219,6 +207,7 @@
                 }
             }
         }
+        
         .flat-tabs {
             .tab-title li {
                 box-shadow: none;
@@ -227,13 +216,133 @@
                 margin-bottom: 0px;
             }
         }
-        
+
+        .author-box {
+            margin-bottom: 23px;
+            .image-author {
+                margin-right: 17px;
+                img {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .title-contact {
+            margin-bottom: 24px;
+        }
+
+        #comments .comment-form fieldset {
+            margin-bottom: 12px;
+            &.message-wrap {
+                margin-bottom: 18px;
+            }
+            input {
+                padding: 13px 14px 13px 18px;
+            }
+            textarea {
+                padding: 13px 15px 12px 17px;
+            }
+        }
+        #comments .button-box  {
+            button:nth-child(1) {
+                margin-right: 10px;
+                padding: 16.5px 20px 16.5px 20px;
+            }
+            button:nth-child(2) {
+                padding: 16.5px 17px 16.5px 20px;
+            }
+            button {
+                padding: 16px px 16px 21px;
+                @include flex-center;
+                span {
+                    margin-right: 10px;
+                    flex: none;
+                }
+            }
+        }
+        .style-tour {
+            padding: 30px 29px 28px;
+        }
+        .widget-tour {
+            .title-tour {
+                margin-bottom: 2px;
+            }
+            .p-tour {
+                margin-bottom: 24px;
+            }
+            .days-wrap {
+                margin-left: -10px;
+                margin-bottom: 24px;
+                .day-box {
+                    width: calc(25% - 10px);
+                    margin-left: 10px;
+                    padding: 14px 5px;
+                    border: 2px solid $color-5;
+                    border-radius: 10px;
+                    @include transition3;
+                    cursor: pointer;
+                    .number {
+                        margin: 8px 0 7px;
+                        @include transition3;
+                    }
+                    &:hover {
+                        border: 2px solid $color-3;
+                        .number {
+                            color: $color-3;
+                        }
+                    }
+                }
+            }
+            h5 {
+                margin-bottom: 12px;
+            }
+            .flat-tabs {
+                .tab-title li {
+                    svg {
+                        margin-right: 8px;
+                    }
+                }
+                .box-tab {
+                    margin-bottom: 11px;
+                }
+            }
+            #comments .comment-form {
+                .nice-select {
+                    padding: 16px 20px 14px 17px;
+                    margin-bottom: 9px;
+                }
+                button {
+                    width: 100%;
+                    span {
+                        margin-right: 7px;
+                    }
+                }
+                fieldset.message-wrap {
+                    margin-bottom: 6px;
+                }
+            }
+            .widget-form {
+                margin-bottom: 12px;
+                .btn-checkbox {
+                    border: 1px solid $color-5;
+                    width: 20px;
+                }
+                .sub-title {
+                    margin-right: 3px;
+                    margin-top: 1px;
+                }
+            }
+        }
                 
   
     &.side-bar-1 {
         .widget-rent {
             padding: 19px 29px 28px;
             margin-bottom: 42px;
+            &.style {
+                padding: 29px 29px 28px;
+            }
         }
         .wd-find-select .form-group-3 .group-select .nice-select {
             margin-bottom: 26px;
@@ -278,6 +387,7 @@
     padding: 29px 29px 28px;
     background: #FAFAFA;
     margin-bottom: 40px;
+    
     .search-form {
         .search-field { 
             padding: 14px 15px 14px 43px;

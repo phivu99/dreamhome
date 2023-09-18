@@ -533,13 +533,7 @@ button {
 
 .tf-section { padding: 100px 0 }
 
-.tf-section1 { padding: 100px 0 101px}
-
-.tf-section2 { padding: 100px 0 102px}
-
-.tf-section01 { padding: 100px 0 99px}
-
-.tf-section02 { padding: 100px 0 98px}
+.tf-section2 { padding-bottom: 95px;}
 
 .bg-1 {
     background-color: #F7F7F7;
@@ -710,6 +704,10 @@ a {
     color: #F1FAEE;
 }
 
+path {
+    @include transition3;
+}
+
 .form-wg {
     margin-left: -30px;
     .wg-box {
@@ -774,7 +772,7 @@ a {
         }
         &:focus {
             color: $color-2;
-            border: 1px solid $color-2;
+            border: 1px solid $color-3;
         }
     }
 }
@@ -818,6 +816,9 @@ a {
     }
     &.style2 {
         margin-top: 0px;
+    }
+    &.style3 {
+        margin-top: 40px;
     }
     ul {
         position: relative;

@@ -414,6 +414,7 @@
       };
 
 
+
     $('.pull-right').on('click', function (e) {
         e.preventDefault();
 
@@ -421,6 +422,8 @@
         $(".wd-search-form").toggleClass("show");
   
       });
+
+
 
 
       

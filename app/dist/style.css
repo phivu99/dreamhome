@@ -616,20 +616,8 @@ button {
   padding: 100px 0;
 }
 
-.tf-section1 {
-  padding: 100px 0 101px;
-}
-
 .tf-section2 {
-  padding: 100px 0 102px;
-}
-
-.tf-section01 {
-  padding: 100px 0 99px;
-}
-
-.tf-section02 {
-  padding: 100px 0 98px;
+  padding-bottom: 95px;
 }
 
 .bg-1 {
@@ -854,6 +842,14 @@ a:focus, a:hover {
   color: #F1FAEE;
 }
 
+path {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .form-wg {
   margin-left: -30px;
 }
@@ -919,7 +915,7 @@ a:focus, a:hover {
 }
 .search-form .search-field:focus {
   color: #120A21;
-  border: 1px solid #120A21;
+  border: 1px solid #FFA920;
 }
 
 /* Header Fixed */
@@ -962,6 +958,9 @@ a:focus, a:hover {
 }
 .themesflat-pagination.style2 {
   margin-top: 0px;
+}
+.themesflat-pagination.style3 {
+  margin-top: 40px;
 }
 .themesflat-pagination ul {
   position: relative;

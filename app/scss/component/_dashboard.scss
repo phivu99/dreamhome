@@ -563,7 +563,7 @@
         border-radius: 12px;
         margin-bottom: 20px;
         .inner-1 {
-            margin-bottom: 30px;
+            margin-bottom: 31px;
         }
         fieldset input {
             border: 1px solid $color-5;
@@ -584,8 +584,32 @@
             &:focus {
                 border: 1px solid $color-3;
             }  
-          
         }
+        .rent-box {
+            a {
+                width: 231.6px;
+                svg {
+                    margin-right: 6px;
+                }
+                &:nth-child(2) {
+                    background-color: $color-1;
+                    border: 1px solid $color-5;
+                    span {
+                        color: $color-2;
+                    }
+                    &:hover {
+                        border: 1px solid $color-3;
+                        background-color: $color-3;
+                        span {
+                            color: $color-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tf-rent {
+        padding: 29px 31px 34px;
     }
     .tf-price {
         padding: 30px 31px 31px;
@@ -847,8 +871,12 @@
     .titles {
         margin-bottom: 13px;
     }
+    .p-date {
+        position: absolute;
+        right: 38px;
+        top: 10px;
+    }
     .tf-new-listing {
-        
         width: 74.7%;
         margin-right: 20px;
         .wrap-form {
@@ -857,6 +885,7 @@
             border-bottom: 1px solid $color-5;
         }
         .sub-text {
+            margin-bottom: 10px;
             .one {
                 color: #6E55FF;
             }
@@ -869,8 +898,20 @@
         .titles {
             margin-bottom: 14px;
         }
-        .sub-text {
-            margin-bottom: 10px;
+        .form-style {
+            margin-right: 13px;
+        }
+        .search-form {
+            input {
+                padding: 13px 15px 15px 44px;
+            }
+            i {
+                position: absolute;
+                color: #8E8E93;
+                top: 14px;
+                left: 19px;
+                cursor: pointer;
+            }
         }
         input {
             width: 262px;
@@ -937,19 +978,14 @@
             }
             .date-wg {
                 width: 338px;
-
             }
-        }
-      
-        #lineChart {
-            
         }
     }
     .tf-sidebar {
         width: 25%;
     }
     .messages-sidebar {
-        padding: 30px 30px 30px 30px;
+        padding: 30px 31px 30px 30px;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0392156863);
         border-radius: 12px;
         margin-bottom: 20px;
@@ -1007,12 +1043,7 @@ tr {
     transition: all 0.3s ease;
 }
 
-thead tr th {
-   
-}
-
 thead {
-    
     tr {
         background-color: #3A3A3C;
         color: $color-1;
@@ -1085,6 +1116,7 @@ tbody {
         }
     }
     .tf-infomation {
+        padding: 0px 30px 31px;
         textarea {
             border: 1px solid #E5E5EA;
             padding: 12px 15px 12px 16px;
@@ -1109,6 +1141,13 @@ tbody {
         .sc-button {
             width: 224px;
         }
-    }
-    
+    } 
+}
+
+.flat-all-review {
+    .messages-sidebar li {
+        padding-bottom: 14px;
+        margin-bottom: 13.5px;
+        border-bottom: 1px solid #E5E5EA;
+    }    
 }

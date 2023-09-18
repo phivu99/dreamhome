@@ -35,6 +35,11 @@
         @include transition3;
       }
     }
+    &.btn-svg {
+      svg {
+        margin-right: 0;
+      }
+    }
     &.btn-1 {
       background-color: #FFF5E0;
       span {
@@ -49,6 +54,22 @@
         }
         svg {
           animation: 0.3s link-icon2 linear;
+          
+        }
+        svg,
+        path {
+          fill: $color-1;
+          stroke: $color-1;
+        }
+      }
+      &.one {
+        span {
+          color             : $color-3;
+        }
+        &:hover {
+          span {
+            color : $color-1;
+          }
         }
       }
     }
@@ -74,6 +95,16 @@
         height: 22px;
         background-color: rgba(255, 255, 255, 0.2);
         margin-left: -11px;
+        position: absolute;
+      }
+    }
+    &.btn-icon2 {
+      span::after {
+        content: "";
+        width: 1px;
+        height: 22px;
+        background-color: rgba(255, 255, 255, 0.2);
+        // margin-right: 11px;
         position: absolute;
       }
     }
