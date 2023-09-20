@@ -879,10 +879,6 @@
 			.navigation > li > a {
 				color: $color-1;
 			}
-			 .navigation > li:hover > a,
-			 .navigation > li.current > a{
-				color: $color-1;
-			}
 		}
 		.search-form .search-field {
 			width: 284px;
@@ -928,7 +924,7 @@
 				width: 1px;
 				height: 30px;
 				background-color: #D9D9D9;
-				top: 24px;
+				top: 14px;
 				position: absolute;
 				margin-left: 14px;
 			}
@@ -1214,8 +1210,14 @@
 .main-header .main-menu .navigation > li:hover > a,
 .main-header .main-menu .navigation > li.current > a{
 	opacity:1;
-	color: $color-2;
+	color: $color-3;
 }
+
+// .main-header .main-menu .navigation > li:hover > a,
+// .main-header .main-menu .navigation > li.current > a{
+// 	opacity:1;
+// 	color: $color-3;
+// }
 
 .main-header .main-menu .navigation > li > ul{
 	position:absolute;

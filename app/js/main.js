@@ -57,10 +57,10 @@
     var retinaLogos = function() {
         var retina = window.devicePixelRatio > 1 ? true : false;
           if(retina) {
-              $('#site-logo-inner').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'195',height:'50'} );
+              $('#site-logo-inner').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'197',height:'48'} );
 
-              $('#logo-footer.style').find('img').attr( {src:'assets/images/logo/logo-footer@2x.png',width:'195',height:'50'} );
-              $('#logo-footer.style2').find('img').attr( {src:'assets/images/logo/logo-footer-home.png',width:'195',height:'50'} );
+              $('#logo-footer.style').find('img').attr( {src:'assets/images/logo/logo-footer@2x.png',width:'197',height:'48'} );
+              $('#logo-footer.style2').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'197',height:'48'} );
           }   
         };
 

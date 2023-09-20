@@ -46,10 +46,6 @@
 .main-header.home2 .main-menu .navigation > li > a {
   color: #fff;
 }
-.main-header.home2 .main-menu .navigation > li:hover > a,
-.main-header.home2 .main-menu .navigation > li.current > a {
-  color: #fff;
-}
 .main-header.home2 .search-form .search-field {
   width: 284px;
   height: 41px;
@@ -91,7 +87,7 @@
   width: 1px;
   height: 30px;
   background-color: #D9D9D9;
-  top: 24px;
+  top: 14px;
   position: absolute;
   margin-left: 14px;
 }
@@ -370,7 +366,7 @@
 .main-header .main-menu .navigation > li:hover > a,
 .main-header .main-menu .navigation > li.current > a {
   opacity: 1;
-  color: #120A21;
+  color: #FFA920;
 }
 
 .main-header .main-menu .navigation > li > ul {
@@ -2017,12 +2013,10 @@ path.two {
 }
 .flat-featured.home2 .box {
   width: 100%;
+  margin-left: 0;
 }
 .flat-featured.home2 .owl-dots {
   margin-top: 10px;
-}
-.flat-featured.home2 .owl-carousel .owl-stage-outer {
-  margin: 0 -30px;
 }
 .flat-featured.home2 .owl-stage-outer::after,
 .flat-featured.home2 .owl-stage-outer::before {
@@ -2325,6 +2319,7 @@ path.two {
   background-image: url(../../../assets/images/section/bg-rent.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .flat-rent .heading-section {
   margin-bottom: 45px;
@@ -3177,8 +3172,7 @@ path.two {
 }
 .flat-agents .heading-section {
   margin-bottom: 0;
-  margin-top: 76px;
-  padding: 0 13px 0 116px;
+  padding: 76px 13px 76px 116px;
 }
 .flat-agents .heading-section .text-1 {
   margin-bottom: 53px;
@@ -3277,10 +3271,6 @@ path.two {
 
 .flat-your .swiper-container {
   margin-left: -32px;
-}
-.flat-your .swiper-slide {
-  width: 256px !important;
-  overflow: hidden;
 }
 .flat-your .box:hover .content {
   bottom: 18px;
@@ -3493,9 +3483,6 @@ path.two {
 }
 .flat-search-today .wrap-search-today .content p {
   margin-bottom: 13px;
-}
-.flat-search-today .swiper-slide {
-  width: 350px !important;
 }
 
 .flat-why-choose2 .images {
@@ -5682,7 +5669,7 @@ path.two {
   align-items: center;
   min-height: calc(100% - 0rem);
   max-width: 920px;
-  margin: 1.75rem auto;
+  margin: auto auto;
 }
 
 .modal.fade.popup.show {
@@ -5832,7 +5819,7 @@ path.two {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.widget-menu .box-menu li a:hover {
+.widget-menu .box-menu li:hover a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -5840,7 +5827,7 @@ path.two {
   transition: all 0.3s ease;
   color: #FFA920;
 }
-.widget-menu .box-menu li a:hover::before {
+.widget-menu .box-menu li:hover a::before {
   opacity: 0;
   visibility: hidden;
   margin-right: 0;

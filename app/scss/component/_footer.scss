@@ -121,8 +121,9 @@
                     margin-right: 11px;
                     @include transition3;
                 }
-
-                &:hover {
+            }
+            &:hover {
+                a {
                     @include transition3;
                     color: $color-3;
                     &::before {
