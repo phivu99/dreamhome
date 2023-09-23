@@ -1,5 +1,21 @@
 @use '../abstracts/' as *;
 /* dashboard menu */
+
+.dashboard .main-header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    opacity: 1;
+    background-color: $color-1;
+}
+
+.header-item {
+    position: fixed;
+    z-index: 11;
+}
+
 .hamburger-icon {
     width: 20px;
     height: 14px;
@@ -69,7 +85,7 @@
 
 .left-menu {
     width: 280px;
-    z-index: 100;
+    z-index: 10;
     background: #1C1C1E;
     bottom: 0;
     position: fixed;
@@ -328,8 +344,7 @@
 
 .show-job .left-menu {
     width: 70px;
-    z-index: 5;
-
+    z-index: 10;
 }
 
 .show-job .left-menu .simplebar-content-wrapper,
@@ -498,7 +513,7 @@
 
 // 
 .flat-title2 {
-    padding: 47px 0px 17px;
+    padding: 125px 0px 17px;
 }
 
 .info-wg {
@@ -590,6 +605,9 @@
                 width: 231.6px;
                 svg {
                     margin-right: 6px;
+                }
+                &:nth-child(1) {
+                    margin-right: 10px;
                 }
                 &:nth-child(2) {
                     background-color: $color-1;
@@ -794,6 +812,9 @@
 
 .tf-bottom {
     padding: 20px 0 25px;
+    &.style {
+        padding: 20px 385px 25px 0;
+    }
 }
 
 .flat-counter {
@@ -918,6 +939,12 @@
             height: 40px;
         }
         .wrap-listing {
+            tbody tr td {
+                padding: 16px 30px 16px 0px;
+            }
+            .images {
+                width: 168px;
+            }
             .content {
                 padding: 1px 0px 0 20px;
                 p {
@@ -955,9 +982,9 @@
                 }
                 
             }
-            .themesflat-pagination {
-                margin-top: 16px;
-            }
+        }
+        .themesflat-pagination {
+            margin-top: 16px;
         }
     }
     .charts {
@@ -1042,6 +1069,7 @@ tr {
     white-space: nowrap !important;
     transition: all 0.3s ease;
 }
+
 
 thead {
     tr {

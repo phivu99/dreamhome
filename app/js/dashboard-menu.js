@@ -13,10 +13,10 @@
             $('body').addClass("sidebar-enable");
             $.cookie("isButtonActive", "1");
            } 
-        1400 <= t(window).width() ? t("body").toggleClass("show-job") : t("body").removeClass("show-job") ;
+        1440 <= t(window).width() ? t("body").toggleClass("show-job") : t("body").removeClass("show-job") ;
   
         var width = $(window).width();
-        if (width < 1400){
+        if (width < 1440){
           $.cookie('isButtonActive', null)
         }
   

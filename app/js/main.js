@@ -110,7 +110,44 @@
     };
 
     // Header Connect
-
+    var headerFixed = function () {
+        if ($("header").hasClass("header-fixed")) {
+          var nav = $("#header");
+    
+          if (nav.length) {
+            var offsetTop = nav.offset().top,
+              headerHeight = nav.height(),
+              injectSpace = $("<div>", {
+                height: headerHeight,
+              });
+            injectSpace.hide();
+    
+            if ($("header").hasClass("style-absolute")) {
+              injectSpace.hide();
+            } else {
+              injectSpace.insertAfter(nav);
+            }
+    
+            $(window).on("load scroll", function () {
+              if ($(window).scrollTop() > offsetTop + headerHeight) {
+                nav.addClass("is-fixed");
+                injectSpace.show();
+                $("#trans-logo").attr("src", "images/logo.png");
+              } else {
+                nav.removeClass("is-fixed");
+                injectSpace.hide();
+                $("#trans-logo").attr("src", "images/logo-white.png");
+              }
+    
+              if ($(window).scrollTop() > 150) {
+                nav.addClass("is-small");
+              } else {
+                nav.removeClass("is-small");
+              }
+            });
+          }
+        }
+      };
     var loadmore = function () {
         $(".fl-item").slice(0, 8).show();
         $(".fl-blog.fl-item2").slice(0, 6).show();
@@ -175,41 +212,45 @@
     //         }
     //     }
     // };
+   
 
-        //=========NICE SELECT=========
-        $('.select_js').niceSelect();
+    
+
+    //=========NICE SELECT=========
+    $('.select_js').niceSelect();
+        
 
         // Header Fixed
-        var headerFixed = function () {
-            if ($('body').hasClass('header-fixed')) {
-                var nav = $('#site-header');
+        // var headerFixed = function () {
+        //     if ($('body').hasClass('header-fixed')) {
+        //         var nav = $('#site-header');
     
-                if (nav.length) {
-                    var offsetTop = nav.offset().top,
-                        headerHeight = nav.height(),
-                        injectSpace = $('<div />', {
-                            height: headerHeight
-                        }).insertAfter(nav);
-                    injectSpace.hide();
+        //         if (nav.length) {
+        //             var offsetTop = nav.offset().top,
+        //                 headerHeight = nav.height(),
+        //                 injectSpace = $('<div />', {
+        //                     height: headerHeight
+        //                 }).insertAfter(nav);
+        //             injectSpace.hide();
     
-                    $(window).on('load scroll', function () {
-                        if ($(window).scrollTop() > offsetTop) {
-                            nav.addClass('is-fixed');
-                            injectSpace.show();
-                        } else {
-                            nav.removeClass('is-fixed');
-                            injectSpace.hide();
-                        }
+        //             $(window).on('load scroll', function () {
+        //                 if ($(window).scrollTop() > offsetTop) {
+        //                     nav.addClass('is-fixed');
+        //                     injectSpace.show();
+        //                 } else {
+        //                     nav.removeClass('is-fixed');
+        //                     injectSpace.hide();
+        //                 }
     
-                        if ($(window).scrollTop() > 500) {
-                            nav.addClass('is-small');
-                        } else {
-                            nav.removeClass('is-small');
-                        }
-                    })
-                }
-            }
-        };
+        //                 if ($(window).scrollTop() > 500) {
+        //                     nav.addClass('is-small');
+        //                 } else {
+        //                     nav.removeClass('is-small');
+        //                 }
+        //             })
+        //         }
+        //     }
+        // };
 
 
         

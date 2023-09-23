@@ -74,6 +74,7 @@
         padding: 0px;
         box-shadow: unset;
     }
+
    
     .search-form {
         .search-field { 
@@ -1385,6 +1386,7 @@
     background-image: url(../../../assets/images/section/bg-search-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     padding: 101px 0 297px;
     color: $color-1;
     p {
@@ -2070,22 +2072,32 @@
             flex: none;
             width: 540px;
             .img-box {
-                
                 .img-2,
                 .img-3 {
                     margin-bottom: 2px;
                 }
                 &.img-box1 {
                     margin-right: 0px;
+                    width: 54.2%;
+                    flex: unset !important;
                 }
                 &.img-box2 {
-                    width: 24.9%;
+                    // width: 24.9%;
+                    width: 26.9%;
                     margin-left: 2px;
                 }
                 &.img-box3 {
                     margin-left: 2px;
+                    width: 26.9%;
                 }
-                
+                .imgs {
+                    height: 100%;
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
             }
             .icon-inner {
                 @include flex-center;
@@ -2187,6 +2199,23 @@
             margin-bottom: 19px;
             .image-group {
                 width: 100%;
+                // img {
+                //     width: 100%;
+                //     object-fit: cover;
+                // }
+                // .img-box.img-box1 {
+                //     width: 54.2%;
+                // }
+                // .img-box.img-box2 {
+                //     width: 26.9%;
+                // }
+                // .img-box.img-box3 {
+                //     width: 26.9%;
+                // }
+                // .imgs {
+                //     height: 100%;
+                //     width: 100%;
+                // }
             }
             .content {
                 width: 100%;
@@ -2391,9 +2420,6 @@
         .box {
             padding: 20px 17px 17px;
             margin-bottom: 26px;
-            .image-group {
-                width: 38.5%;
-            }
             .content {
                 width: 61.5%;
                 h3 {
@@ -2483,6 +2509,7 @@
     .box-agencies {
         margin-bottom: 30px;
         border-radius: 20px;
+        box-shadow: 0px 4px 18px 0px #00000014;
         .icon-brand {
             display: inline-flex;
             margin-left: 20px;
@@ -2495,7 +2522,7 @@
         }
         .content {
             padding: 19px 20px 16px;
-            box-shadow: 0px 4px 18px 0px #00000014;
+            // box-shadow: 0px 4px 18px 0px #00000014;
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 20px;
             .title-group {
@@ -2580,6 +2607,10 @@
     padding-bottom: 100px;
     .avatar {
         box-shadow: 0px 4px 18px 0px #00000014;
+        width: 190px;
+        height: 190px;
+        border-radius: 10px;
+        overflow: hidden;
     }
     .box-avatar {
         align-items: end;
@@ -2736,7 +2767,6 @@
 }
 
 .flat-service {
-    padding: 100px 0;
     background-image: url(../../../assets/images/section/bg-icon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -2895,17 +2925,31 @@
  
     .wrap-img {
         margin-bottom: 50px;
+        .box-img {
+            img {
+                width: 100%;
+            }
+        }
         .box-1 {
             margin-right: 10px;
+            width: 49.1%;
         }
         .box-2 {
+            width: 50.2%;
             .img-box {
                 margin-top: 10px;
+            }
+            .img-3 {
+                width: 50%;
             }
             .image {
                 margin-left: 10px;
                 position: relative;
                 @include flex-center;
+                width: 50%;
+                .img-4 {
+                    height: 100%;
+                }
                 &::before {
                     content: "";
                     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 53.85%, #000000 100%);
@@ -3809,7 +3853,7 @@
             margin-bottom: 11px;
             background-color: $color-1;
             .toggle-title {
-                padding: 20px 30px 24px 21px;
+                padding: 20px 40px 24px 21px;
                 background-color: $color-1;
                 cursor          : pointer;
                 color: $color-2;
@@ -3850,6 +3894,11 @@
                 box-shadow: 0px 12px 30px 0px #0000000D;
             }
         }
+    .text-box {
+        span {
+            padding-right: 4px;
+        }
+    }
     .wrap-author {
         margin-top: 56px;
         .images {
