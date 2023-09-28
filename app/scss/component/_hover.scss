@@ -47,7 +47,7 @@
     }
     &:hover {
         .img2 {
-            transform:  scale(1.1) rotate(5deg);
+            transform:  scale(1.1) rotate(3deg);
         }
     }
 } 
@@ -70,38 +70,7 @@
     }
 } 
 
-// .hv-one {
-//     position: relative;
-//     .hover-one::after,
-//     .hover-one::before {
-//         content: "";
-//         background: $color-3;
-//         height: 0;
-//         width: 0;
-//         z-index: 1;
-//         position: absolute;
-//         opacity: .6;
-//     }
-//     .hover-one {
-//         &::after {
-//             z-index: 3;
-//             bottom: 0;
-//             left: 0;
-//         }
-//         &::before {
-//             z-index: 3;
-//             right: 0;
-//             top: 0;
-//         }
-//     }
-//     &:hover .hover-one::after,
-//     &:hover .hover-one::before  {
-//         height: 100%;
-//         width: 100%;
-//         opacity: 0;
-//         transition-duration: 1.3s!important;
-//     }
-// }
+
 .pagi2 .swiper-pagination2,
             .swiper-button-next2,
             .swiper-button-prev2,
@@ -146,12 +115,10 @@
             transition: transform 1000ms ease;
             border-radius: 10px;
         }
-        // &:hover {
-        //     &::before {
-        //         transform: scale(1, 1);
-        //         transform-origin: center;
-        //     }
-        // }
+        &.s-one::before {
+            border-radius: 50%;
+        }
+
        
     }
 
@@ -222,6 +189,7 @@
     }
 }
 
+// hv tool
 .hv-tool {
     position: relative;
     transition: all 0.3s ease;

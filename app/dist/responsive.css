@@ -124,6 +124,15 @@
     padding: 40px 30px 35px 30px;
     width: 45%;
   }
+  .slider-item .js-letters > * {
+    display: unset;
+  }
+  .slider.home2 .slider-item .content .heading h1 {
+    padding: 0;
+  }
+  .slider.home4 .heading h1 {
+    padding-right: 0;
+  }
 }
 @media only screen and (max-width: 1440px) {
   .flat-agents {
@@ -401,7 +410,7 @@
     margin-right: 20px;
   }
   .dashboard .main-header .main-menu {
-    margin-left: 325px;
+    margin-left: 320px;
   }
   .dashboard .tf-bottom.style {
     padding: 20px 0px 25px 0;
@@ -425,6 +434,20 @@
 @media only screen and (max-width: 991px) {
   #navbarSupportedContent {
     display: block;
+  }
+  #header.style-absolute.is-fixed.home2 #showlogo {
+    display: unset;
+  }
+  #header.style-absolute.is-fixed.home2 .mobile-button {
+    top: 0%;
+    transform: translateY(35%);
+    transition: all 0s ease;
+  }
+  #header.style-absolute.is-fixed.home2 .search-form {
+    display: none;
+  }
+  #header.style-absolute.is-fixed.home2 .mobile-button::before, #header.style-absolute.is-fixed.home2 .mobile-button::after, #header.style-absolute.is-fixed.home2 .mobile-button span {
+    background-color: #fff;
   }
   .main-header {
     position: relative;
@@ -829,9 +852,9 @@
     margin-left: 0;
     margin-right: 8px;
   }
-  .flat-property-detail .wrap-form #comments .comment-form .nice-select,
-  .flat-property-detail .wrap-form #comments .comment-form .inner-2,
-  .flat-property-detail .wrap-form #comments .comment-form fieldset {
+  .flat-property-detail .wrap-form .comments .comment-form .nice-select,
+  .flat-property-detail .wrap-form .comments .comment-form .inner-2,
+  .flat-property-detail .wrap-form .comments .comment-form fieldset {
     margin-bottom: 20px;
   }
   .flat-property-detail .wrap-review .comment-list li {
@@ -876,10 +899,10 @@
   .flat-blog-list .themesflat-pagination {
     margin-top: 27px;
   }
-  .flat-blog-detai .image img {
+  .flat-blog-detail .image img {
     width: 100%;
   }
-  .flat-blog-detai .text-box {
+  .flat-blog-detail .text-box {
     padding: 40px 15px 40px;
   }
   .flat-blog.page-detail {
@@ -897,7 +920,7 @@
   .flat-brand.page-contact {
     padding: 80px 0 160px;
   }
-  .flat-contact-page #comments {
+  .flat-contact-page .comments {
     border-radius: 12px;
     padding: 30px 15px;
   }
@@ -1259,10 +1282,10 @@
   .flat-contact .box-info .icon-info {
     margin-right: 20px;
   }
-  #comments .comment-form .text-wrap {
+  .comments .comment-form .text-wrap {
     flex-wrap: wrap;
   }
-  #comments .comment-form .text-wrap fieldset {
+  .comments .comment-form .text-wrap fieldset {
     width: calc(100% - 22px);
   }
   .wg-search-area .box .content {
@@ -1355,14 +1378,14 @@
   .flat-featured.home3 .flat-tabs .box-tab {
     margin-bottom: 30px;
   }
+  .flat-search-home {
+    padding: 80px 0 280px;
+  }
   .flat-search-home .box-icon .icon {
     margin-right: 15px;
   }
   .flat-search-home .box-icon .icon::after {
     display: none;
-  }
-  .flat-search-home {
-    padding: 80px 0 280px;
   }
   .flat-why-choose2 .images {
     margin: 0 0 45px;
@@ -1639,19 +1662,19 @@
   .flat-property-detail .wrap-form .form-wg .wg-box {
     width: calc(100% - 30px) !important;
   }
-  .flat-property-detail .wrap-form #comments .comment-form fieldset {
+  .flat-property-detail .wrap-form .comments .comment-form fieldset {
     margin-bottom: 20px;
   }
-  .flat-property-detail .wrap-form #comments .comment-form .nice-select {
+  .flat-property-detail .wrap-form .comments .comment-form .nice-select {
     margin-bottom: 20px;
   }
-  .flat-property-detail .wrap-form #comments .comment-form .inner-1 .nice-select {
+  .flat-property-detail .wrap-form .comments .comment-form .inner-1 .nice-select {
     margin-top: 0;
   }
-  .flat-property-detail .wrap-form #comments .comment-form .message-wrap {
+  .flat-property-detail .wrap-form .comments .comment-form .message-wrap {
     margin-bottom: 18px;
   }
-  .flat-property-detail .wrap-form #comments .comment-form .inner-2 {
+  .flat-property-detail .wrap-form .comments .comment-form .inner-2 {
     margin-bottom: 20px;
   }
   .flat-property-detail .wrap-review .box-title {
@@ -1701,46 +1724,46 @@
   .flat-blog-list .wrap-blog .box .content {
     padding: 21px 0px 0 0px;
   }
-  .flat-blog-detai .title-heading {
+  .flat-blog-detail .title-heading {
     font-size: 28px;
     line-height: 42px;
   }
-  .flat-blog-detai .text-box {
+  .flat-blog-detail .text-box {
     padding: 30px 15px 30px;
     margin-bottom: 15px;
   }
-  .flat-blog-detai .icon-boxs {
+  .flat-blog-detail .icon-boxs {
     flex-wrap: wrap;
     padding-left: 0px;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
-  .flat-blog-detai .icon-boxs .icon {
+  .flat-blog-detail .icon-boxs .icon {
     margin-bottom: 5px;
   }
-  .flat-blog-detai .texts-1 {
+  .flat-blog-detail .texts-1 {
     margin-bottom: 20px;
   }
-  .flat-blog-detai .texts-2 {
+  .flat-blog-detail .texts-2 {
     margin-bottom: 15px;
   }
-  .flat-blog-detai .texts-3 {
+  .flat-blog-detail .texts-3 {
     padding-bottom: 20px;
   }
-  .flat-blog-detai .content-img {
+  .flat-blog-detail .content-img {
     margin-bottom: 20px;
   }
-  .flat-blog-detai .tag-wrap {
+  .flat-blog-detail .tag-wrap {
     display: block;
     margin-bottom: 30px;
   }
-  .flat-blog-detai .tag-wrap .tags-box {
+  .flat-blog-detail .tag-wrap .tags-box {
     margin-bottom: 10px;
   }
-  .flat-blog-detai .tag-wrap .share-box {
+  .flat-blog-detail .tag-wrap .share-box {
     flex-wrap: wrap;
   }
-  .flat-blog-detai .tag-wrap .share-box p {
+  .flat-blog-detail .tag-wrap .share-box p {
     margin-bottom: 5px;
   }
   .flat-blog.page-detail {
@@ -1758,7 +1781,7 @@
   .flat-contact-page .info-box {
     width: calc(100% - 22px) !important;
   }
-  #comments .button-boxs {
+  .comments .button-boxs {
     text-align: center;
   }
   .flat-brand.page-contact {
@@ -2101,7 +2124,7 @@
   .modal-dialog-centered .content {
     padding: 30px 15px 20px;
   }
-  .modal-body #comments .comment-form fieldset {
+  .modal-body .comments .comment-form fieldset {
     margin-bottom: 20px;
   }
   .modal-body .title-login {

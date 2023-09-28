@@ -21,7 +21,10 @@
   * tabs
   * btnQuantity
   * dropdown
- 
+  * img upload
+  * delete img
+  * click search form
+  * curved
 */
 
 ; (function ($) {
@@ -211,15 +214,15 @@
                 })
         ;}
 
-        var search = function () {
-            $('.header-search').on('click', function () {
-                $('.form-checkbox').find('input').prop('checked', false);
-            });
-    
-            $('a.clear-checkbox').on('click' , function(e){
-              e.preventDefault();
-            });
-        };
+    // var search = function () {
+    //     $('.header-search').on('click', function () {
+    //         $('.form-checkbox').find('input').prop('checked', false);
+    //     });
+
+    //     $('a.clear-checkbox').on('click' , function(e){
+    //       e.preventDefault();
+    //     });
+    // };
 
     var flatProgressBar = function () {
         $('.couter').appear(function () {
@@ -259,7 +262,7 @@
         $(".preload").fadeOut("slow", function () {
             $(this).remove();
         });
-        }, 1200);
+        }, 400);
     };
 
     var no_link = function(){
@@ -405,6 +408,7 @@
         fasterPreview(this);
     });
 
+    // delete img
     var delete_img = function (e) {
         $(".remove-file").on("click", function (e) {
           e.preventDefault();
@@ -414,19 +418,34 @@
       };
 
 
-
+    // click search form
     $('.pull-right').on('click', function (e) {
         e.preventDefault();
 
         $(this).toggleClass("click");
         $(".wd-search-form").toggleClass("show");
   
-      });
+    });
+
+    //  curved
+    $(document).ready(function() {
+        var str = $('.curved-text').html();
+        var curved = '';
+        for (var i = 0, len = str.length; i < len; i++) {
+            curved += '<div><span class="char'; curved += i; curved += '">';
+            curved += str[i];
+            curved += '</span>';
+            curved += '</div>';
+        }
+        $('.curved-text').html(curved);
+    });
 
 
+    var width = $(window).width();
+        if (width < 1500){
+        $(".js-letters").removeClass("wow").show();
+    }
 
-
-      
 
     // Dom Ready
     $(function () {
@@ -437,7 +456,6 @@
         donatProgress();
         popUpLightBox();
         toggleMenu();
-        
         Parallax();
         flatCounter();
         buttonHeart();
@@ -451,11 +469,8 @@
         donatProgress();
         tabs();
         delete_img();
-        //dele_img();
         Preloader();
         AOS.init();
     });
 
 })(jQuery);
-
-

@@ -1,5 +1,5 @@
 /**
-  * Name: SeoMx - Seo & Digital Marketing HTML Template
+  * Name: DreamHome - Real Estate HTML Template
   * Version: 1.0
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
@@ -29,6 +29,8 @@
     * heading 
     * dropdown
     * progress bar
+    * map
+    * up load 
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th,
@@ -919,6 +921,7 @@ path {
 }
 
 /* Header Fixed */
+#header.style-absolute.is-fixed,
 .header.is-fixed {
   position: fixed;
   top: -80px;
@@ -937,20 +940,7 @@ path {
 }
 
 #header.style-absolute.is-fixed {
-  position: fixed;
-  top: -80px;
-  left: 0;
-  width: 100%;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
-  z-index: 9999;
   background: #120A21;
-  border: none;
-  opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .header.is-fixed.is-small,
@@ -1447,7 +1437,7 @@ body .dribbble img {
 }
 
 .face > div {
-  background-image: url(../../../assets/images/section/bg-icon.jpg);
+  background-image: url(../../assets/images/section/bg-icon.jpg);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1627,7 +1617,6 @@ body .dribbble img {
   background-clip: content-box;
 }
 
-/* up file */
 .btn-upload {
   padding: 16px 47px;
 }

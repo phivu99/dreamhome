@@ -1,5 +1,13 @@
 @use '../abstracts/' as *;
 /* dashboard menu */
+/**
+  	* Menu
+	* flat upload photo
+	* flat counter dash
+	* flat dashboard
+    * flat profile
+    * flat all review 
+*/
 
 .dashboard .main-header {
     position: fixed;
@@ -151,11 +159,6 @@
 
 .left-menu::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-#sidebar-menu {
-    // padding: 37px 30px 22px;
-    
 }
 
 #sidebar-menu .ff-active>.has-arrow:after {
@@ -533,7 +536,7 @@
     }
 }
 
-
+// flat-upload-photo
 .flat-upload-photo {
     .titles {
         margin-bottom: 20px;
@@ -659,9 +662,7 @@
                 text-align: center;
                 padding: 4px 0 0 0;
             }
-        
             .btn-quantity {
-                // padding: 10px 11.2px 8px;
                 width: 16px;
                 height: 16px;
                 line-height: 0;
@@ -685,43 +686,6 @@
             }
         } 
     }
-//     input[type="checkbox"],
-// input[type='submit'] {
-//     width: 20px;
-//     height: 20px;
-//     position: relative;
-//     @include flex-center;
-//     border-radius: 6px;
-//     border: 1px solid #E5E5EA;
-// }
-
-// input[type="checkbox"]:checked {
-//     border-radius: 6px;
-//     border: 1px solid $color-5 !important;
-// }
-
-// input[type='checkbox']:checked::before {
-//     content: "\f00c";
-//     font-family: 'Font Awesome 5 Pro';
-//     color: #fff;
-//     font-size: 14px;
-//     position: absolute;
-//     z-index: 2;
-// }
-
-// input[type="checkbox"]:checked:after,
-// input[type='submit']:after,
-// input[type='submit']:checked:after {
-//     width: 20px;
-//     height: 20px;
-//     position: absolute;
-//     background-color: #14a077;
-//     content: "";
-   
-// }
-
-
-
 }
 
 .tf-amenities {
@@ -758,7 +722,6 @@
         width: 20px;
         height: 20px;
         border: 1px solid $color-5;
-        // background-color: rgba( $color-1, 0.1);
         border-radius: 6px;
         @include flex-center;
         margin-right: 10px;
@@ -817,6 +780,7 @@
     }
 }
 
+// flat counter dash
 .flat-counter {
     margin-bottom: 20px;
     .icons {
@@ -826,7 +790,6 @@
         border: 1px solid #E2E2E2;
         @include flex-center
     }
-
     .counter-box {
         position: relative;
         margin-right: 0px;
@@ -854,17 +817,8 @@
             border-radius: 10px;
         }
     }
-   
 }
 
-
-
-//   .charts {
-//     display: grid;
-//     grid-template-columns: 2fr 1fr;
-//     grid-gap: 20px;
-//     width: 100%;
-//   }
 .date-wgs {
     .date-wg {
         background: #fff;
@@ -881,7 +835,7 @@
     }
 }
 
-
+// flat dashboard
 .flat-dashboard {
     .new-listing {
         padding: 30px 30px 24px 30px;
@@ -1102,17 +1056,13 @@ tbody {
     }
 }
 
+// flat profile
 .flat-profile {
     .tf-uploads {
         padding: 30px 30px 30px 30px;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0392156863);
         border-radius: 12px;
     }
-    // #tf-upload-img {
-    //     position: relative;
-    //     opacity: 1;
-    //     width: unset;
-    // }
     .box-upload {
         .img-up {
             margin-right: 30px;
@@ -1172,6 +1122,7 @@ tbody {
     } 
 }
 
+// flat all review 
 .flat-all-review {
     .messages-sidebar li {
         padding-bottom: 14px;

@@ -1,7 +1,7 @@
 @use './abstracts/' as *;
 
 /**
-  * Name: SeoMx - Seo & Digital Marketing HTML Template
+  * Name: DreamHome - Real Estate HTML Template
   * Version: 1.0
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
@@ -33,6 +33,8 @@
     * heading 
     * dropdown
     * progress bar
+    * map
+    * up load 
 */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
@@ -111,7 +113,6 @@ ul, li {
 }
 
 .container5 {
-    // max-width: 1734px;
     max-width: 1890px;
 }
 
@@ -124,7 +125,6 @@ ul, li {
 }
 
 .container2 {
-    // max-width: 1460px;
     max-width: 1750px;
 }
 
@@ -200,9 +200,6 @@ input[type="search"]::placeholder,
 input[type="tel"]::placeholder, 
 input[type="color"]::placeholder {
     font-family: $font-1;
-    // font-size: 16px;
-    // line-height: 26px;
-    // color: $color-1;
     color: $color-2;
     line-height: 26px;
     font-size: 14px;
@@ -779,33 +776,7 @@ path {
 
 /* Header Fixed */
 
-// .header_1 {
-//     &.is-fixed {
-//         position: fixed;
-//         top: 0px;
-//         left: 0;
-//         width: 100%;
-//         box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 30%);
-//         z-index: 999;
-//         background: $color-1;
-//         border: none;
-//         opacity: 0;
-//         @include transition5;
-//         #main-nav > ul > li > a {
-//             color: $color-2;
-//         }
-//         #main-nav > ul > .current-menu-item > a {
-//             color: $color-6;
-//         }   
-//     }
-// }
-
-// .header_1.is-fixed.is-small {
-//     top: 0;
-//     opacity: 1;
-//     visibility: visible;
-// }
-
+#header.style-absolute.is-fixed,
 .header.is-fixed {
   position: fixed;
   top: -80px;
@@ -824,21 +795,8 @@ path {
 }
 
 #header.style-absolute.is-fixed {
-    position: fixed;
-    top: -80px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
-    z-index: 9999;
     background: $color-2;
-    border: none;
-    opacity: 1;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
+}
 
 .header.is-fixed.is-small,
 #header.style-absolute.is-small {
@@ -983,65 +941,6 @@ path {
     justify-content: center;
     align-items: center;
 }
-
-// #loaders {
-//     position: absolute;
-//     top: calc(50% - 20px);
-//     left: calc(50% - 20px);
-//   }
-//   @keyframes loader {
-//     0% { left: -100px }
-//     100% { left: 110%; }
-//   }
-//   #box {
-//     width: 50px;
-//     height: 50px;
-//     background: $color-3;
-//     animation: animate .5s linear infinite;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     border-radius: 3px;
-//     z-index: 9999999999;
-//   }
-//   @keyframes animate {
-//     17% { border-bottom-right-radius: 3px; }
-//     25% { transform: translateY(9px) rotate(22.5deg); }
-//     50% {
-//       transform: translateY(18px) scale(1,.9) rotate(45deg) ;
-//       border-bottom-right-radius: 40px;
-//     }
-//     75% { transform: translateY(9px) rotate(67.5deg); }
-//     100% { transform: translateY(0) rotate(90deg); }
-//   } 
-//   #shadow { 
-//     width: 50px;
-//     height: 5px;
-//     background: #000;
-//     opacity: 0.1;
-//     position: absolute;
-//     top: 59px;
-//     left: 0;
-//     border-radius: 50%;
-//     animation: shadow .5s linear infinite;
-//   }
-//   @keyframes shadow {
-//     50% {
-//       transform: scale(1.2,1);
-//     }
-//   }
-
-//   .title-load {
-//     position: absolute;
-//     bottom: 20px;
-//     left: 20px;
-//     margin: 0;
-//     font-weight: 200;
-//     opacity: .5;
-//       font-family: sans-serif;
-//     color: #fff;
-//   }
-
 
 @keyframes spin {
     100% {
@@ -1202,15 +1101,6 @@ body {
 // heading 
 .heading-section {
     margin-bottom: 50px;
-    // h6 {
-    //     margin-bottom: 26px;
-    //     color: $color-1;
-    //     padding: 10px 20px;
-    //     display: inline-block;
-    //     background: $color-3;
-    //     border-radius: 5px;
-    //     box-shadow: 5px 5px 0 $color-2;
-    // }
     h2 {
         margin-bottom: 14px;
     }
@@ -1338,9 +1228,6 @@ body {
     -webkit-transform: translateX(-50%);
 }
 
-
-// map
-
 /* MAP */
 .map-marker-container {
     position: absolute;
@@ -1348,7 +1235,7 @@ body {
     transform: translate3d(-50%, -100%, 0);
   }
   
-  .marker-container {
+.marker-container {
     position: relative;
     top: 25px;
     left: 10px;
@@ -1358,9 +1245,9 @@ body {
     border-radius: 50%;
     cursor: pointer;
     -webkit-perspective: 1000;
-  }
+}
   
-  .face {
+.face {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -1376,10 +1263,10 @@ body {
     background-clip: content-box;
     line-height: 46px;
     font-size: 24px;
-  }
+}
 
-  .face::before,
-  .face::after {
+.face::before,
+.face::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1412,21 +1299,9 @@ body {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
-  
-//   .face:before {
-//     position: absolute;
-//     left: -8px;
-//     top: -8px;
-//     height: 44px;
-//     width: 44px;
-//     border-radius: 50%;
-//     border: 8px solid rgba(255, 255, 255);
-//     box-shadow: 0 2px 30px rgba(20, 159, 117, 0.2);
-//     content: "";
-//   }
-  
-  .face>div {
-    background-image: url(../../../assets/images/section/bg-icon.jpg);
+
+.face>div {
+    background-image: url(../../assets/images/section/bg-icon.jpg);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1434,37 +1309,30 @@ body {
     background-position: center;
     background-size: cover;
     z-index: 99;
-  }
+}
   
-//   .map-marker-container:hover .marker-container .marker-card,
-//   .clicked .marker-container .marker-card,
-//   .map-marker-container.clicked .marker-card {
-//     transform: rotateY(360deg);
-//     transition: all 0.4s ease-in-out;
-//   }
-  
-  #singleListingMap .marker-container {
+#singleListingMap .marker-container {
     cursor: default;
-  }
+}
   
-  .marker-card {
+.marker-card {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     position: absolute;
     z-index: 1;
-  }
+}
   
-  #map .infoBox {
+#map .infoBox {
     margin-left: 170px;
     margin-bottom: -100px;
-  }
+}
 
 .map-listing-item {
     position: relative;
-  }
+}
   
-  .map-listing-item .infoBox-close {
+.map-listing-item .infoBox-close {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1479,45 +1347,29 @@ body {
     text-align: center;
     cursor: pointer;
     transition: all 300ms ease;
-  }
+}
   
-  .map-listing-item .infoBox-close:hover {
+.map-listing-item .infoBox-close:hover {
     font-weight: 700;
     color: $color-3;
-  }
+}
   
-  .map-listing-item .inner-box {
+.map-listing-item .inner-box {
     position: relative;
-    // padding: 16px;
-    // padding-left: 93px;
     border-radius: 10px;
     background: #ffffff;
     min-width: 359px;
     box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
-  }
+}
   
-//   .map-listing-item .image-box {
-//     position: absolute;
-//     left: 20px;
-//     top: 20px;
-//   }
-  
-//   .map-listing-item .image {
-//     display: block;
-//     height: 60px;
-//     width: 60px;
-//     overflow: hidden;
-//     margin-bottom: 0;
-//   }
-  
-  .map-listing-item .image img {
+.map-listing-item .image img {
     display: block;
     max-width: 100%;
     height: auto;
     transition: all 500ms ease;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
+}
   
   .map-listing-item .content {
     position: relative;
@@ -1544,18 +1396,6 @@ body {
     color: $color-3;
   }
   
-//   .map-listing-item h4 a {
-//     font-size: 14px;
-//     font-weight: 600;
-//     line-height: 24px;
-//     color: #14a077;
-//     transition: all 300ms ease;
-//   }
-  
-//   .map-listing-item h4 a:hover {
-//     color: #14a077;
-//   }
-  
   .map-listing-item h3 {
     position: relative;
     font-weight: 700;
@@ -1564,13 +1404,7 @@ body {
     color: $color-3;
   }
   
-  
   .map-listing-item .location {
-    // color: #64666c;
-    // font-size: 14px;
-    // line-height: 22px;
-    // cursor: pointer;
-    // margin-top: 8px;
     font-size: 12px;
     line-height: 18px;
     font-family: $font-1;
@@ -1647,97 +1481,15 @@ body {
     background-clip: content-box;
   }
 
-/* up file */
-
-// .dashboard .uploadFile {
-//     width: 100%;
-//     border: 1px solid rgba(138, 138, 160, 0.3);
-//     border-radius: 8px;
-//     font-size: 14px;
-//     line-height: 100px;
-//     overflow: hidden;
-//     padding: 31px 0 27px 3px;
-//     position: relative;
-//     resize: none;
-//     cursor: pointer;
-// }
-
-// .dashboard .uploadFile input[type="file"] {
-//     cursor: pointer;
-//     width: 210px;
-//     height: 50px;
-//     overflow: hidden;
-//     position: relative;
-//     padding: 0 0;
-//     border: none;
-//     border-radius: 8px;
-//     margin: auto;
-// }
-
-// .dashboard .uploadFile input[type="file"]:hover::after {
-//     color: #fff;
-// }
-
-// .dashboard .uploadFile .inputfile:hover::before {
-//     background-color: #8e2ac3;
-//     color: #fff;
-// }
-
-// .dashboard .uploadFile .form-control {
-//     background: #7759f312 !important;
-//     color: #fff;
-// }
-
-// .dashboard .uploadFile input[type="file"]:before {
-//     width: 210px;
-//     height: 50px;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 50px;
-//     content: "Upload Your Photo";
-//     display: inline-block;
-//     background: #7759f312;
-//     text-align: center;
-//     border-radius: 8px;
-//     font-family: "Open Sans";
-//     transition: all 0.3s ease;
-//     padding-left: 29px;
-// }
-
-// .dashboard .uploadFile input[type="file"]::after {
-//     content: "\f0ee";
-//     font-family: "Font Awesome 5 Pro";
-//     font-size: 18px;
-//     transition: all 0.3s ease;
-//     position: absolute;
-//     top: 11px;
-//     left: 27px;
-// }
 
 // up load 01
 .btn-upload {
-    // position: relative;
-    // width: 200px;
-    // height: 54px;
-    // display: flex !important;
-    // justify-content: center;
-    // align-items: center;
-    // border-radius: 5px;
-    // font-size: 14px;
-    // font-weight: 400;
-    // line-height: 22px;
-    // color: #fff;
-    // background: $color-3;
-    // margin-bottom: 10px;
-    // padding-top: 3px;
-    // font-family: 'Open Sans';
     padding: 16px 47px;
 }
 
 #upload-profile {
     margin-bottom: 15px;
 }
-
 
 #tf-upload-img {
     position: absolute;
