@@ -14,325 +14,323 @@
 }
 
 .side-bar {
-        .widget {
+    .widget {
+        margin-bottom: 20px;
+        padding: 0;
+        &:last-child {
+            margin-bottom: 0px;
+        }     
+    }
+    .widget-contact {
+        margin-bottom: 42px;
+        .box-contact {
             margin-bottom: 20px;
-            padding: 0;
+            border-bottom: 1px solid $color-8;
+            padding-bottom: 19px;
+            .img-author {
+                margin-right: 17px;
+            }
             &:last-child {
                 margin-bottom: 0px;
-            }     
+                padding-bottom: 0;
+                border-bottom: 0;
+            }  
         }
-        .widget-contact {
-            margin-bottom: 42px;
-            .box-contact {
-                margin-bottom: 20px;
-                border-bottom: 1px solid $color-8;
-                padding-bottom: 19px;
-                .img-author {
-                    margin-right: 17px;
-                }
-                &:last-child {
-                    margin-bottom: 0px;
-                    padding-bottom: 0;
-                    border-bottom: 0;
-                }  
-            }
-        }
-        
-        .widget-listings {
-            margin-bottom: 39px;
-            .box-listings {
-                margin-bottom: 21px;
-                padding-bottom: 19px;
-                border-bottom: 1px solid $color-8;
-                .img-listings {
-                    margin-right: 5px;
-                    flex: none;
-                }
-                &:last-child {
-                    margin-bottom: 0px;
-                    border-bottom: 0px;
-                    padding-bottom: 0;
-                } 
-                .content {
-                    padding-left: 8px;
-                    a {
-                        margin-bottom: 6px;
-                    }
-                }
-            }
-        }
-        
-        .widget-estate {
-            margin-bottom: 29px;
-            .group-estate {
-                flex-wrap: wrap;
-                margin-left: -10px;
-                .box-estate {
-                    width: calc(50% - 10px);
-                    margin-left: 10px;
-                    margin-bottom: 21px;
-                    .thumb {
-                        position: relative;
-                        &::before {
-                            content: '';
-                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 53.85%, #000000 100%);
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            width: 100%;
-                            height: 100%;
-                            z-index: 1;
-                            border-radius: 8px;
-                        }
-                        img {
-                            border-radius: 8px;
-                        }
-                    }
-                    .content {
-                        margin-top: -45px;
-                        padding-left: 10px;
-                        z-index: 2;
-                        position: relative;
-                    }
-                }
-            }
-        }
+    }
     
-        .box-ads {
-            background: url(./../../assets/images/section/sidebar-ads.jpg) center center no-repeat;
-            background-size: cover;
-            border-radius: 10px;
-            padding: 336px 50px 27px 31px;
-            position: relative;
-            &::before {
-                @include imgover;
-                background: linear-gradient(180deg, rgba(107, 144, 128, 0) 36.38%, #24332C 100%);
-            }
-            .icon-p {
-                
-                &::before {
-                    color: $color-1;
-                }
-            }
-            h3 {
-                margin-bottom: 10px;
-            }
-            p {
-                margin-bottom: 10px;
-            }
-        }
-        
-        .widget-marketing  {
-            background-color: #FFE8CE;
-            border: 0px;
-            padding: 34px 34px 41px;
-            .titles {
-                margin-bottom: 23px;
-            }
-            .buttons {
-                margin-bottom: 35px;
-            }
-        }
-        .widget-title {
-            position: relative;   
-            padding-left: 1px;
+    .widget-listings {
+        margin-bottom: 39px;
+        .box-listings {
             margin-bottom: 21px;
-        }
-
-        .widget-categories {
-            margin-bottom: 30px;
-            h3 {
-                margin-bottom: 7px;
+            padding-bottom: 19px;
+            border-bottom: 1px solid $color-8;
+            .img-listings {
+                margin-right: 5px;
+                flex: none;
             }
-            li {
-                position: relative;
-                // margin-bottom: 24px;
-                padding: 12px 0px 9px 0px;
-                @include transition3;
-                border-bottom: 1px solid $color-5;
-                a {
-                    color: $color-2;
-                    font-weight: 700;
-                    display: flex;
-                    justify-content: space-between;
-                    &::after {
-                        content: "\f178";
-                        font-family: "Font Awesome 5 Pro";
-                        font-size: 16px;
-                        font-weight: 100;
-                        @include transition3;
-                    }
-                }
-                &.active,
-                &:hover {
-                    a {
-                        color: $color-3;
-                        &::after {
-                            animation: 0.3s link-icon linear;
-                            color: $color-3;
-                        }
-                    }
-                }
-                &:last-child {
-                    margin-bottom: 0;
-                    border-bottom: unset;
-                }
-            }
-        }
-        .widget-tags {
-            // padding: 32px 38px 27px 39px;
-            .tags_cloud_inner {
-                a {
-                    display: inline-block;
-                    padding: 7px 15px;
-                    font-size: 13px;
-                    margin-right: 8px;
-                    margin-bottom: 15px;
-                    border: 1px solid $color-5;
-                    font-family:  $font-2;
-                    border-radius: 10px;
-                    @include transition3;
-                    &.active,
-                    &:hover {
-                        color: $color-1;
-                        background-color: $color-3;
-                    }
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-            }
-        }
-        
-        .flat-tabs {
-            .tab-title li {
-                box-shadow: none;
-            }
-            .box-tab {
+            &:last-child {
                 margin-bottom: 0px;
-            }
-        }
-
-        .author-box {
-            margin-bottom: 23px;
-            .image-author {
-                margin-right: 17px;
-                img {
-                    width: 65px;
-                    height: 65px;
-                    border-radius: 50%;
-                }
-            }
-        }
-        .title-contact {
-            margin-bottom: 24px;
-        }
-
-        .comments .comment-form fieldset {
-            margin-bottom: 12px;
-            &.message-wrap {
-                margin-bottom: 18px;
-            }
-            input {
-                padding: 13px 14px 13px 18px;
-            }
-            textarea {
-                padding: 13px 15px 12px 17px;
-            }
-        }
-        .comments .button-box  {
-            button {
-                margin-right: 10px;
-                padding: 16.5px 20px 16.5px 20px;
-            }
-            a {
-                padding: 16.5px 17px 16.5px 20px;
-            }
-            a,
-            button {
-                padding: 16px px 16px 21px;
-                @include flex-center;
-                span {
-                    margin-right: 10px;
-                    flex: none;
-                }
-            }
-        }
-        .style-tour {
-            padding: 30px 29px 28px;
-        }
-        .widget-tour {
-            .title-tour {
-                margin-bottom: 2px;
-            }
-            .p-tour {
-                margin-bottom: 24px;
-            }
-            .days-wrap {
-                margin-left: -10px;
-                margin-bottom: 24px;
-                .day-box {
-                    width: calc(25% - 10px);
-                    margin-left: 10px;
-                    padding: 14px 5px;
-                    border: 2px solid $color-5;
-                    border-radius: 10px;
-                    @include transition3;
-                    cursor: pointer;
-                    .number {
-                        margin: 8px 0 7px;
-                        @include transition3;
-                    }
-                    &:hover {
-                        border: 2px solid $color-3;
-                        .number {
-                            color: $color-3;
-                        }
-                    }
-                }
-            }
-            h5 {
-                margin-bottom: 12px;
-            }
-            .flat-tabs {
-                .tab-title li {
-                    svg {
-                        margin-right: 8px;
-                    }
-                }
-                .box-tab {
-                    margin-bottom: 11px;
-                }
-            }
-            .comments .comment-form {
-                .nice-select {
-                    padding: 16px 20px 14px 17px;
-                    margin-bottom: 9px;
-                }
-                button {
-                    width: 100%;
-                    span {
-                        margin-right: 7px;
-                    }
-                }
-                fieldset.message-wrap {
+                border-bottom: 0px;
+                padding-bottom: 0;
+            } 
+            .content {
+                padding-left: 8px;
+                a {
                     margin-bottom: 6px;
                 }
             }
-            .widget-form {
-                margin-bottom: 12px;
-                .btn-checkbox {
-                    border: 1px solid $color-5;
-                    width: 20px;
+        }
+    }
+    
+    .widget-estate {
+        margin-bottom: 29px;
+        .group-estate {
+            flex-wrap: wrap;
+            margin-left: -10px;
+            .box-estate {
+                width: calc(50% - 10px);
+                margin-left: 10px;
+                margin-bottom: 21px;
+                .thumb {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 53.85%, #000000 100%);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        border-radius: 8px;
+                    }
+                    img {
+                        border-radius: 8px;
+                    }
                 }
-                .sub-title {
-                    margin-right: 3px;
-                    margin-top: 1px;
+                .content {
+                    margin-top: -45px;
+                    padding-left: 10px;
+                    z-index: 2;
+                    position: relative;
                 }
             }
         }
+    }
+
+    .box-ads {
+        background: url(./../../assets/images/section/sidebar-ads.jpg) center center no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 336px 50px 27px 31px;
+        position: relative;
+        &::before {
+            @include imgover;
+            background: linear-gradient(180deg, rgba(107, 144, 128, 0) 36.38%, #24332C 100%);
+        }
+        .icon-p {
+            
+            &::before {
+                color: $color-1;
+            }
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .widget-marketing  {
+        background-color: #FFE8CE;
+        border: 0px;
+        padding: 34px 34px 41px;
+        .titles {
+            margin-bottom: 23px;
+        }
+        .buttons {
+            margin-bottom: 35px;
+        }
+    }
+    .widget-title {
+        position: relative;   
+        padding-left: 1px;
+        margin-bottom: 21px;
+    }
+
+    .widget-categories {
+        margin-bottom: 30px;
+        h3 {
+            margin-bottom: 7px;
+        }
+        li {
+            position: relative;
+            padding: 12px 0px 9px 0px;
+            @include transition3;
+            border-bottom: 1px solid $color-5;
+            a {
+                color: $color-2;
+                font-weight: 700;
+                display: flex;
+                justify-content: space-between;
+                &::after {
+                    content: "\f178";
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 16px;
+                    font-weight: 100;
+                    @include transition3;
+                }
+            }
+            &.active,
+            &:hover {
+                a {
+                    color: $color-3;
+                    &::after {
+                        animation: 0.3s link-icon linear;
+                        color: $color-3;
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: unset;
+            }
+        }
+    }
+    .widget-tags {
+        .tags_cloud_inner {
+            a {
+                display: inline-block;
+                padding: 7px 15px;
+                font-size: 13px;
+                margin-right: 8px;
+                margin-bottom: 15px;
+                border: 1px solid $color-5;
+                font-family:  $font-2;
+                border-radius: 10px;
+                @include transition3;
+                &.active,
+                &:hover {
+                    color: $color-1;
+                    background-color: $color-3;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    
+    .flat-tabs {
+        .tab-title li {
+            box-shadow: none;
+        }
+        .box-tab {
+            margin-bottom: 0px;
+        }
+    }
+
+    .author-box {
+        margin-bottom: 23px;
+        .image-author {
+            margin-right: 17px;
+            img {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .title-contact {
+        margin-bottom: 24px;
+    }
+
+    .comments .comment-form fieldset {
+        margin-bottom: 12px;
+        &.message-wrap {
+            margin-bottom: 18px;
+        }
+        input {
+            padding: 13px 14px 13px 18px;
+        }
+        textarea {
+            padding: 13px 15px 12px 17px;
+        }
+    }
+    .comments .button-box  {
+        button {
+            margin-right: 10px;
+            padding: 16.5px 20px 16.5px 20px;
+        }
+        a {
+            padding: 16.5px 17px 16.5px 20px;
+        }
+        a,
+        button {
+            padding: 16px px 16px 21px;
+            @include flex-center;
+            span {
+                margin-right: 10px;
+                flex: none;
+            }
+        }
+    }
+    .style-tour {
+        padding: 30px 29px 28px;
+    }
+    .widget-tour {
+        .title-tour {
+            margin-bottom: 2px;
+        }
+        .p-tour {
+            margin-bottom: 24px;
+        }
+        .days-wrap {
+            margin-left: -10px;
+            margin-bottom: 24px;
+            .day-box {
+                width: calc(25% - 10px);
+                margin-left: 10px;
+                padding: 14px 5px;
+                border: 2px solid $color-5;
+                border-radius: 10px;
+                @include transition3;
+                cursor: pointer;
+                .number {
+                    margin: 8px 0 7px;
+                    @include transition3;
+                }
+                &:hover {
+                    border: 2px solid $color-3;
+                    .number {
+                        color: $color-3;
+                    }
+                }
+            }
+        }
+        h5 {
+            margin-bottom: 12px;
+        }
+        .flat-tabs {
+            .tab-title li {
+                svg {
+                    margin-right: 8px;
+                }
+            }
+            .box-tab {
+                margin-bottom: 11px;
+            }
+        }
+        .comments .comment-form {
+            .nice-select {
+                padding: 16px 20px 14px 17px;
+                margin-bottom: 9px;
+            }
+            button {
+                width: 100%;
+                span {
+                    margin-right: 7px;
+                }
+            }
+            fieldset.message-wrap {
+                margin-bottom: 6px;
+            }
+        }
+        .widget-form {
+            margin-bottom: 12px;
+            .btn-checkbox {
+                border: 1px solid $color-5;
+                width: 20px;
+            }
+            .sub-title {
+                margin-right: 3px;
+                margin-top: 1px;
+            }
+        }
+    }
                 
   
     &.side-bar-1 {

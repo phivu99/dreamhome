@@ -415,6 +415,10 @@ var swiper =  new Swiper(".carousel-6", {
   
 
 var swiper =  new Swiper(".carousel-7", {
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: true,
+    },
     loop:false,
     slidesPerView: 1,
     spaceBetween: 30,

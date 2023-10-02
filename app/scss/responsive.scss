@@ -161,7 +161,7 @@
     .slider.home4 .heading h1 {
       padding-right: 0;
     }
-   
+    
   
 
   }
@@ -212,8 +212,7 @@
       }
     }
 
-    
-   
+
   }
 
   @media only screen and (max-width: 1350px) {
@@ -311,6 +310,10 @@
         display: flex;
         align-items: center;
         margin-right: 20px;
+      }
+      .wd-search-form {
+        width: 950px;
+        left: -560px;
       }
     }
 
@@ -432,11 +435,6 @@
     }  
 
     
-
-   
-
-    
-
    
     .widget-logo-footer .box-menu {
       margin-left: 0px;
@@ -533,6 +531,7 @@
         display: none;
       }
     }
+    
   }
   
 
@@ -702,6 +701,18 @@
       }
     }
 
+    .wd-search-form {
+      .box1 {
+          padding: 0 0px 10px 0;
+        .form-group {
+          width: calc(50% - 30px) !important;
+          &:last-child {
+            padding-right: 8px;
+          }
+        }
+      }
+    }
+
     .slider.home2 .slider-item .content {
       padding: 130px 0 90px;
       .heading {
@@ -717,6 +728,13 @@
       .slider-item .content {
         padding: 0px 0px 90px 0;
       }
+      .wd-search-form {
+        width: 100%;
+        left: unset;
+        .form-group {
+          margin-bottom: 20px;
+        }
+      } 
     }
     
     .flat-featured .box {
@@ -730,7 +748,7 @@
       }
     }
 
-    .flat-meet .images img {
+    .flat-meet .images a {
       width: 100%;
     }
 
@@ -745,17 +763,31 @@
       }
     }
 
-    .flat-blog .content {
-      padding: 20px 0px 0;
+    .flat-blog {
+      .box {
+        .images a {
+          width: 100%;
+        }
+        .content {
+          padding: 20px 0px 0;
+        }
+      }
+      
     }
 
     .flat-testimonial .box .inner {
       padding: 30px 15px;
+    } 
+
+    .icon-plus img {
+      width: unset !important;
     }
 
     // home2
-    .flat-find-neighborhood .box .images img {
-      width: 100%;
+    .flat-find-neighborhood .box .images {
+      img {
+        width: 100%;
+      }
     }
     .flat-estate-near {
       padding: 75px 0 50px;
@@ -1761,6 +1793,9 @@
         img {
           width: 100%;
         }
+        .icon-plus img {
+          width: unset;
+        }
       }
       &.find-2 .box {
         width: calc(50% - 10px);
@@ -2580,11 +2615,23 @@
     }
 
 
-    // 
     .wd-search-form {
-      margin-top: 11px;
-      .form-wg .wg-box2 {
-        width: calc(50% - 30px) !important;
+      padding: 24px 15px 10px;
+      &.show {
+        margin-top: 30px;
+      }
+      .box1 {
+        .form-group {
+          width: calc(100% - 30px) !important;
+          &:nth-child(3) {
+            padding-right: 8px;
+          }
+        }
+      }
+      .box2 {
+        .form-group {
+          width: calc(50% - 30px) !important;
+        }
       }
     }
    

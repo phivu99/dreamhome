@@ -62,7 +62,6 @@
 .swiper-button-prev3 {
     width: 54px;
     height: 54px;
-    // border-radius: 5px; 
     z-index: 99;
     opacity: 1;
     @include transition3;
@@ -139,13 +138,13 @@
 
 // slider home 02
 .swiper-button-next2 {
-    right: 34.5%; 
+    right: 37.5%; 
     left : auto; 
 }
 
 .swiper-button-prev2 {
     right: auto; 
-    left : 34.5%; 
+    left : 37.5%; 
 }
 
 .swiper-button-next2,
@@ -334,8 +333,6 @@
         background-attachment: fixed;
         .slider-item {
             position: relative;
-            // padding: 200px 0 157px;
-           
             .content {
                 padding: 245px 0 373px;
                 .heading {
@@ -409,7 +406,8 @@
             padding: 168px 0px 192px 0;
         }
         .wd-search-form {
-            padding: 22px;
+            width: 1110px;
+            left: -650px;
         }
     }
     &.home5 {
@@ -515,7 +513,6 @@
         z-index: 100;
         left: 50%;
         opacity: 0;
-        /* text-align: center; */
         transform: translateX(-50%);
     }
     .swiper-pagination-bullet {
@@ -693,6 +690,45 @@
 }
 
 // 
+
+.wd-search-form {
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 26px 0px rgba(66, 71, 76, 0.0784313725);
+    border-radius: 10px;
+    padding: 24px 22px 10px;
+    margin-left: -22px;
+    @include transition3;
+    opacity: 0;
+    visibility: hidden;
+    &.show {
+        display: unset;
+        opacity: 1;
+        margin-top: 40px;
+        visibility: visible;
+    }    
+    .group-select .nice-select {
+        width: 100% !important;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .tf-amenities {
+        padding: 0;
+        box-shadow: unset;
+        margin-bottom: 0;
+    }
+    .box1 {
+        padding: 0 10px 10px 0;
+    }
+    .boder-wg {
+        border-bottom: 1px solid $color-5;
+        margin-bottom: 30px;
+    }
+  }
+
 .form-sl {
     background-color: $color-1;
     padding: 22px;
@@ -776,47 +812,6 @@
   }
 
 
-  .flat-slider .flat-bt-slider,
-.flat-slider .sub-heading ,
-.slider-item .heading  {
-    transform: translateY(400px);
-}
-
-.flat-slider .flat-bt-slider,
-.flat-slider .sub-heading,
-.slider-item .heading {
-    opacity: 0;
-}
-
-
-.swiper-slide-active .flat-slider .flat-bt-slider,
-.swiper-slide-active .flat-slider .sub-heading,
-.slider-item .heading  {
-    opacity           : 1;
-    visibility        : visible;
-    -webkit-transition: transform 1100ms ease, opacity 1100ms ease;
-    -moz-transition   : transform 1100ms ease, opacity 1100ms ease;
-    -ms-transition    : transform 1100ms ease, opacity 1100ms ease;
-    -o-transition     : transform 1100ms ease, opacity 1100ms ease;
-    transition        : transform 1100ms ease, opacity 1100ms ease;
-    transition-delay  : 1100ms;
-}
-
-
-.swiper-slide-active .flat-slider .flat-bt-slider,
-.swiper-slide-active .flat-slider .sub-heading,
-.slider-item .heading {
-    transform: translateY(0) !important;
-}
-
-.slider-item .heading {
-    transition-delay: 800ms !important;
-}
-
-.swiper-slide-active .flat-slider .sub-heading {
-    transition-delay: 550ms !important;
-}
-
 
   @keyframes waviy {
     0%,40%,100% {
@@ -841,8 +836,6 @@
       min-width: 0.21em;
       backface-visibility: hidden;
       animation: slide-up 0.6s both;
-    //   animation: slide-up 0.6s $ease-cb-4 both;
-      // Meat & Potatos of our stagger
       @include nth-ani-delay(40, 0.05s);
     }
   }

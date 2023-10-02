@@ -1,3 +1,4 @@
+// diagram
 var ctx = document.getElementById('lineChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',

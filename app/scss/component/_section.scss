@@ -183,6 +183,9 @@
     .wd-find-select .group-select .nice-select {
         width: 217px;
     }
+    .wd-search-form {
+        margin-left: 0;
+    }
 }
 
 .flat-tabs.style2 {
@@ -435,9 +438,25 @@
                 .icon-plus {
                     opacity: 1;
                     z-index: 99;
+                    transition-delay: 0.3s;
                     top: 50%;
-                    transition-delay: 0.5s;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
                 }
+                .swiper-button-next2 {
+                    right: 34.5%; 
+                }
+                .swiper-button-prev2 {
+                    left : 34.5%; 
+                }
+                
+                .swiper-slide {
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
+                        
             }
         }
         &.style-dream {
@@ -448,6 +467,12 @@
     }
     .image-group {
         margin-bottom: 16px;
+        .swiper-slide {
+            overflow: hidden;
+            img {
+                @include transition3;
+            }
+        }
     }
     
     h3 {
@@ -523,15 +548,15 @@
     
     .icon-plus {
         position: absolute;
-        top: 0%;
+        top: 45%;
         transform: translate(-50%, -50%);
         left: 50%;
         opacity: 0;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
+        @include transition3;
+        img {
+            top: 40%;
+            position: relative;
+        }
     }
     
     .featured {
@@ -634,8 +659,31 @@
                 opacity: 0.7;
             }
         }
-        &:hover .images::after {
-            height: 200%;
+        .icon-plus {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            @include transition3;
+            opacity: 0;
+            img {
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                text-align: center;
+                position: relative;
+            }
+        }
+        &:hover {
+            .images::after {
+                height: 200%;
+            }
+            .icon-plus {
+                opacity: 1;
+                 transition-delay: 0.3s;
+            }
         }
         
         .content {
@@ -1464,6 +1512,7 @@
             }
             .images {
                 margin-bottom: 17px;
+                display: inline-flex;
             }
             p {
                 margin-bottom: 18px;
@@ -1479,17 +1528,22 @@
 
 // flat your
 .flat-your {  
+    .swiper-slide {
+        overflow: hidden;
+    }
     .box {
+        overflow: hidden;
         &:hover {
-            .content {
-                bottom: 18px;
-                p {
-                    margin-bottom: 10px;
-                }
-            }
             .icon-plus {
                 opacity: 1;
                 z-index: 99;
+            }
+            .content {
+                bottom: 18px;
+                z-index: 99;
+                p {
+                    margin-bottom: 10px;
+                }
             }
         }
         .img {
@@ -1513,16 +1567,24 @@
             }
         }
         .icon-plus {
-            position: absolute;
-            top: 41%;
-            transform: translate(-50%, -50%);
-            left: 50%;
+            position: absolute;   
             opacity: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            img {
+                left: 50%;
+                top: 41%;
+                position: relative;
+                transform: translate(-50%, -50%);
+            }
         }
         .content {
             margin-top: -75px;
             @include transition3;
-            z-index: 9;
+            z-index: 98;
             bottom: -18px;
             left: 21px;
             position: absolute;
@@ -1685,8 +1747,35 @@
             padding-right: 100px;
             margin-bottom: 133px;
         }
+        .box {
+            &:hover {
+                .icon-socials {
+                    right: 0;
+                    opacity: 1;
+                }
+            }
+        }
         .images {
             border-radius: 10px 10px 0 0;
+            position: relative;
+            .icon-socials {
+                background-color: $color-3;
+                position: absolute;
+                width: 50px;
+                height: 100%;
+                top: 0;
+                right: -30px;
+                display: grid;
+                @include transition3;
+                opacity: 0;
+                a {
+                    @include flex-center
+                }
+                i {
+                    font-size: 17px;
+                    color: $color-1;
+                }
+            }
         }
         .content {
             background-color: $color-1;
@@ -1799,7 +1888,6 @@
     padding-bottom: 100px;
     &.page {
         padding: 92px 0 0;
- 
     }
     .box {
         background: $color-1;
@@ -2741,8 +2829,14 @@
         background-color: $color-1;
         padding: 30px;
         border-radius: 10px;
-        svg {
+        &:hover {
+            .icon svg {
+                animation: toBottomFromTop 0.5s forwards;
+            }
+        }
+        .icon {
             margin-bottom: 25px;
+            overflow: hidden;
         }
         h3 {
             margin-bottom: 15px;
@@ -2758,6 +2852,16 @@
             }
         }
     }
+}
+
+@keyframes toTopFromBottom {
+    49% {
+      transform: translateY(-20%); }
+    50% {
+      opacity: 0;
+      transform: translateY(20%); }
+    51% {
+      opacity: 1; } 
 }
 
 .flat-why-choose.page {
@@ -3638,29 +3742,6 @@
         }
     }
 }
-
-.wd-search-form {
-    margin-top: 20px;
-    position: absolute;
-    width: 100%;
-    background: #fff;
-    box-shadow: 0px 4px 26px 0px rgba(66, 71, 76, 0.0784313725);
-    border-radius: 10px;
-    padding: 22px 22px 10px;
-    margin-left: -22px;
-    @include transition3;
-    display: none;
-    &.show {
-        display: unset !important;
-    }    
-    .group-select .nice-select {
-        width: 100% !important;
-    }
-    .form-group {
-        margin-bottom: 20px;
-    }
-  }
-
 
 
 //flat video

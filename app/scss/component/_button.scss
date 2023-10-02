@@ -47,7 +47,6 @@
       }
       &:hover,
       &.active {
-        // background-color: rgba(#FFF5E0, 0.6);
         background-color: $color-3;
         span {
           color : $color-1;
@@ -104,7 +103,6 @@
         width: 1px;
         height: 22px;
         background-color: rgba(255, 255, 255, 0.2);
-        // margin-right: 11px;
         position: absolute;
       }
     }

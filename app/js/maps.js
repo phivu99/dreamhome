@@ -23,11 +23,7 @@
           '" alt=""></figure>' +
           "</div>" +
           '<div class="content">' +
-        //   "<h4><a >" +
-        '<h4><a href=' +
-        //   locationTopCity +
-        //   "</a></h4>" +
-          //"<h4><a href=" +
+          '<h4><a href=' +
          
           locationURL +
           '">' +

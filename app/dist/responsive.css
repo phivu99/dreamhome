@@ -254,6 +254,10 @@
     align-items: center;
     margin-right: 20px;
   }
+  .slider.home4 .wd-search-form {
+    width: 950px;
+    left: -560px;
+  }
   .wd-search-form {
     margin-left: -15px;
   }
@@ -566,6 +570,15 @@
     margin-left: 8px;
     margin-bottom: 10px;
   }
+  .wd-search-form .box1 {
+    padding: 0 0px 10px 0;
+  }
+  .wd-search-form .box1 .form-group {
+    width: calc(50% - 30px) !important;
+  }
+  .wd-search-form .box1 .form-group:last-child {
+    padding-right: 8px;
+  }
   .slider.home2 .slider-item .content {
     padding: 130px 0 90px;
   }
@@ -579,6 +592,13 @@
   .slider.home4 .slider-item .content {
     padding: 0px 0px 90px 0;
   }
+  .slider.home4 .wd-search-form {
+    width: 100%;
+    left: unset;
+  }
+  .slider.home4 .wd-search-form .form-group {
+    margin-bottom: 20px;
+  }
   .flat-featured .box {
     width: calc(50% - 30px);
   }
@@ -588,7 +608,7 @@
   .flat-search-area .box img {
     width: 100%;
   }
-  .flat-meet .images img {
+  .flat-meet .images a {
     width: 100%;
   }
   .flat-contact {
@@ -601,11 +621,17 @@
   .flat-contact .wrap-contact {
     padding: 30px 15px 30px 15px;
   }
-  .flat-blog .content {
+  .flat-blog .box .images a {
+    width: 100%;
+  }
+  .flat-blog .box .content {
     padding: 20px 0px 0;
   }
   .flat-testimonial .box .inner {
     padding: 30px 15px;
+  }
+  .icon-plus img {
+    width: unset !important;
   }
   .flat-find-neighborhood .box .images img {
     width: 100%;
@@ -1431,6 +1457,9 @@
   .flat-find-neighborhood.home5 .wrap-find.find-1 .box img {
     width: 100%;
   }
+  .flat-find-neighborhood.home5 .wrap-find.find-1 .box .icon-plus img {
+    width: unset;
+  }
   .flat-find-neighborhood.home5 .wrap-find.find-2 .box {
     width: calc(50% - 10px);
     margin-bottom: 10px;
@@ -2116,9 +2145,18 @@
     max-height: calc(100% - 90px);
   }
   .wd-search-form {
-    margin-top: 11px;
+    padding: 24px 15px 10px;
   }
-  .wd-search-form .form-wg .wg-box2 {
+  .wd-search-form.show {
+    margin-top: 30px;
+  }
+  .wd-search-form .box1 .form-group {
+    width: calc(100% - 30px) !important;
+  }
+  .wd-search-form .box1 .form-group:nth-child(3) {
+    padding-right: 8px;
+  }
+  .wd-search-form .box2 .form-group {
     width: calc(50% - 30px) !important;
   }
   .modal-dialog-centered .content {

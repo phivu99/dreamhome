@@ -423,7 +423,7 @@
         e.preventDefault();
 
         $(this).toggleClass("click");
-        $(".wd-search-form").toggleClass("show");
+        $(".wd-search-form").toggleClass("show").delay( 800 );
   
     });
 
